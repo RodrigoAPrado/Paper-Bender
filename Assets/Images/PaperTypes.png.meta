@@ -1,0 +1,175 @@
+fileFormatVersion: 2
+guid: 15c1045e92e4a3d468a06567b45baa5e
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 7
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: PaperTypes_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1693
+        width: 374
+        height: 287
+      alignment: 7
+      pivot: {x: .5, y: 0}
+    - name: PaperTypes_1
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 1693
+        width: 390
+        height: 148
+      alignment: 7
+      pivot: {x: .5, y: 0}
+    - name: PaperTypes_2
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 1693
+        width: 378
+        height: 362
+      alignment: 7
+      pivot: {x: .5, y: 0}
+    - name: PaperTypes_3
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 1727
+        width: 391
+        height: 207
+      alignment: 9
+      pivot: {x: .5, y: .301588565}
+    - name: PaperTypes_4
+      rect:
+        serializedVersion: 2
+        x: 1772
+        y: 1693
+        width: 375
+        height: 362
+      alignment: 7
+      pivot: {x: .5, y: 0}
+    - name: PaperTypes_5
+      rect:
+        serializedVersion: 2
+        x: 2207
+        y: 1633
+        width: 390
+        height: 208
+      alignment: 9
+      pivot: {x: .5, y: .301588595}
+    - name: PaperTypes_6
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1293
+        width: 360
+        height: 360
+      alignment: 7
+      pivot: {x: .5, y: 0}
+    - name: PaperTypes_7
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 1293
+        width: 363
+        height: 362
+      alignment: 7
+      pivot: {x: .5, y: 0}
+    - name: PaperTypes_8
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1293
+        width: 431
+        height: 362
+      alignment: 7
+      pivot: {x: .5, y: 0}
+    - name: PaperTypes_9
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 1293
+        width: 431
+        height: 362
+      alignment: 7
+      pivot: {x: .5, y: 0}
+    - name: PaperTypes_10
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 397
+        width: 383
+        height: 863
+      alignment: 7
+      pivot: {x: .5, y: 0}
+    - name: PaperTypes_11
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 397
+        width: 363
+        height: 863
+      alignment: 7
+      pivot: {x: .5, y: 0}
+    - name: PaperTypes_12
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 0
+        width: 436
+        height: 359
+      alignment: 7
+      pivot: {x: .5, y: 0}
+    - name: PaperTypes_13
+      rect:
+        serializedVersion: 2
+        x: 1346
+        y: 0
+        width: 438
+        height: 359
+      alignment: 7
+      pivot: {x: .5, y: 0}
+  spritePackingTag: 
+  userData: 
