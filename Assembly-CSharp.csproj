@@ -207,7 +207,7 @@
      <Compile Include="Assets\Scripts\Old\SeesawController.cs" />
      <Compile Include="Assets\Scripts\Old\SwitchController.cs" />
      <Compile Include="Assets\Scripts\PaperMaker.cs" />
-     <Compile Include="Assets\Scripts\Spritetype.cs" />
+     <Compile Include="Assets\Scripts\Spritetypefull.cs" />
      <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
      <None Include="Assets\NGUI\ReadMe - 3.6.3.txt" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />

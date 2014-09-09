@@ -1,9 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\SPJam2014\SPJam2014\Assets\Assets\Scripts\Game\CharacterController3D.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Spritetypefull.cs">
     <Files>
-      <File FileName="..\SPJam2014\SPJam2014\Assets\Assets\Scripts\Game\CameraController.cs" Line="1" Column="1" />
-      <File FileName="..\SPJam2014\SPJam2014\Assets\Assets\Scripts\Game\CharacterController3D.cs" Line="297" Column="4" />
+      <File FileName="Assets\Scripts\Spritetypefull.cs" Line="4" Column="28" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
