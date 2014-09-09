@@ -186,14 +186,17 @@ public class MovePlayer : MonoBehaviour {
 		{
 			if(Physics2D.OverlapArea(new Vector2(obstacleDetectUpper.position.x, obstacleDetectUpper.position.y), new Vector2(obstacleDetectLower.position.x, obstacleDetectLower.position.y), groundLayer).gameObject == currentGround || (Physics2D.OverlapArea(new Vector2(obstacleDetectUpper.position.x, obstacleDetectUpper.position.y), new Vector2(obstacleDetectLower.position.x, obstacleDetectLower.position.y), groundLayer).gameObject.tag == "MovingPlataform" && Physics2D.OverlapArea(new Vector2(obstacleDetectUpper.position.x, obstacleDetectUpper.position.y), new Vector2(obstacleDetectLower.position.x, obstacleDetectLower.position.y), groundLayer).gameObject.GetComponent<MovingPlataformController>().moving) || (Physics2D.OverlapArea(new Vector2(obstacleDetectUpper.position.x, obstacleDetectUpper.position.y), new Vector2(obstacleDetectLower.position.x, obstacleDetectLower.position.y), groundLayer).gameObject.tag == "Floor" && Physics2D.OverlapArea(new Vector2(obstacleDetectUpper.position.x, obstacleDetectUpper.position.y), new Vector2(obstacleDetectLower.position.x, obstacleDetectLower.position.y), groundLayer).gameObject.transform.eulerAngles.z != 0) || Physics2D.OverlapArea(new Vector2(obstacleDetectUpper.position.x, obstacleDetectUpper.position.y), new Vector2(obstacleDetectLower.position.x, obstacleDetectLower.position.y), groundLayer).gameObject.tag == "DiagonalFloor")
 			{
+				print ("ok1");
 				return 0;
 			}
 			if(Physics2D.OverlapArea(new Vector2(obstacleDetectUpper.position.x, obstacleDetectUpper.position.y), new Vector2(obstacleDetectLower.position.x, obstacleDetectLower.position.y), groundLayer).gameObject.tag == "PaperBall" && !paperBall)
 			{
+				print ("ok2");
 				return 0;
 			}
 			else
 			{
+				print ("ok3");
 				paperBall = false;
 			}
 		/*if(Physics2D.OverlapCircle(new Vector2(obstacleCheck.position.x, obstacleCheck.position.y), 0.64f, groundLayer))
