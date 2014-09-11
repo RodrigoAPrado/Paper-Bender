@@ -16,7 +16,8 @@ public class MovingPlataformController : MonoBehaviour {
 	public Transform upperRight;
 	public Transform lowerLeft;
 	public Transform lowerRight;
-	
+
+	public TileSpriteManager spriteManager;
 	public Transform uppermostLeft;
 	public Transform uppermostRight;
 	// Use this for initialization

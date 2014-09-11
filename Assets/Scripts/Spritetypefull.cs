@@ -14,7 +14,9 @@ public class Spritetypefull : MonoBehaviour {
 		Mountain,
 		Swamp
 	}
-	public Sprite[] sprites;
+	//public Sprite[] sprites;
+	
+	public TileSpriteManager spriteManager;
 	public enum linha
 	{
 		Primeira,
@@ -86,9 +88,11 @@ public class Spritetypefull : MonoBehaviour {
 		}
 		if(chao)
 			tileIndex += 16;
-		if(sprites[tileIndex] == null)
+		if(spriteManager.sprites[tileIndex] == null)
 			tileIndex = 0;
-		gameObject.GetComponent<SpriteRenderer>().sprite = sprites[tileIndex];
+		//gameObject.GetComponent<SpriteRenderer>().sprite = sprites[tileIndex];
+		gameObject.GetComponent<SpriteRenderer>().sprite = spriteManager.sprites[tileIndex];
+
 		/*switch(world)
 		{
 		case worldSelect.Blank:
