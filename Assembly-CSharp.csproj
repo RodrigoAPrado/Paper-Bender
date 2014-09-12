@@ -185,7 +185,9 @@
      <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
      <Compile Include="Assets\Pause\scripts\btn_Pause.cs" />
+     <Compile Include="Assets\Scripts\BendSpriteController.cs" />
      <Compile Include="Assets\Scripts\FloorMaker.cs" />
+     <Compile Include="Assets\Scripts\MasterPaperNeo.cs" />
      <Compile Include="Assets\Scripts\Old\BeginGame.cs" />
      <Compile Include="Assets\Scripts\Old\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\Old\CameraFollowB.cs" />
