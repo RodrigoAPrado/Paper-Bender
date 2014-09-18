@@ -26,6 +26,8 @@ public class PositionDetect : MonoBehaviour {
 		targetSprite = GameObject.FindGameObjectWithTag("TargetSprite").gameObject;
 		character = GameObject.FindGameObjectWithTag("Player").transform;
 		movePlayer = character.gameObject.GetComponent<MovePlayer>();
+		Camera.main.transform.position = new Vector3(cameraPositions[0].x, cameraPositions[0].y, -10);
+		Camera.main.orthographicSize = cameraPositions[0].z;
 	}
 	
 	// Update is called once per frame
