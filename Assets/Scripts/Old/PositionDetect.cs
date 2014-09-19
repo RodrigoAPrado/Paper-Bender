@@ -18,9 +18,10 @@ public class PositionDetect : MonoBehaviour {
 	bool paperBall;
 
 	public bool halt;
+	public bool firstFollow;
 
 	public Vector3[] cameraPositions;
-
+		
 
 	void Start () {
 		targetSprite = GameObject.FindGameObjectWithTag("TargetSprite").gameObject;

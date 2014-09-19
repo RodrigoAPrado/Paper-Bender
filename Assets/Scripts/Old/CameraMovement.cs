@@ -7,7 +7,7 @@ public class CameraMovement : MonoBehaviour {
 	float xN;
 	float yN;
 	float sizeN;
-	bool followChar;
+	[SerializeField] bool followChar;
 	bool stage3Follow;
 	Transform character;
 	// Use this for initialization

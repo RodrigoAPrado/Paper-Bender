@@ -4,7 +4,7 @@
     <Files>
       <File FileName="Assets\Scripts\FloorMaker.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Old\CameraMovement.cs" Line="16" Column="3" />
-      <File FileName="Assets\Scripts\Old\PositionDetect.cs" Line="30" Column="49" />
+      <File FileName="Assets\Scripts\Old\PositionDetect.cs" Line="23" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
