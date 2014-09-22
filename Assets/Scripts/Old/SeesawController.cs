@@ -2,13 +2,15 @@
 using System.Collections;
 
 public class SeesawController : MonoBehaviour {
-
+	
 	public Transform seesawMiddle;
 	bool playerOnTop;
 	Transform playerTransform;
 	MovePlayer movePlayer;
 	public float rotationSpeed;
-
+	
+	public float autoRotationSpeed;
+	
 	public LayerMask groundLayer;
 	public LayerMask detectionLayer;
 	public Transform leftGroundDetector;
@@ -17,7 +19,9 @@ public class SeesawController : MonoBehaviour {
 	public Transform[] collidersDetecter;
 	public float[] positionSpeedModifier;
 	public Collider2D[] collidersDetected;
-
+	public bool rotate;
+	public Transform[] groundDetector;
+	
 	// Use this for initialization
 	void Start () {
 		playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
@@ -26,7 +30,13 @@ public class SeesawController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-
+		
+		if(rotate)
+		{
+			rotationSpeed = autoRotationSpeed;
+			Rotating();
+			return;
+		}
 		DetectColliders();
 		/*if(Physics2D.OverlapCircleNonAlloc(new Vector2(left3.position.x, left3.position.y), 0.5f, collidersDetected, detectionLayer) > 0)
 		{
@@ -50,7 +60,7 @@ public class SeesawController : MonoBehaviour {
 				}
 			}
 		}*/
-
+		
 		//return;
 		/*if(movePlayer.currentGround == this.gameObject)
 			playerOnTop = true;
@@ -140,5 +150,14 @@ public class SeesawController : MonoBehaviour {
 		{
 
 		}*/
+	}
+	void Rotating()
+	{
+		for(int i = 0; i < groundDetector.Length; i++)
+		{
+			if(Physics2D.OverlapCircle(new Vector2(groundDetector[i].position.x, groundDetector[i].position.y), 0.1f, groundLayer))
+				return;
+		}
+		transform.Rotate(new Vector3(0,0,rotationSpeed));
 	}
 }

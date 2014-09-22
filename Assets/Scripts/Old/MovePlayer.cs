@@ -30,6 +30,7 @@ public class MovePlayer : MonoBehaviour {
 	public LayerMask groundLayer;
 	[SerializeField]float jumpSpeed = 10;
 	bool paperBall;
+	public bool flipStart;
 
 	SpriteRenderer bendZoneSprite;
 	float opacity;
@@ -40,9 +41,12 @@ public class MovePlayer : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
 		bendZoneSprite = GameObject.FindGameObjectWithTag("PlayerBendZone").gameObject.GetComponent<SpriteRenderer>();
 		currentDist = new float[2];
 		avatarSprite = GameObject.FindGameObjectWithTag("PlayerSprite").transform;
+		if(flipStart)
+			Flip();
 	}
 
 
