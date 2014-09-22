@@ -46,10 +46,15 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Menu\Scripts\ActivateOnClick.cs" />
+     <Compile Include="Assets\Menu\Scripts\CloseLevels.cs" />
+     <Compile Include="Assets\Menu\Scripts\LoadLevel.cs" />
+     <Compile Include="Assets\Menu\Scripts\ReturnMenu.cs" />
      <Compile Include="Assets\Menu\Scripts\_Control.cs" />
      <Compile Include="Assets\Menu\Scripts\_Control_MainMenu.cs" />
      <Compile Include="Assets\Menu\Scripts\buttonOptions.cs" />
      <Compile Include="Assets\Menu\Scripts\buttonReturnOptions.cs" />
+     <Compile Include="Assets\Menu\Scripts\button_Quit.cs" />
      <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipItems.cs" />
      <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipRandomItem.cs" />
      <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UICursor.cs" />
