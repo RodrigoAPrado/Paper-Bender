@@ -24,9 +24,9 @@ public class SwitchController : MonoBehaviour {
 		locked = !Physics2D.OverlapArea(new Vector2(left.position.x, left.position.y), new Vector2(right.position.x, right.position.y), weights);
 		if(locked && !forceOpen)
 		{
+			GetComponent<SpriteRenderer>().sprite = sprites[0];
 			if(!rotateAPlataform)
 			{
-				GetComponent<SpriteRenderer>().sprite = sprites[0];
 				switchLight.GetComponent<SpriteRenderer>().sprite = sprites[0];
 				door.SetActive(true);
 				return;
@@ -34,9 +34,9 @@ public class SwitchController : MonoBehaviour {
 		}
 		else
 		{
+			GetComponent<SpriteRenderer>().sprite = sprites[1];
 			if(!rotateAPlataform)
 			{
-				GetComponent<SpriteRenderer>().sprite = sprites[1];
 				switchLight.GetComponent<SpriteRenderer>().sprite = sprites[1];
 				door.SetActive(false);
 				return;
