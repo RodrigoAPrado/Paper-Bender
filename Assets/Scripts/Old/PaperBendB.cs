@@ -10,6 +10,7 @@ public class PaperBendB : MonoBehaviour {
 	public float timeSet;
 	float timeCounter;
 	bool canBend;
+	public bool canBendAnywhere;
 	public bool checkSprite;
 	public GameObject imageRenderer;
 
@@ -21,6 +22,8 @@ public class PaperBendB : MonoBehaviour {
 	float mousex;
 	float mousey;
 
+	public Transform bendDetectLeft;
+	public Transform bendDetectRight;
 	// Use this for initialization
 	public Sprite[] spriteArray = new Sprite[3];
 	
@@ -29,10 +32,18 @@ public class PaperBendB : MonoBehaviour {
 	void Update()
 	{
 		//playerCurrentGround = GameObject.FindGameObjectWithTag("Player").GetComponent<MovePlayer>().currentGround;
-		canBend = Physics2D.OverlapCircle(new Vector2(transform.position.x, transform.position.y), 0.2f, playerBendingZone);
+		if(bendDetectLeft || bendDetectRight == null)
+		{
+			canBend = Physics2D.OverlapCircle(new Vector2(transform.position.x, transform.position.y), 0.2f, playerBendingZone);
+		}
+		else
+		{
+			canBend = Physics2D.OverlapArea(new Vector2(bendDetectLeft.position.x, bendDetectLeft.position.y), new Vector2(bendDetectRight.position.x, bendDetectRight.position.y), playerBendingZone);
+		}
 		if(canBend)
 		{
-			canBend = !Physics2D.OverlapArea(new Vector2(upperPaperLeft.position.x, upperPaperLeft.position.y), new Vector2(lowerPaperRight.position.x, lowerPaperRight.position.y), playerZone);
+			if(!canBendAnywhere)
+				canBend = !Physics2D.OverlapArea(new Vector2(upperPaperLeft.position.x, upperPaperLeft.position.y), new Vector2(lowerPaperRight.position.x, lowerPaperRight.position.y), playerZone);
 		}
 		if(canBend)
 			//gameObject.renderer.enabled = true;

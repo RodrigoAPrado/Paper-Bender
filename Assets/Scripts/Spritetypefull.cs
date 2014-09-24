@@ -7,12 +7,8 @@ public class Spritetypefull : MonoBehaviour {
 	public enum worldSelect
 	{
 		Blank,
-		Village,
-		Temple,
-		Grasslands,
-		Wastelands,
-		Mountain,
-		Swamp
+		Tempou,
+		Wasteland
 	}
 	//public Sprite[] sprites;
 	
@@ -33,7 +29,6 @@ public class Spritetypefull : MonoBehaviour {
 	}
 	public coluna colunaIndex;
 	public linha linhaIndex;
-	public bool chao;
 	int tileIndex = 0;
 	public worldSelect world = worldSelect.Blank;
 	// Use this for initialization
@@ -70,24 +65,10 @@ public class Spritetypefull : MonoBehaviour {
 		case worldSelect.Blank:
 			tileIndex = 0;
 		break;
-		case worldSelect.Temple:
-			tileIndex += 32;
-			break;
-		case worldSelect.Grasslands:
-			tileIndex += 64;
-			break;
-		case worldSelect.Wastelands:
-			tileIndex += 96;
-			break;
-		case worldSelect.Mountain:
-			tileIndex += 128;
-			break;
-		case worldSelect.Swamp:
-			tileIndex += 160;
+		case worldSelect.Wasteland:
+			tileIndex += 16;
 			break;
 		}
-		if(chao)
-			tileIndex += 16;
 		if(spriteManager.sprites[tileIndex] == null)
 			tileIndex = 0;
 		//gameObject.GetComponent<SpriteRenderer>().sprite = sprites[tileIndex];
