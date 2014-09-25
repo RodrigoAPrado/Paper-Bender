@@ -1,13 +1,16 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Spritetypefull.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Old\MovePlayer.cs">
     <Files>
-      <File FileName="Assets\Scripts\TileSpriteManager.cs" Line="8" Column="17" />
+      <File FileName="Assets\Scripts\Old\MovePlayer.cs" Line="40" Column="9" />
+      <File FileName="Assets\Scripts\Old\CameraMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\TileSpriteManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Old\MovingPlataformController.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Old\SwitchController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\TemplePuzzle.cs" Line="20" Column="28" />
-      <File FileName="Assets\Scripts\Spritetypefull.cs" Line="33" Column="47" />
-      <File FileName="Assets\Scripts\Old\PaperBendB.cs" Line="35" Column="35" />
+      <File FileName="Assets\Scripts\TemplePuzzle.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Spritetypefull.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Old\PaperBendB.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Old\PositionDetect.cs" Line="45" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
