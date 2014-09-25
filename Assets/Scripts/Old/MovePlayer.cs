@@ -37,14 +37,14 @@ public class MovePlayer : MonoBehaviour {
 
 	//Sprite
 	bool facingRight = true;
-	Transform avatarSprite;
+	public Transform avatarSprite;
 
 	// Use this for initialization
 	void Start () {
 
 		bendZoneSprite = GameObject.FindGameObjectWithTag("PlayerBendZone").gameObject.GetComponent<SpriteRenderer>();
 		currentDist = new float[2];
-		avatarSprite = GameObject.FindGameObjectWithTag("PlayerSprite").transform;
+		//avatarSprite = GameObject.FindGameObjectWithTag("PlayerSprite").transform;
 		if(flipStart)
 			Flip();
 	}
