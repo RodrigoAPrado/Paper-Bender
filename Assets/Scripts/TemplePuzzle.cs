@@ -13,7 +13,6 @@ public class TemplePuzzle : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		print (puzzle.Length);
 		for(int i = 0; i < puzzle.Length; i++)
 		{
 

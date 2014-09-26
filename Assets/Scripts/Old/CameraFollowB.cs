@@ -35,7 +35,7 @@ public class CameraFollowB : MonoBehaviour {
 				toEnableB.SetActive(true);
 			if(toEnableC)
 				toEnableC.SetActive(true);
-			Camera.main.GetComponent<CameraMovement>().MoveCamera(pD.cameraPositions[cameraPositionChange].x, pD.cameraPositions[cameraPositionChange].y, pD.cameraPositions[cameraPositionChange].z, followCharacter, stage3Follow);
+			Camera.main.GetComponent<CameraMovement>().MoveCamera(pD.cameraPositions[cameraPositionChange].x, pD.cameraPositions[cameraPositionChange].y, pD.cameraPositions[cameraPositionChange].z, followCharacter, stage3Follow, cameraPositionChange);
 			/*Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position, new Vector3(pD.cameraPositions[cameraPositionChange].x, pD.cameraPositions[cameraPositionChange].y, -10), 1);
 			Camera.main.orthographicSize = Mathf.Lerp(Camera.main.orthographicSize, pD.cameraPositions[cameraPositionChange].z, 1);*/
 				//Camera.main.transform.position = new Vector3(pD.cameraPositions[cameraPositionChange].x, pD.cameraPositions[cameraPositionChange].y, -10);
