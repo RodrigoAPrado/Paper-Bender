@@ -70,7 +70,8 @@ public class PositionDetect : MonoBehaviour {
 				}
 				if(hit.collider.tag=="PaperBendB" && !movePlayer.moving)
 				{
-					hit.collider.gameObject.GetComponent<PaperBendB>().BendPaper();
+					//hit.collider.gameObject.GetComponent<PaperBendB>().BendPaper();
+					movePlayer.BendAnimation(hit.collider.gameObject.GetComponent<PaperBendB>());
 					return;
 				}
 			}

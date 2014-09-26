@@ -19,6 +19,7 @@ public class MovePlayer : MonoBehaviour {
 	public Transform jumpCheck;
 
 	//Jump
+	bool dontJump;
 	public Transform heightToJump;
 	bool jumpedOnce;
 	public GameObject currentGround;
@@ -40,6 +41,8 @@ public class MovePlayer : MonoBehaviour {
 	//Sprite
 	bool facingRight = true;
 	public Transform avatarSprite;
+
+	bool bending;
 
 	// Use this for initialization
 	void Start () {
@@ -289,6 +292,11 @@ public class MovePlayer : MonoBehaviour {
 		{
 			rigidbody2D.gravityScale = 1;
 		}
+	}
+	public void BendAnimation(PaperBendB pB)
+	{
+		//pB.BendPaper();
+		moving = false;
 	}
 	public void MoveCharacter(float mouseInfo, float mouseHeight, bool paperBallCheck)
 	{

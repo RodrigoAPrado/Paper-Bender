@@ -190,6 +190,7 @@
      <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
      <Compile Include="Assets\Old_Pause\scripts\btn_Pause.cs" />
+     <Compile Include="Assets\Scripts\AnimationPriest.cs" />
      <Compile Include="Assets\Scripts\BendSpriteController.cs" />
      <Compile Include="Assets\Scripts\FloorMaker.cs" />
      <Compile Include="Assets\Scripts\MasterPaperNeo.cs" />
@@ -214,8 +215,10 @@
      <Compile Include="Assets\Scripts\Old\SeesawController.cs" />
      <Compile Include="Assets\Scripts\Old\SwitchController.cs" />
      <Compile Include="Assets\Scripts\PaperMaker.cs" />
+     <Compile Include="Assets\Scripts\PaperToBeCut.cs" />
      <Compile Include="Assets\Scripts\Pause.cs" />
      <Compile Include="Assets\Scripts\Scissor.cs" />
+     <Compile Include="Assets\Scripts\ScissorBroken.cs" />
      <Compile Include="Assets\Scripts\Spritetypefull.cs" />
      <Compile Include="Assets\Scripts\TemplePuzzle.cs" />
      <Compile Include="Assets\Scripts\TheFuckingEnd.cs" />
