@@ -19,6 +19,8 @@ public class MovePlayer : MonoBehaviour {
 	public Transform jumpCheck;
 
 	//Jump
+	public Transform heightToJump;
+	bool jumpedOnce;
 	public GameObject currentGround;
 	public Transform groundCheck;
 	public Transform jumpLeft;
@@ -100,6 +102,7 @@ public class MovePlayer : MonoBehaviour {
 			if((dist == currentDist[0] && dist == currentDist[1]) || (mouseClicked < transform.position.x && speed > 0) || (mouseClicked > transform.position.x && speed < 0))
 			{
 				moving = false;
+				jumpedOnce = false;
 				for(int i = 0; i < 2; i++)
 				{
 					currentDist[i] = 0;
@@ -163,7 +166,7 @@ public class MovePlayer : MonoBehaviour {
 	{
 		jumpCheck.localScale = new Vector2 (speed, jumpCheck.localScale.y);
 		/*Physics2D.OverlapArea(new Vector2(jumpLeft.position.x, jumpLeft.position.y), new Vector2(jumpRight.position.x, jumpRight.position.y), groundLayer).collider2D.gameObject == currentGround*/
-		if(!Physics2D.OverlapArea(new Vector2(jumpLeft.position.x, jumpLeft.position.y), new Vector2(jumpRight.position.x, jumpRight.position.y), groundLayer))
+		if(!jumpedOnce && !Physics2D.OverlapArea(new Vector2(jumpLeft.position.x, jumpLeft.position.y), new Vector2(jumpRight.position.x, jumpRight.position.y), groundLayer))
 		{
 			if(grounded && mouseClickedHeight > transform.position.y - 0.96f)
 			{
@@ -179,7 +182,16 @@ public class MovePlayer : MonoBehaviour {
 				}
 				rigidbody2D.gravityScale = 1;
 				rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, jumpSpeed);
+				jumpedOnce = true;
 			}
+			return;
+		}
+		if(mouseClickedHeight > heightToJump.position.y + 0.32f && !jumpedOnce)
+		{
+			rigidbody2D.gravityScale = 1;
+			rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, jumpSpeed);
+			jumpedOnce = true;
+			return;
 		}
 	}
 	int CheckObstacleHeight()
@@ -268,7 +280,7 @@ public class MovePlayer : MonoBehaviour {
 	}
 	void GravityModifier()
 	{
-		if(grounded && !moving && currentGround.tag != "MovingPlataform" && currentGround.tag != "Seesaw")
+		if(grounded && !moving && currentGround.tag != "MovingPlataform" && currentGround.tag != "Seesaw" && currentGround.tag != "Floor")
 		{
 			rigidbody2D.velocity = new Vector2(0,0);
 			rigidbody2D.gravityScale = 0;
@@ -285,13 +297,13 @@ public class MovePlayer : MonoBehaviour {
 		mouseClicked = mouseInfo;
 		moving = true;
 		GravityModifier();
-		if(mouseClicked > transform.position.x)
+		if(mouseClicked > transform.position.x + 0.96f)
 		{
 			speed = 1;
 			if(!facingRight)
 				Flip ();
 		}
-		else
+		if(mouseClicked < transform.position.x - 0.96f)
 		{
 			speed = -1;
 			if(facingRight)

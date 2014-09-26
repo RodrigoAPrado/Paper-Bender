@@ -10,6 +10,7 @@ public class CameraMovement : MonoBehaviour {
 	[SerializeField] bool followChar;
 	bool stage3Follow;
 	Transform character;
+	public int currentCameraPosition;
 	// Use this for initialization
 	void Start () {
 		character = GameObject.FindGameObjectWithTag("Player").transform;
@@ -37,8 +38,9 @@ public class CameraMovement : MonoBehaviour {
 				move = false;
 		}
 	}
-	public void MoveCamera(float x, float y, float size, bool follow, bool s3F)
+	public void MoveCamera(float x, float y, float size, bool follow, bool s3F, int cameraPos)
 	{
+		currentCameraPosition = cameraPos;
 		stage3Follow = s3F;
 		if(stage3Follow)
 		{
@@ -52,6 +54,7 @@ public class CameraMovement : MonoBehaviour {
 		yN = y;
 		sizeN = size;
 		move = true;
+
 
 		//print ("X = " + x + " / Y = " + y + " / Size = " + size);
 		/**/

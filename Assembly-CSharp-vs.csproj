@@ -220,6 +220,7 @@
      <Compile Include="Assets\Scripts\TemplePuzzle.cs" />
      <Compile Include="Assets\Scripts\TheFuckingEnd.cs" />
      <Compile Include="Assets\Scripts\TileSpriteManager.cs" />
+     <Compile Include="Assets\Scripts\UltraRangeStatueController.cs" />
      <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
      <None Include="Assets\NGUI\ReadMe - 3.6.3.txt" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
