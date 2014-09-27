@@ -9,7 +9,7 @@ public class PaperBendB : MonoBehaviour {
 	public LayerMask playerBendingZone;
 	public float timeSet;
 	float timeCounter;
-	bool canBend;
+	public bool canBend;
 	public bool canBendAnywhere;
 	public bool checkSprite;
 	public GameObject imageRenderer;

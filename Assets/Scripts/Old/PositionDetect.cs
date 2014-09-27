@@ -57,7 +57,7 @@ public class PositionDetect : MonoBehaviour {
 
 		if(Input.GetMouseButtonDown(0))
 		{
-			if(!movePlayer.grounded)
+			if(!movePlayer.grounded || movePlayer.bending)
 				return;
 
 			RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, 1, bendingLayer);
@@ -68,9 +68,10 @@ public class PositionDetect : MonoBehaviour {
 					hit.collider.gameObject.GetComponent<PaperBend>().BendPaper();
 					return;
 				}
-				if(hit.collider.tag=="PaperBendB" && !movePlayer.moving)
+				if(hit.collider.tag=="PaperBendB")
 				{
-					hit.collider.gameObject.GetComponent<PaperBendB>().BendPaper();
+					//hit.collider.gameObject.GetComponent<PaperBendB>().BendPaper();
+					movePlayer.BendAnimation(hit.collider.gameObject.GetComponent<PaperBendB>());
 					return;
 				}
 			}
