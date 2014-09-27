@@ -42,7 +42,14 @@ public class MovePlayer : MonoBehaviour {
 	bool facingRight = true;
 	public Transform avatarSprite;
 
-	bool bending;
+	public bool bending;
+	bool bended;
+
+	PaperBendB paperToBend;
+
+	//Animations
+	[SerializeField] Animator anim;
+	float animationCounter;
 
 	// Use this for initialization
 	void Start () {
@@ -50,6 +57,7 @@ public class MovePlayer : MonoBehaviour {
 		bendZoneSprite = GameObject.FindGameObjectWithTag("PlayerBendZone").gameObject.GetComponent<SpriteRenderer>();
 		currentDist = new float[2];
 		//avatarSprite = GameObject.FindGameObjectWithTag("PlayerSprite").transform;
+		anim = avatarSprite.GetComponent<Animator>();
 		if(flipStart)
 			Flip();
 	}
@@ -57,6 +65,7 @@ public class MovePlayer : MonoBehaviour {
 
 	void FixedUpdate()
 	{
+
 		if(!moving && grounded)
 		{
 			if(opacity < 1.6F)
@@ -77,6 +86,9 @@ public class MovePlayer : MonoBehaviour {
 		}
 		bendZoneSprite.color = new Color(1,1,1,opacity - 1);
 		GravityModifier();
+
+
+		anim.SetBool("Moving", moving);
 
 		grounded = Physics2D.OverlapCircle(new Vector2(groundCheck.position.x, groundCheck.position.y), groundRadius, groundLayer);
 		if(grounded)
@@ -99,9 +111,11 @@ public class MovePlayer : MonoBehaviour {
 			}
 			currentDist[currentDistCounter] = dist;
 			if(grounded){
-				CheckJump();
+				if(!dontJump)
+					CheckJump();
 			}
-			CheckClimb(CheckObstacleHeight());
+			if(!dontJump)
+				CheckClimb(CheckObstacleHeight());
 			if((dist == currentDist[0] && dist == currentDist[1]) || (mouseClicked < transform.position.x && speed > 0) || (mouseClicked > transform.position.x && speed < 0))
 			{
 				moving = false;
@@ -118,6 +132,24 @@ public class MovePlayer : MonoBehaviour {
 		}
 		if(!grounded && !moving && rigidbody2D.velocity.y == 0)
 			transform.position = new Vector2(transform.position.x - (speed/10), transform.position.y);
+		if(bending)
+		{
+			if(anim.GetCurrentAnimatorStateInfo(0).IsName("Priest_StaffEnd") && !bended)
+			{
+				paperToBend.BendPaper();
+				bended = true;
+			}
+			if(anim.GetCurrentAnimatorStateInfo(0).IsName("Priest_Idle") && animationCounter <= 0)
+			{
+				bending = false;
+				bended = false;
+				anim.SetBool("Bend", false);
+			}
+		}
+		if(animationCounter > 0)
+		{
+			animationCounter -= Time.deltaTime;
+		}
 	}
 	// Update is called once per frame
 	void Update () 
@@ -153,15 +185,15 @@ public class MovePlayer : MonoBehaviour {
 		{
 			if(jumpHeight <= 0)
 			{
-				print ("There' is nothing to jump on.");
+				//print ("There' is nothing to jump on.");
 			}
 			if(jumpHeight > 7)
 			{
-				print ("I'll not climb, this is too high.");
+				//print ("I'll not climb, this is too high.");
 			}
 			if(!canClimb)
 			{
-				print ("There's an obstacle up there, I can't clmb this.");
+				//print ("There's an obstacle up there, I can't clmb this.");
 			}
 		}
 	}
@@ -205,17 +237,17 @@ public class MovePlayer : MonoBehaviour {
 		{
 			if(Physics2D.OverlapArea(new Vector2(obstacleDetectUpper.position.x, obstacleDetectUpper.position.y), new Vector2(obstacleDetectLower.position.x, obstacleDetectLower.position.y), groundLayer).gameObject == currentGround || (Physics2D.OverlapArea(new Vector2(obstacleDetectUpper.position.x, obstacleDetectUpper.position.y), new Vector2(obstacleDetectLower.position.x, obstacleDetectLower.position.y), groundLayer).gameObject.tag == "MovingPlataform" && Physics2D.OverlapArea(new Vector2(obstacleDetectUpper.position.x, obstacleDetectUpper.position.y), new Vector2(obstacleDetectLower.position.x, obstacleDetectLower.position.y), groundLayer).gameObject.GetComponent<MovingPlataformController>().moving) || (Physics2D.OverlapArea(new Vector2(obstacleDetectUpper.position.x, obstacleDetectUpper.position.y), new Vector2(obstacleDetectLower.position.x, obstacleDetectLower.position.y), groundLayer).gameObject.tag == "Floor" && Physics2D.OverlapArea(new Vector2(obstacleDetectUpper.position.x, obstacleDetectUpper.position.y), new Vector2(obstacleDetectLower.position.x, obstacleDetectLower.position.y), groundLayer).gameObject.transform.eulerAngles.z != 0) || Physics2D.OverlapArea(new Vector2(obstacleDetectUpper.position.x, obstacleDetectUpper.position.y), new Vector2(obstacleDetectLower.position.x, obstacleDetectLower.position.y), groundLayer).gameObject.tag == "DiagonalFloor")
 			{
-				print ("ok1");
+				//print ("ok1");
 				return 0;
 			}
 			if(Physics2D.OverlapArea(new Vector2(obstacleDetectUpper.position.x, obstacleDetectUpper.position.y), new Vector2(obstacleDetectLower.position.x, obstacleDetectLower.position.y), groundLayer).gameObject.tag == "PaperBall" && !paperBall)
 			{
-				print ("ok2");
+				//print ("ok2");
 				return 0;
 			}
 			else
 			{
-				print ("ok3");
+				//print ("ok3");
 				paperBall = false;
 			}
 		/*if(Physics2D.OverlapCircle(new Vector2(obstacleCheck.position.x, obstacleCheck.position.y), 0.64f, groundLayer))
@@ -261,7 +293,7 @@ public class MovePlayer : MonoBehaviour {
 				}
 				obstacleCheck.localPosition = new Vector2 (obstacleCheck.localPosition.x, obstacleCheck.localPosition.y + 0.32f);
 			}
-			print (obstacleHeight);
+			//print (obstacleHeight);
 			return obstacleHeight;
 		}
 		else
@@ -295,8 +327,16 @@ public class MovePlayer : MonoBehaviour {
 	}
 	public void BendAnimation(PaperBendB pB)
 	{
-		//pB.BendPaper();
-		moving = false;
+		print ("bend");
+		if(pB.canBend){
+			paperToBend = pB;
+			moving = false;
+			rigidbody2D.velocity = new Vector2(0,0);
+			dontJump = true;
+			bending = true;
+			anim.SetBool("Bend", true);
+			animationCounter = 0.3f;
+		}
 	}
 	public void MoveCharacter(float mouseInfo, float mouseHeight, bool paperBallCheck)
 	{
