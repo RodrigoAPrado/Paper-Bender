@@ -8,9 +8,14 @@ public class Spritetypefull : MonoBehaviour {
 	{
 		Blank,
 		Tempou,
-		Wasteland
+		Wasteland,
+		Swampland,
+		TempleEarth,
+		WastelandRock,
+		WastelandEarth,
+		SwampEarth,
+		SwampTruck
 	}
-	//public Sprite[] sprites;
 	
 	public TileSpriteManager spriteManager;
 	public enum linha
@@ -68,6 +73,29 @@ public class Spritetypefull : MonoBehaviour {
 		case worldSelect.Wasteland:
 			tileIndex += 16;
 			break;
+		case worldSelect.Swampland:
+			tileIndex += 32;
+			break;
+		case worldSelect.TempleEarth:
+			tileIndex += 48;
+			break;
+		case worldSelect.WastelandRock:
+			tileIndex += 64;
+			break;
+		case worldSelect.WastelandEarth:
+			tileIndex += 80;
+			break;
+		case worldSelect.SwampEarth:
+			tileIndex += 96;
+			break;
+		case worldSelect.SwampTruck:
+			tileIndex += 112;
+			break;		
+			//TempleEarth
+			//WastelandRock
+			//WastelandEarth
+			//SwampEarth
+			//SwampTrunk
 		}
 		if(spriteManager.sprites[tileIndex] == null)
 			tileIndex = 0;
