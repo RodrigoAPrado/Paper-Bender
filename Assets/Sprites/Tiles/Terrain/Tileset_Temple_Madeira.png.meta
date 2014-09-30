@@ -1,0 +1,1633 @@
+fileFormatVersion: 2
+guid: 80134cb9e06b5f848ae1ac2f692458f3
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: Tileset_Temple_Madeira_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 884
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 884
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_2
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 884
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_3
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 884
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_4
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 884
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_5
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 884
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_6
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 884
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_7
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 884
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_8
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 884
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_9
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 884
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_10
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 884
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_11
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 884
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_12
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 884
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_13
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 884
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_14
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 884
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_15
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 884
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 789
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_17
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 789
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_18
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 789
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_19
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 789
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_20
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 789
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_21
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 789
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_22
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 789
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_23
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 789
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_24
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 789
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_25
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 789
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_26
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 789
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_27
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 789
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_28
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 789
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_29
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 789
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_30
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 789
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_31
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 789
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 707
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_33
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 707
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_34
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 707
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_35
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 707
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_36
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 707
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_37
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 707
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_38
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 707
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_39
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 707
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_40
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 707
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_41
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 707
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_42
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 707
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_43
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 707
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_44
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 707
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_45
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 707
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_46
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 707
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_47
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 707
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 628
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_49
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 628
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_50
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 628
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_51
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 628
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_52
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 628
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_53
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 628
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_54
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 628
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_55
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 628
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_56
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 628
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_57
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 628
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_58
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 628
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_59
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 628
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_60
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 628
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_61
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 628
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_62
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 628
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_63
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 628
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 524
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_65
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 524
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_66
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 524
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_67
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 524
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_68
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 524
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_69
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 524
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_70
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 524
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_71
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 524
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_72
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 524
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_73
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 524
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_74
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 524
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_75
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 524
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_76
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 524
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_77
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 524
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_78
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 524
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_79
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 524
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 412
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_81
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 412
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_82
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 412
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_83
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 412
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_84
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 412
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_85
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 412
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_86
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 412
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_87
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 412
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_88
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 412
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_89
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 412
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_90
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 412
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_91
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 412
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_92
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 412
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_93
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 412
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_94
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 412
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_95
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 412
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 333
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_97
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 333
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_98
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 333
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_99
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 333
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_100
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 333
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_101
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 333
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_102
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 333
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_103
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 333
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_104
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 333
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_105
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 333
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_106
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 333
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_107
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 333
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_108
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 333
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_109
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 333
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_110
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 333
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_111
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 333
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 264
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_113
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 264
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_114
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 264
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_115
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 264
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_116
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 264
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_117
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 264
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_118
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 264
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_119
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 264
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_120
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 264
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_121
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 264
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_122
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 264
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_123
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 264
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_124
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 264
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_125
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 264
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_126
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 264
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_127
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 264
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_128
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 154
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_129
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 154
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_130
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 154
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_131
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 154
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_132
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 154
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_133
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 154
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_134
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 154
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_135
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 154
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_136
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 158
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_137
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 158
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_138
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 158
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_139
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 158
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_140
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 158
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_141
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 158
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_142
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 158
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_143
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 158
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Madeira_144
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 72
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_145
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 72
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_146
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 72
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_147
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 72
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_148
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 72
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_149
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 72
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_150
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 72
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_151
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 72
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_152
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 72
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_153
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 72
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_154
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 72
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_155
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 72
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_156
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 72
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_157
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 72
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_158
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 72
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_159
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 72
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_160
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_161
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_162
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_163
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_164
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_165
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_166
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_167
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_168
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_169
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_170
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_171
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_172
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_173
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_174
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Madeira_175
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 

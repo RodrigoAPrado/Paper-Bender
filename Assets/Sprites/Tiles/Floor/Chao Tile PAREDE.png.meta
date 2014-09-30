@@ -1,0 +1,544 @@
+fileFormatVersion: 2
+guid: b24109fd125fa17498c3b78e4153f4c3
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: Chao Tile PAREDE_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1501
+        width: 257
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_1
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 1501
+        width: 257
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_2
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 1501
+        width: 257
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1364
+        width: 84
+        height: 84
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_4
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 1364
+        width: 84
+        height: 84
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_5
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 1364
+        width: 84
+        height: 84
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_6
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 1364
+        width: 84
+        height: 84
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_7
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 1362
+        width: 88
+        height: 88
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_8
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 1362
+        width: 88
+        height: 88
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1256
+        width: 84
+        height: 84
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_10
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 1256
+        width: 84
+        height: 84
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_11
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 1256
+        width: 84
+        height: 84
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_12
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 1256
+        width: 84
+        height: 84
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_13
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 1253
+        width: 88
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_14
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 1253
+        width: 88
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1055
+        width: 257
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_16
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 1055
+        width: 257
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_17
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 1055
+        width: 257
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 928
+        width: 89
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_19
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 928
+        width: 89
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_20
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 928
+        width: 89
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_21
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 928
+        width: 89
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_22
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 928
+        width: 89
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_23
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 928
+        width: 89
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 791
+        width: 89
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_25
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 791
+        width: 89
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_26
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 791
+        width: 89
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_27
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 791
+        width: 89
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_28
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 791
+        width: 89
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_29
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 791
+        width: 89
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 648
+        width: 257
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_31
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 648
+        width: 257
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_32
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 648
+        width: 257
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 515
+        width: 89
+        height: 90
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_34
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 515
+        width: 89
+        height: 90
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_35
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 515
+        width: 89
+        height: 90
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_36
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 515
+        width: 89
+        height: 90
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_37
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 515
+        width: 89
+        height: 90
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_38
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 515
+        width: 89
+        height: 90
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 397
+        width: 89
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_40
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 397
+        width: 89
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_41
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 397
+        width: 89
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_42
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 397
+        width: 89
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_43
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 397
+        width: 89
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_44
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 397
+        width: 89
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 257
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_46
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 240
+        width: 257
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 113
+        width: 89
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_48
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 113
+        width: 89
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_49
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 113
+        width: 89
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_50
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 113
+        width: 89
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 89
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_52
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 89
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_53
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 0
+        width: 89
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+    - name: Chao Tile PAREDE_54
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 0
+        width: 89
+        height: 89
+      alignment: 2
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 

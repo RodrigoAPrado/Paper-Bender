@@ -1,0 +1,1633 @@
+fileFormatVersion: 2
+guid: 82e15429e702f934da5333d5084c6f77
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: Tileset_Wasteland_Terra.png_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 966
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 966
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_2
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 966
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_3
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 966
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_4
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 966
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_5
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 966
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_6
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 966
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_7
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 966
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_8
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 966
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_9
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 966
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_10
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 966
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_11
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 966
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_12
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 966
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_13
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 966
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_14
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 966
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_15
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 966
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 851
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_17
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 851
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_18
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 851
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_19
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 851
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_20
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 851
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_21
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 851
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_22
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 851
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_23
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 851
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_24
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 851
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_25
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 851
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_26
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 851
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_27
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 851
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_28
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 851
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_29
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 851
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_30
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 851
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_31
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 851
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_33
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_34
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_35
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_36
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_37
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_38
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_39
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_40
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_41
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_42
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_43
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_44
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_45
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_46
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_47
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 674
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_49
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 674
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_50
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 674
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_51
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 674
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_52
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 674
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_53
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 674
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_54
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 674
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_55
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 674
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_56
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 674
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_57
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 674
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_58
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 674
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_59
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 674
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_60
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 674
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_61
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 674
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_62
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 674
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_63
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 674
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 567
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_65
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 567
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_66
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 567
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_67
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 567
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_68
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 567
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_69
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 567
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_70
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 567
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_71
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 567
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_72
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 567
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_73
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 567
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_74
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 567
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_75
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 567
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_76
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 567
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_77
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 567
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_78
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 567
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_79
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 567
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 434
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_81
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 434
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_82
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 434
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_83
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 434
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_84
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 434
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_85
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 434
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_86
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 434
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_87
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 434
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_88
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 434
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_89
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 434
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_90
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 434
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_91
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 434
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_92
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 434
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_93
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 434
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_94
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 434
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_95
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 434
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 351
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_97
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 351
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_98
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 351
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_99
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 351
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_100
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 351
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_101
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 351
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_102
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 351
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_103
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 351
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_104
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 351
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_105
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 351
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_106
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 351
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_107
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 351
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_108
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 351
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_109
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 351
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_110
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 351
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_111
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 351
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 274
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_113
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 274
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_114
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 274
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_115
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 274
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_116
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 274
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_117
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 274
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_118
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 274
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_119
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 274
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_120
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 274
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_121
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 274
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_122
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 274
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_123
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 274
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_124
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 274
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_125
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 274
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_126
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 274
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_127
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 274
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_128
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 170
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_129
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 170
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_130
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 170
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_131
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 170
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_132
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 170
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_133
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 170
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_134
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 170
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_135
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 170
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_136
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 170
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_137
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 170
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_138
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 170
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_139
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 170
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_140
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 170
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_141
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 170
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_142
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 170
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_143
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 170
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_Terra.png_144
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 93
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_145
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 93
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_146
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 93
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_147
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 93
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_148
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 93
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_149
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 93
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_150
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 93
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_151
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 93
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_152
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 93
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_153
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 93
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_154
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 93
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_155
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 93
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_156
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 93
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_157
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 93
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_158
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 93
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_159
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 93
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_160
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_161
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_162
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_163
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_164
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_165
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_166
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_167
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_168
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_169
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_170
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_171
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_172
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_173
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_174
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_Terra.png_175
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 

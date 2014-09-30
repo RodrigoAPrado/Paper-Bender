@@ -1,0 +1,1633 @@
+fileFormatVersion: 2
+guid: 87034157b1520df47b694338c9a0621f
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: Tileset_Wasteland_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 901
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 901
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_2
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 901
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_3
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 901
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_4
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 901
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_5
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 901
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_6
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 901
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_7
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 901
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_8
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 899
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_9
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 899
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_10
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 899
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_11
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 899
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_12
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 899
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_13
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 899
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_14
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 899
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_15
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 899
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 821
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_17
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 821
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_18
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 821
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_19
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 821
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_20
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 821
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_21
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 821
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_22
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 821
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_23
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 821
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_24
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 821
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_25
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 821
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_26
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 821
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_27
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 821
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_28
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 821
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_29
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 821
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_30
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 821
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_31
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 821
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 745
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_33
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 745
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_34
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 745
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_35
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 745
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_36
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 745
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_37
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 745
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_38
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 745
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_39
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 745
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_40
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 745
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_41
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 745
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_42
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 745
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_43
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 745
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_44
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 745
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_45
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 745
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_46
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 745
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_47
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 745
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_48
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 667
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_49
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 667
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_50
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 667
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_51
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 667
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_52
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 667
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_53
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 667
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_54
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 667
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_55
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 667
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_56
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 667
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_57
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 667
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_58
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 667
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_59
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 667
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_60
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 667
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_61
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 667
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_62
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 667
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_63
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 667
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 586
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_65
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 586
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_66
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 586
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_67
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 586
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_68
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 586
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_69
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 586
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_70
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 586
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_71
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 586
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_72
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 586
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_73
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 586
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_74
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 586
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_75
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 586
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_76
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 586
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_77
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 586
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_78
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 586
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_79
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 586
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 468
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_81
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 468
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_82
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 468
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_83
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 468
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_84
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 468
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_85
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 468
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_86
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 468
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_87
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 468
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_88
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 468
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_89
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 468
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_90
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 468
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_91
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 468
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_92
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 468
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_93
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 468
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_94
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 468
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_95
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 468
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 387
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_97
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 387
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_98
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 387
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_99
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 387
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_100
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 387
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_101
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 387
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_102
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 387
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_103
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 387
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_104
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 387
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_105
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 387
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_106
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 387
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_107
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 387
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_108
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 387
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_109
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 387
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_110
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 387
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_111
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 387
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 301
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_113
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 301
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_114
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 301
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_115
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 301
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_116
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 301
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_117
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 301
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_118
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 301
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_119
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 301
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_120
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 301
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_121
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 301
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_122
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 301
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_123
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 332
+        width: 65
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_124
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 332
+        width: 65
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_125
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 332
+        width: 65
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_126
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 332
+        width: 65
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_127
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 332
+        width: 65
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_128
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 178
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_129
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 178
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_130
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 178
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_131
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 178
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_132
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 178
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_133
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 178
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_134
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 178
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_135
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 178
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_136
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 178
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_137
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 178
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_138
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 178
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_139
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 178
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_140
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 178
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_141
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 178
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_142
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 178
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_143
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 178
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Wasteland_144
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 90
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_145
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 90
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_146
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 90
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_147
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 90
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_148
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 90
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_149
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 90
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_150
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 90
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_151
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 90
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_152
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 90
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_153
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 90
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_154
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 90
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_155
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 90
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_156
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 90
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_157
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 90
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_158
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 90
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_159
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 90
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_160
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_161
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_162
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_163
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_164
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_165
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_166
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_167
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_168
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_169
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_170
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_171
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_172
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_173
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_174
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Wasteland_175
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 

@@ -1,0 +1,1633 @@
+fileFormatVersion: 2
+guid: 28053b19553f07342b4ce727011f54bd
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: Tileset_Temple_Terra_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 966
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 966
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_2
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 966
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_3
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 966
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_4
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 966
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_5
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 966
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_6
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 966
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_7
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 966
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_8
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 966
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_9
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 966
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_10
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 966
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_11
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 966
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_12
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 966
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_13
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 966
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_14
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 966
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_15
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 966
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 851
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_17
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 851
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_18
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 851
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_19
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 851
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_20
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 851
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_21
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 851
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_22
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 851
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_23
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 851
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_24
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 851
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_25
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 851
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_26
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 851
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_27
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 851
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_28
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 851
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_29
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 851
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_30
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 851
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_31
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 851
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_33
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_34
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_35
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_36
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_37
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_38
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_39
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_40
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_41
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_42
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_43
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_44
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_45
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_46
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_47
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 674
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_49
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 674
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_50
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 674
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_51
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 674
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_52
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 674
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_53
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 674
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_54
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 674
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_55
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 674
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_56
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 674
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_57
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 674
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_58
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 674
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_59
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 674
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_60
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 674
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_61
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 674
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_62
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 674
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_63
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 674
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 567
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_65
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 567
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_66
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 567
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_67
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 567
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_68
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 567
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_69
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 567
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_70
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 567
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_71
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 567
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_72
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 567
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_73
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 567
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_74
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 567
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_75
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 567
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_76
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 567
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_77
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 567
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_78
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 567
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_79
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 567
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 434
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_81
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 434
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_82
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 434
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_83
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 434
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_84
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 434
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_85
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 434
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_86
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 434
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_87
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 434
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_88
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 434
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_89
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 434
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_90
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 434
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_91
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 434
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_92
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 434
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_93
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 434
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_94
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 434
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_95
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 434
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 351
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_97
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 351
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_98
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 351
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_99
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 351
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_100
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 351
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_101
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 351
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_102
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 351
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_103
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 351
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_104
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 351
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_105
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 351
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_106
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 351
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_107
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 351
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_108
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 351
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_109
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 351
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_110
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 351
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_111
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 351
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 274
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_113
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 274
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_114
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 274
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_115
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 274
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_116
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 274
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_117
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 274
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_118
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 274
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_119
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 274
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_120
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 274
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_121
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 274
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_122
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 274
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_123
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 274
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_124
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 274
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_125
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 274
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_126
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 274
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_127
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 274
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_128
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 169
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_129
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 170
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_130
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 170
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_131
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 170
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_132
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 170
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_133
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 170
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_134
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 170
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_135
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 170
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_136
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 170
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_137
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 170
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_138
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 170
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_139
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 170
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_140
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 170
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_141
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 170
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_142
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 170
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_143
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 170
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Tileset_Temple_Terra_144
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 93
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_145
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 93
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_146
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 93
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_147
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 93
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_148
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 93
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_149
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 93
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_150
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 93
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_151
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 93
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_152
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 93
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_153
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 93
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_154
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 93
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_155
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 93
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_156
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 93
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_157
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 93
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_158
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 93
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_159
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 93
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_160
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_161
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_162
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_163
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_164
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_165
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_166
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_167
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_168
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_169
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_170
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_171
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_172
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_173
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_174
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Tileset_Temple_Terra_175
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 
