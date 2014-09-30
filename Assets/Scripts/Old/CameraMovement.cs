@@ -14,7 +14,8 @@ public class CameraMovement : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		character = GameObject.FindGameObjectWithTag("Player").transform;
-
+		if(followChar)
+			sizeN = 5;
 	}
 	
 	// Update is called once per frame
@@ -27,7 +28,7 @@ public class CameraMovement : MonoBehaviour {
 		}
 		if(followChar)
 		{
-			camera.orthographicSize = Mathf.Lerp(camera.orthographicSize, 4, 5 * Time.deltaTime);
+			camera.orthographicSize = Mathf.Lerp(camera.orthographicSize, sizeN, 5 * Time.deltaTime);
 			transform.position = Vector3.Lerp(transform.position, new Vector3(character.position.x, character.position.y, -10), 5 * Time.deltaTime);
 		}
 		if(move && !followChar && !stage3Follow)
@@ -48,11 +49,11 @@ public class CameraMovement : MonoBehaviour {
 			return;
 		}
 		followChar = follow;
+		sizeN = size;
 		if(followChar)
 			return;
 		xN = x;
 		yN = y;
-		sizeN = size;
 		move = true;
 
 

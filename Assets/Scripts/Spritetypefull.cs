@@ -10,11 +10,17 @@ public class Spritetypefull : MonoBehaviour {
 		Tempou,
 		Wasteland,
 		Swampland,
+		TempleGray,
+		TempleWood,
+		TempleBrown,
 		TempleEarth,
+		WastelandWood,
 		WastelandRock,
 		WastelandEarth,
-		SwampEarth,
-		SwampTruck
+		SwampLeaf,
+		SwampTree,
+		SwampWood,
+		SwampEarth
 	}
 	
 	public TileSpriteManager spriteManager;
@@ -76,28 +82,41 @@ public class Spritetypefull : MonoBehaviour {
 		case worldSelect.Swampland:
 			tileIndex += 32;
 			break;
-		case worldSelect.TempleEarth:
+		case worldSelect.TempleGray:
 			tileIndex += 48;
 			break;
-		case worldSelect.WastelandRock:
+		case worldSelect.TempleWood:
 			tileIndex += 64;
 			break;
-		case worldSelect.WastelandEarth:
+		case worldSelect.TempleBrown:
 			tileIndex += 80;
 			break;
-		case worldSelect.SwampEarth:
+		case worldSelect.TempleEarth:
 			tileIndex += 96;
 			break;
-		case worldSelect.SwampTruck:
+		case worldSelect.WastelandWood:
 			tileIndex += 112;
 			break;		
-			//TempleEarth
-			//WastelandRock
-			//WastelandEarth
-			//SwampEarth
-			//SwampTrunk
+		case worldSelect.WastelandRock:
+			tileIndex += 128;
+			break;
+		case worldSelect.WastelandEarth:
+			tileIndex += 144;
+			break;
+		case worldSelect.SwampLeaf:
+			tileIndex += 160;
+			break;
+		case worldSelect.SwampTree:
+			tileIndex += 176;
+			break;
+		case worldSelect.SwampWood:
+			tileIndex += 192;
+			break;
+		case worldSelect.SwampEarth:
+			tileIndex += 208;
+			break;
 		}
-		if(spriteManager.sprites[tileIndex] == null)
+		if(spriteManager.sprites[tileIndex] == null || tileIndex >= spriteManager.sprites.Length)
 			tileIndex = 0;
 		//gameObject.GetComponent<SpriteRenderer>().sprite = sprites[tileIndex];
 		gameObject.GetComponent<SpriteRenderer>().sprite = spriteManager.sprites[tileIndex];
