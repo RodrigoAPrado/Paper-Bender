@@ -58,8 +58,8 @@ public class MovePlayer : MonoBehaviour {
 		currentDist = new float[2];
 		//avatarSprite = GameObject.FindGameObjectWithTag("PlayerSprite").transform;
 		anim = avatarSprite.GetComponent<Animator>();
-		if(flipStart)
-			Flip();
+		/*if(flipStart)
+			Flip();*/
 	}
 
 
@@ -302,7 +302,7 @@ public class MovePlayer : MonoBehaviour {
 		}
 
 	}
-	void Flip()
+	public void Flip()
 	{
 		if(Time.timeScale == 0)
 		{

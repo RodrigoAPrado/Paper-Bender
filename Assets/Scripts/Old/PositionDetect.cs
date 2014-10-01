@@ -63,6 +63,11 @@ public class PositionDetect : MonoBehaviour {
 			RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, 1, bendingLayer);
 			if(hit.collider != null)
 			{
+				if(hit.collider.tag=="NextStage")
+				{
+					hit.collider.gameObject.GetComponent<NextStage>().Clicked();
+					return;
+				}
 				if(hit.collider.tag=="PaperBend" && !movePlayer.moving)
 				{
 					hit.collider.gameObject.GetComponent<PaperBend>().BendPaper();
