@@ -4,15 +4,16 @@ using System.Collections;
 public class BanditController : MonoBehaviour {
 
 
-	public Transform[] wayPoints;
-	public bool[] wayPointsStop;
+	//public Transform[] wayPoints;
+	//public bool[] wayPointsStop;
 
 	public LayerMask wayPointsLayer;
 
 	public LayerMask playerObstacleLayer;
 	public LayerMask playerLayer;
 
-	public int currentWayPoint;
+	public Transform currentWayPoint;
+	BanditWayPoint bWP;
 
 
 
@@ -39,10 +40,13 @@ public class BanditController : MonoBehaviour {
 	//
 	Transform player;
 
+	GameObject charAvatar;
+
 	// Use this for initialization
 	void Start () {
 		player = GameObject.FindGameObjectWithTag("Player").transform;
-
+		bWP = currentWayPoint.GetComponent<BanditWayPoint>();
+		charAvatar = transform.FindChild("Avatar").gameObject;
 		//walk = true;
 		//isOnStart = true;
 	}
@@ -54,7 +58,7 @@ public class BanditController : MonoBehaviour {
 		{
 			if(!detectSide)
 			{
-				if(transform.position.x > wayPoints[currentWayPoint].position.x)
+				if(transform.position.x > currentWayPoint.position.x)
 					left = true;
 				else
 					left = false;
@@ -75,7 +79,30 @@ public class BanditController : MonoBehaviour {
 			{
 				if(Physics2D.OverlapCircle(wayPointCheck.position, 0.1f, wayPointsLayer))
 				{
-					walk = false;
+					if(Physics2D.OverlapCircle(transform.position, range, playerLayer))
+					{
+						isOnStart = true;
+						if(player.transform.position.x < transform.position.x)
+						{
+							currentWayPoint = bWP.wayPointRight;
+							bWP = currentWayPoint.GetComponent<BanditWayPoint>();
+							walk = true;
+							isOnStart = true;
+							return;
+						}
+						if(player.transform.position.x > transform.position.x)
+						{
+							currentWayPoint = bWP.wayPointLeft;
+							bWP = currentWayPoint.GetComponent<BanditWayPoint>();
+							walk = true;
+							isOnStart = true;
+							return;
+						}
+					}
+					else
+					{
+						walk = false;
+					}
 				}
 			}
 		}
@@ -154,28 +181,54 @@ public class BanditController : MonoBehaviour {
 	{
 		if(Physics2D.OverlapCircle(transform.position, range, playerLayer))
 		{
+
+			RaycastHit2D resultUp = Physics2D.Raycast(transform.position, Vector2.up, range, playerObstacleLayer);
 			if(player.transform.position.x < transform.position.x)
 			{
+				RaycastHit2D resultDUp = Physics2D.Raycast(transform.position, new Vector2(-1,1), range, playerObstacleLayer);
+				RaycastHit2D resultDDown = Physics2D.Raycast(transform.position, new Vector2(-1,-1), range, playerObstacleLayer);
 				RaycastHit2D result = Physics2D.Raycast(transform.position, -Vector2.right, range, playerObstacleLayer);
-				if(result.collider == null || result.collider.tag != "Player")
+				if((result.collider == null || result.collider.tag != "Player") && (resultUp.collider == null || resultUp.collider.tag != "Player") &&(resultDUp.collider == null || resultDUp.collider.tag != "Player") && (resultDDown.collider == null || resultDDown.collider.tag != "Player"))
 				{
 					print ("he's not here");
 				}
 				else
 				{
-					print ("he's here");
+					print ("he's here, on my left");
+					int height = bWP.wayPointRight.GetComponent<BanditWayPoint>().CheckHeight(true);
+					if(height < 7)
+						currentWayPoint = bWP.wayPointRight;
+					else
+						currentWayPoint = bWP.wayPointLeft;
+					bWP = currentWayPoint.GetComponent<BanditWayPoint>();
+					walk = true;
+					isOnStart = true;
+					return;
 				}
 			}
 			if(player.transform.position.x > transform.position.x)
 			{
+				RaycastHit2D resultDUp = Physics2D.Raycast(transform.position, new Vector2(1,1), range, playerObstacleLayer);
+				RaycastHit2D resultDDown = Physics2D.Raycast(transform.position, new Vector2(1,-1), range, playerObstacleLayer);
 				RaycastHit2D result = Physics2D.Raycast(transform.position, Vector2.right, range, playerObstacleLayer);
-				if(result.collider == null || result.collider.tag != "Player")
+
+				if((result.collider == null || result.collider.tag != "Player") && (resultUp.collider == null || resultUp.collider.tag != "Player") &&(resultDUp.collider == null || resultDUp.collider.tag != "Player") && (resultDDown.collider == null || resultDDown.collider.tag != "Player"))
 				{
 					print ("he's not here");
 				}
 				else
 				{
-					print ("he's here");
+					print ("he's here, on my right");
+					int height = bWP.wayPointLeft.GetComponent<BanditWayPoint>().CheckHeight(false);
+					if(height < 7)
+						currentWayPoint = bWP.wayPointLeft;
+					else
+						currentWayPoint = bWP.wayPointRight;
+
+					bWP = currentWayPoint.GetComponent<BanditWayPoint>();
+					walk = true;
+					isOnStart = true;
+					return;
 				}
 			}
 

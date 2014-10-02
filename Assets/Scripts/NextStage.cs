@@ -7,6 +7,9 @@ public class NextStage : MonoBehaviour {
 	public int nextStageStartingPosition;
 	ChangeScene cSc;
 	public LayerMask player;
+	//remover essas aqui depois
+	int checkLevel;
+	public int addLevel;
 	// Use this for initialization
 	void Start () {
 		if(Camera.main.GetComponent<ChangeScene>() != null)
@@ -47,6 +50,11 @@ public class NextStage : MonoBehaviour {
 	}
 	public void Clicked()
 	{
+		checkLevel = PlayerPrefs.GetInt("DevelopLevel");
+		if(checkLevel < addLevel)
+		{
+			PlayerPrefs.SetInt("DevelopLevel", addLevel);
+		}
 		gameObject.tag = "NextStageNote";
 		DontDestroyOnLoad(gameObject);
 		if(cSc!= null)

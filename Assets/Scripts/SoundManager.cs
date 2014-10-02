@@ -8,6 +8,7 @@ public class SoundManager : MonoBehaviour {
 	public AudioSource indoorMusic;
 	public AudioSource outdoorMusic;
 	float volumeOutDoor;
+	public float musicEnd;
 	[SerializeField] bool startsIndoor;
 	// Use this for initialization
 	void Start () {
@@ -16,17 +17,19 @@ public class SoundManager : MonoBehaviour {
 		else
 			volumeOutDoor = 1;
 		indoorMusic.volume = volumeOutDoor;
+		//outdoorMusic.time = 80;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		print("IndoorMusic: " + indoorMusic.time);
 		print("OutdoorMusic: " + outdoorMusic.time);
-		if(outdoorMusic.time > 20)
+		/*if(outdoorMusic.time >= musicEnd)
 		{
 			outdoorMusic.time = 0;
-		}
-		if(indoorMusic.time != outdoorMusic.time)
+			indoorMusic.time = 0;
+		}*/
+		if(indoorMusic.time > outdoorMusic.time + 0.5f || indoorMusic.time < outdoorMusic.time - 0.5f)
 		{
 			indoorMusic.time = outdoorMusic.time;
 		}

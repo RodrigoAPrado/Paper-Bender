@@ -144,6 +144,8 @@ public class MovePlayer : MonoBehaviour {
 				bending = false;
 				bended = false;
 				anim.SetBool("Bend", false);
+				dontJump = false;
+				jumpedOnce = false;
 			}
 		}
 		if(animationCounter > 0)
