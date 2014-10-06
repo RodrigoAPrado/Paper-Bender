@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿	using UnityEngine;
 using System.Collections;
 
 public class BanditController : MonoBehaviour {
@@ -18,11 +18,13 @@ public class BanditController : MonoBehaviour {
 
 
 	float speed;
-
 	bool left;
 	bool detectSide;
 	bool isOnStart;
 	bool walk;
+
+	
+	float jumpSpeed;
 
 	[SerializeField] float range;
 
@@ -84,25 +86,30 @@ public class BanditController : MonoBehaviour {
 						isOnStart = true;
 						if(player.transform.position.x < transform.position.x)
 						{
-							currentWayPoint = bWP.wayPointRight;
-							bWP = currentWayPoint.GetComponent<BanditWayPoint>();
-							walk = true;
-							isOnStart = true;
+							DecideWayPoint(true);
 							return;
 						}
 						if(player.transform.position.x > transform.position.x)
 						{
-							currentWayPoint = bWP.wayPointLeft;
-							bWP = currentWayPoint.GetComponent<BanditWayPoint>();
-							walk = true;
-							isOnStart = true;
+							DecideWayPoint(false);
 							return;
 						}
 					}
 					else
 					{
-						walk = false;
+						if(bWP.dontStopHere)
+						{
+							DecideWayPoint(left);
+							return;
+						}
+						else
+						{
+							walk = false;
+							detectSide = false;
+						}
 					}
+					//walk = false;
+					//detectSide = false;
 				}
 			}
 		}
@@ -177,6 +184,10 @@ public class BanditController : MonoBehaviour {
 		}
 		*/
 	}
+	void Jump()
+	{
+		rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, jumpSpeed);
+	}
 	void DetectPlayer()
 	{
 		if(Physics2D.OverlapCircle(transform.position, range, playerLayer))
@@ -195,14 +206,13 @@ public class BanditController : MonoBehaviour {
 				else
 				{
 					print ("he's here, on my left");
-					int height = bWP.wayPointRight.GetComponent<BanditWayPoint>().CheckHeight(true);
+					/*int height = bWP.wayPointRight.GetComponent<BanditWayPoint>().CheckHeight(true);
+
 					if(height < 7)
 						currentWayPoint = bWP.wayPointRight;
 					else
-						currentWayPoint = bWP.wayPointLeft;
-					bWP = currentWayPoint.GetComponent<BanditWayPoint>();
-					walk = true;
-					isOnStart = true;
+						currentWayPoint = bWP.wayPointLeft;*/
+					DecideWayPoint(true);
 					return;
 				}
 			}
@@ -219,19 +229,87 @@ public class BanditController : MonoBehaviour {
 				else
 				{
 					print ("he's here, on my right");
-					int height = bWP.wayPointLeft.GetComponent<BanditWayPoint>().CheckHeight(false);
+					/*int height = bWP.wayPointLeft.GetComponent<BanditWayPoint>().CheckHeight(false);
 					if(height < 7)
 						currentWayPoint = bWP.wayPointLeft;
 					else
 						currentWayPoint = bWP.wayPointRight;
-
-					bWP = currentWayPoint.GetComponent<BanditWayPoint>();
-					walk = true;
-					isOnStart = true;
+					*/
+					DecideWayPoint(false);
 					return;
 				}
 			}
 
 		}
+	}
+	void DecideWayPoint(bool left)
+	{
+		if(left)
+		{
+			if(bWP.wayPointsRight.Length > 0)
+			{
+				Transform chosenWaypoint = bWP.wayPointsRight[ChooseWayPoint(bWP.wayPointsRight, false)];
+				
+				int height = chosenWaypoint.GetComponent<BanditWayPoint>().CheckHeight(false);
+				
+				if(height < 7)
+				{
+					currentWayPoint = chosenWaypoint;
+				}
+				else
+				{
+					currentWayPoint = bWP.wayPointsLeft[ChooseWayPoint(bWP.wayPointsRight, true)];
+				}
+			}
+			else
+			{
+				currentWayPoint = bWP.wayPointsLeft[ChooseWayPoint(bWP.wayPointsRight, true)];
+			}
+			bWP = currentWayPoint.GetComponent<BanditWayPoint>();
+			walk = true;
+			isOnStart = true;
+			return;
+		}
+		else
+		{
+			if(bWP.wayPointsLeft.Length > 0)
+			{
+				Transform chosenWaypoint = bWP.wayPointsLeft[ChooseWayPoint(bWP.wayPointsRight, true)];
+				
+				int height = chosenWaypoint.GetComponent<BanditWayPoint>().CheckHeight(true);
+				
+				if(height < 7)
+				{
+					currentWayPoint = chosenWaypoint;
+				}
+				else
+				{
+					currentWayPoint = bWP.wayPointsRight[ChooseWayPoint(bWP.wayPointsRight, false)];
+				}
+			}
+			else
+			{
+				currentWayPoint = bWP.wayPointsRight[ChooseWayPoint(bWP.wayPointsRight, false)];
+			}
+			bWP = currentWayPoint.GetComponent<BanditWayPoint>();
+			walk = true;
+			isOnStart = true;
+			return;
+		}
+	}
+	int ChooseWayPoint(Transform[] wayPoints, bool side)
+	{
+		int height = 0;
+		int selectedWaypoint = 0;
+		for(int i = 0; i < wayPoints.Length; i++)
+		{
+			int thisHeight = wayPoints[i].GetComponent<BanditWayPoint>().CheckHeight(side);
+			if(i == 0 || thisHeight < height)
+			{
+				height = thisHeight;
+				selectedWaypoint = i;
+			}
+		}
+		return selectedWaypoint;
 	}
 }

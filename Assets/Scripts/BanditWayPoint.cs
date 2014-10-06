@@ -3,8 +3,11 @@ using System.Collections;
 
 public class BanditWayPoint : MonoBehaviour {
 
-	public Transform wayPointRight;
-	public Transform wayPointLeft;
+	public Transform[] wayPointsRight;
+	public Transform[] wayPointsLeft;
+
+	//public Transform wayPointRight;
+    //public Transform wayPointLeft;
 	public bool dontStopHere;
 	public int baseHeightLeft;
 	public int baseHeightRight;
