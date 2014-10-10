@@ -118,6 +118,10 @@ public class BanditController : MonoBehaviour {
 					}
 					if(!skip)
 					{
+						if(currentWayPoint.gameObject.tag == "BanditWayPointEnd")
+						{
+							GameObject.Destroy(gameObject);
+						}
 						isOnStart = true;
 						detectSide = false;
 						if(bWP.dontStopHere)
@@ -288,8 +292,8 @@ public class BanditController : MonoBehaviour {
 			return;
 		}
 		jumpSpeed = height * jumpSpeedMod;
-		print(height);
-		print (jumpSpeed);
+		//print(height);
+		//print (jumpSpeed);
 		if(bWP.distanceJump || detectDistanceJump)
 			distanceJump = true;
 		detectDistanceJump = false;
