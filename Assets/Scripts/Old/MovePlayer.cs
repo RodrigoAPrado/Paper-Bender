@@ -187,15 +187,15 @@ public class MovePlayer : MonoBehaviour {
 		{
 			if(jumpHeight <= 0)
 			{
-				//print ("There' is nothing to jump on.");
+				print ("There' is nothing to jump on.");
 			}
 			if(jumpHeight > 7)
 			{
-				//print ("I'll not climb, this is too high.");
+				print ("I'll not climb, this is too high.");
 			}
 			if(!canClimb)
 			{
-				//print ("There's an obstacle up there, I can't clmb this.");
+				print ("There's an obstacle up there, I can't clmb this.");
 			}
 		}
 	}
