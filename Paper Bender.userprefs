@@ -1,9 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\BanditController.cs">
     <Files>
-      <File FileName="Assets\Scripts\BanditController.cs" Line="283" Column="83" />
-      <File FileName="Assets\Scripts\BanditWayPoint.cs" Line="63" Column="24" />
+      <File FileName="Assets\Scripts\BanditWayPoint.cs" Line="120" Column="1" />
+      <File FileName="Assets\Scripts\BanditController.cs" Line="448" Column="1" />
+      <File FileName="Assets\Scripts\BanditWayPoint.cs" Line="120" Column="6" />
+      <File FileName="Assets\Scripts\Old\MovePlayer.cs" Line="364" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
