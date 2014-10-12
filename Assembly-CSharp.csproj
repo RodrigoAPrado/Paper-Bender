@@ -191,7 +191,9 @@
      <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
      <Compile Include="Assets\Old_Pause\scripts\btn_Pause.cs" />
      <Compile Include="Assets\Scripts\BanditController.cs" />
+     <Compile Include="Assets\Scripts\BanditControllerNeo.cs" />
      <Compile Include="Assets\Scripts\BanditWayPoint.cs" />
+     <Compile Include="Assets\Scripts\BanditWayPointNeo.cs" />
      <Compile Include="Assets\Scripts\BendSpriteController.cs" />
      <Compile Include="Assets\Scripts\ChangeScene.cs" />
      <Compile Include="Assets\Scripts\DevelopStageSelect.cs" />
