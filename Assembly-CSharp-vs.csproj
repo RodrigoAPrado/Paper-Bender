@@ -226,6 +226,7 @@
      <Compile Include="Assets\Scripts\Pause.cs" />
      <Compile Include="Assets\Scripts\Scissor.cs" />
      <Compile Include="Assets\Scripts\ScissorBroken.cs" />
+     <Compile Include="Assets\Scripts\SheepController.cs" />
      <Compile Include="Assets\Scripts\SoundManager.cs" />
      <Compile Include="Assets\Scripts\Spritetypefull.cs" />
      <Compile Include="Assets\Scripts\StageManager.cs" />
