@@ -87,6 +87,9 @@ public class BanditControllerNeo : MonoBehaviour {
 
 	/*Animacao*/
 	GameObject charAvatar;
+	[SerializeField] Animator anim;
+	bool scared;
+	bool isFacingRight;
 
 	/*Serve para parar o Forasteiro se tiver algum bug. Ele detecta se a posicao do foraseiro nao muda
 	 enquanto ele anda. Como deveria mudar, ele para o Forasteiro automaticamente. Vou ver de fazer
@@ -101,15 +104,68 @@ public class BanditControllerNeo : MonoBehaviour {
 		player = GameObject.FindGameObjectWithTag("Player").transform;
 		bWP = currentWayPoint.GetComponent<BanditWayPointNeo>();
 		charAvatar = transform.FindChild("Avatar").gameObject;
+		anim = charAvatar.GetComponent<Animator>();
 		currentPosition = new Vector2[3];
 		lastWayPoint = null;
+		isFacingRight = true;
 		//walk = true;
 		//isOnStart = true;
 	}
-	
+	void AnimationControl()
+	{
+		if(grounded)
+		{
+			if(walk)
+				anim.SetBool("Walk", true);
+			else
+				anim.SetBool("Walk", false);
+		}
+		if(scared)
+			anim.SetBool("Scared", true);
+		else
+			anim.SetBool("Scared", false);
+
+		if(!grounded)
+			anim.SetBool("Air", true);
+		else
+			anim.SetBool("Air", false);
+		if(jumping && rigidbody2D.velocity.y > 0)
+			anim.SetBool("Jump", true);
+		else
+			anim.SetBool("Jump", false);
+		if(walk && !scared)
+		{
+			if(!left && !isFacingRight)
+				Flip ();
+			if(left && isFacingRight)
+				Flip ();
+		}
+		if(scared)
+		{
+			if(player.position.x > transform.position.x && !isFacingRight)
+			{
+				Flip();
+			}
+			if(player.position.x < transform.position.x && isFacingRight)
+			{
+				Flip();
+			}
+		}
+	}
+	void Flip()
+	{
+		if(Time.timeScale == 0)
+		{
+			return;
+		}
+		Vector2 theScale = new Vector2(charAvatar.transform.localScale.x, charAvatar.transform.localScale.y);
+		theScale.x *= -1;
+		charAvatar.transform.localScale = theScale;
+		isFacingRight = !isFacingRight;
+	}
 	// Update is called once per frame
 	void Update () {
-
+		AnimationControl();
 		if(doJump && !jumping)
 		{
 			Jump();
@@ -126,9 +182,15 @@ public class BanditControllerNeo : MonoBehaviour {
 			isOnStart = true;
 			detectSide = false;
 		}
-
+		if(scared)
+		{
+			if(anim.GetCurrentAnimatorStateInfo(0).IsName("Bandit_Run"))
+				scared = false;
+		}
 		if(walk)
 		{
+			if(scared)
+				return;
 			/*if(!detectSide)
 			{
 				if(transform.position.x > currentWayPoint.position.x)
@@ -324,6 +386,8 @@ public class BanditControllerNeo : MonoBehaviour {
 			float dif = bWP.autoNextWayPoint.position.y - currentWayPoint.position.y;
 			jumpSpeed = dif * jumpSpeedMod;
 		}*/
+		if(scared)
+			return;
 		if(jumping)
 			return;
 
@@ -374,6 +438,7 @@ public class BanditControllerNeo : MonoBehaviour {
 						currentWayPoint = bWP.wayPointRight;
 					else
 						currentWayPoint = bWP.wayPointLeft;*/
+					scared = true;
 					DecideWayPoint(false);
 					return;
 				}
@@ -397,6 +462,7 @@ public class BanditControllerNeo : MonoBehaviour {
 					else
 						currentWayPoint = bWP.wayPointRight;
 						*/
+					scared = true;
 					DecideWayPoint(true);
 					return;
 				}
