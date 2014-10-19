@@ -1,0 +1,175 @@
+fileFormatVersion: 2
+guid: fbeb6995838ed534cb35a8f2a800128e
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: Temple Puzzle Statue_0
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 1189
+        width: 255
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Temple Puzzle Statue_1
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 1065
+        width: 110
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Temple Puzzle Statue_2
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 1135
+        width: 147
+        height: 365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Temple Puzzle Statue_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 749
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Temple Puzzle Statue_4
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 632
+        width: 147
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Temple Puzzle Statue_5
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 879
+        width: 255
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Temple Puzzle Statue_6
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 794
+        width: 400
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Temple Puzzle Statue_7
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 631
+        width: 195
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Temple Puzzle Statue_8
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 451
+        width: 220
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Temple Puzzle Statue_9
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 307
+        width: 147
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Temple Puzzle Statue_10
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 390
+        width: 147
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Temple Puzzle Statue_11
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 227
+        width: 292
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Temple Puzzle Statue_12
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 149
+        width: 219
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Temple Puzzle Statue_13
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 158
+        width: 292
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 
