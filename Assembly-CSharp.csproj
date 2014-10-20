@@ -221,9 +221,11 @@
      <Compile Include="Assets\Scripts\Old\RotatingPlataform.cs" />
      <Compile Include="Assets\Scripts\Old\SeesawController.cs" />
      <Compile Include="Assets\Scripts\Old\SwitchController.cs" />
+     <Compile Include="Assets\Scripts\PaperDurexChecker.cs" />
      <Compile Include="Assets\Scripts\PaperMaker.cs" />
      <Compile Include="Assets\Scripts\PaperToBeCut.cs" />
      <Compile Include="Assets\Scripts\Pause.cs" />
+     <Compile Include="Assets\Scripts\PuzzleDurexControllerNeo.cs" />
      <Compile Include="Assets\Scripts\Scissor.cs" />
      <Compile Include="Assets\Scripts\ScissorBroken.cs" />
      <Compile Include="Assets\Scripts\SheepController.cs" />

@@ -14,6 +14,9 @@ public class PaperBendB : MonoBehaviour {
 	public bool checkSprite;
 	public GameObject imageRenderer;
 
+	bool durex;
+	PaperDurexChecker durexChecker;
+
 	//Uso para papeis invertidos
 	public Transform upperPaperLeft;
 	public Transform lowerPaperRight;
@@ -27,10 +30,19 @@ public class PaperBendB : MonoBehaviour {
 	// Use this for initialization
 	public Sprite[] spriteArray = new Sprite[3];
 	
-	void Start () {
+	void Start () 
+	{
+		if(transform.parent.transform.parent.GetComponent<PaperDurexChecker>())
+		{
+			durexChecker = transform.parent.transform.parent.GetComponent<PaperDurexChecker>();
+		}
 	}
 	void Update()
 	{
+		if(durexChecker != null)
+		{
+			durex = durexChecker.durexOn;
+		}
 		//playerCurrentGround = GameObject.FindGameObjectWithTag("Player").GetComponent<MovePlayer>().currentGround;
 		if(bendDetectLeft || bendDetectRight == null)
 		{
@@ -51,7 +63,7 @@ public class PaperBendB : MonoBehaviour {
 		else
 			imageRenderer.SetActive(false);
 			//gameObject.renderer.enabled = false;
-		if(timeSet > 0)
+		if(timeSet > 0 && !durex)
 			timeCounter += Time.deltaTime;
 
 		if(timeCounter > timeSet && timeSet > 0)

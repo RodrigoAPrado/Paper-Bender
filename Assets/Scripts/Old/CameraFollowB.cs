@@ -10,9 +10,11 @@ public class CameraFollowB : MonoBehaviour {
 	PositionDetect pD;
 	public GameObject toDisable;
 	public GameObject toDisableB;
+	public GameObject toDisableC;
 	public GameObject toEnableA;
 	public GameObject toEnableB;
 	public GameObject toEnableC;
+	public GameObject toEnableD;
 	public int cameraPositionChange;
 	public bool followCharacter;
 	public bool stage3Follow;
@@ -29,12 +31,16 @@ public class CameraFollowB : MonoBehaviour {
 				toDisable.SetActive(false);
 			if(toDisableB)
 				toDisableB.SetActive(false);
+			if(toDisableC)
+				toDisableC.SetActive(false);
 			if(toEnableA)
 				toEnableA.SetActive(true);
 			if(toEnableB)
 				toEnableB.SetActive(true);
 			if(toEnableC)
 				toEnableC.SetActive(true);
+			if(toEnableD)
+				toEnableD.SetActive(true);
 			Camera.main.GetComponent<CameraMovement>().MoveCamera(pD.cameraPositions[cameraPositionChange].x, pD.cameraPositions[cameraPositionChange].y, pD.cameraPositions[cameraPositionChange].z, followCharacter, stage3Follow, cameraPositionChange);
 			/*Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position, new Vector3(pD.cameraPositions[cameraPositionChange].x, pD.cameraPositions[cameraPositionChange].y, -10), 1);
 			Camera.main.orthographicSize = Mathf.Lerp(Camera.main.orthographicSize, pD.cameraPositions[cameraPositionChange].z, 1);*/

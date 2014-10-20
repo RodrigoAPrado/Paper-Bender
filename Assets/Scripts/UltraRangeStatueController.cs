@@ -14,6 +14,7 @@ public class UltraRangeStatueController : MonoBehaviour {
 	public SpriteRenderer light;
 	float lightTime;
 	bool increase;
+	public UltraRangeStatueController otherStatue;
 	// Use this for initialization
 	void Start () {
 		cM = Camera.main.GetComponent<CameraMovement>();
@@ -24,6 +25,11 @@ public class UltraRangeStatueController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if(otherStatue != null)
+		{
+			if(otherStatue.working)
+				return;
+		}
 		if(Physics2D.OverlapArea(left.position, right.position, player))
    	    {
 			range.enabled = false;

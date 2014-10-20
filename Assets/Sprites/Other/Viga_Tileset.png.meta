@@ -1,0 +1,274 @@
+fileFormatVersion: 2
+guid: 860fef94281c92c479d1cc5b128ee391
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: Viga_Tileset_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 311
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Viga_Tileset_1
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 311
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Viga_Tileset_2
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 311
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Viga_Tileset_3
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 311
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Viga_Tileset_4
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 311
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Viga_Tileset_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 233
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Viga_Tileset_6
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 233
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Viga_Tileset_7
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 233
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Viga_Tileset_8
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 233
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Viga_Tileset_9
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 233
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Viga_Tileset_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 156
+        width: 65
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Viga_Tileset_11
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 156
+        width: 65
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Viga_Tileset_12
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 156
+        width: 65
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Viga_Tileset_13
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 156
+        width: 65
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Viga_Tileset_14
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 156
+        width: 65
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Viga_Tileset_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 78
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Viga_Tileset_16
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 78
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Viga_Tileset_17
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 78
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Viga_Tileset_18
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 78
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Viga_Tileset_19
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 78
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Viga_Tileset_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Viga_Tileset_21
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Viga_Tileset_22
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Viga_Tileset_23
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Viga_Tileset_24
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 
