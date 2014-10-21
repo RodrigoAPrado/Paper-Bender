@@ -25,6 +25,9 @@ public class DevelopStageSelect : MonoBehaviour {
 	{
 		if(!available)
 			return;
-		Application.LoadLevel(levelName);
+
+		available = false;
+		GameObject.Find("Loading").SetActiveRecursively(true);
+		Application.LoadLevelAsync(levelName);
 	}
 }
