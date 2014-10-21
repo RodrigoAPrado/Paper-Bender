@@ -14,7 +14,9 @@ public class SeesawController : MonoBehaviour {
 	public LayerMask groundLayer;
 	public LayerMask detectionLayer;
 	public Transform leftGroundDetector;
+	public Transform leftGroundDetectorUpper;
 	public Transform rightGroundDetector;
+	public Transform rightGroundDetectorUpper;
 	public int forcedSide;
 	public Transform[] collidersDetecter;
 	public float[] positionSpeedModifier;
@@ -100,14 +102,14 @@ public class SeesawController : MonoBehaviour {
 	{
 		if(forcedSide > 1)
 		{
-			if(Physics2D.OverlapCircle(new Vector2(leftGroundDetector.position.x, rightGroundDetector.position.y), 0.1f, groundLayer) == false)
+			if(!Physics2D.OverlapCircle(leftGroundDetector.position, 0.1f, groundLayer) && !Physics2D.OverlapCircle(rightGroundDetectorUpper.position, 0.1f, groundLayer))
 			{
 				transform.Rotate(new Vector3(0,0, -1));
 			}
 		}
 		else
 		{
-			if(Physics2D.OverlapCircle(new Vector2(rightGroundDetector.position.x, leftGroundDetector.position.y), 0.1f, groundLayer) == false)
+			if(!Physics2D.OverlapCircle(rightGroundDetector.position, 0.1f, groundLayer) && !Physics2D.OverlapCircle(leftGroundDetectorUpper.position, 0.1f, groundLayer))
 			{
 				transform.Rotate(new Vector3(0,0,1));
 			}
@@ -117,14 +119,14 @@ public class SeesawController : MonoBehaviour {
 	{
 		if(rotationSpeed > 0)
 		{
-			if(Physics2D.OverlapCircle(new Vector2(leftGroundDetector.position.x, leftGroundDetector.position.y), 0.1f, groundLayer) == false)
+			if(	!Physics2D.OverlapCircle(leftGroundDetector.position, 0.1f, groundLayer) && !Physics2D.OverlapCircle(rightGroundDetectorUpper.position, 0.1f, groundLayer))
 			{
 				transform.Rotate(new Vector3(0,0,rotationSpeed));
 			}		
 		}
 		else
 		{
-			if(Physics2D.OverlapCircle(new Vector2(rightGroundDetector.position.x, rightGroundDetector.position.y), 0.1f, groundLayer) == false)
+			if(!Physics2D.OverlapCircle(rightGroundDetector.position, 0.1f, groundLayer) && !Physics2D.OverlapCircle(leftGroundDetectorUpper.position, 0.1f, groundLayer))
 			{
 				transform.Rotate(new Vector3(0,0,rotationSpeed));
 			}

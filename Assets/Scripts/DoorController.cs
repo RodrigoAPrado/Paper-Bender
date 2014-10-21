@@ -34,7 +34,50 @@ public class DoorController : MonoBehaviour {
 			}
 			if(horizontal)
 			{
-
+				if(doorOpen)
+				{
+					if(doorOpenned.transform.position.x > doorClosed.transform.position.x)
+					{
+						speed = 1;
+						if(doorMoving.transform.position.x > doorOpenned.transform.position.x)
+						{
+							moving = false;
+							moveStart = false;
+						}
+					}
+					else
+					{
+						speed = -1;
+						if(doorMoving.transform.position.x < doorOpenned.transform.position.x)
+						{
+							moving = false;
+							moveStart = false;
+						}
+					}
+					doorMoving.rigidbody2D.velocity = new Vector2(speed * speedMod * Time.deltaTime, 0);
+				}
+				if(!doorOpen)
+				{
+					if(doorOpenned.transform.position.x > doorClosed.transform.position.x)
+					{
+						speed = -1;
+						if(doorMoving.transform.position.x < doorClosed.transform.position.x)
+						{
+							moving = false;
+							moveStart = false;
+						}
+					}
+					else
+					{
+						speed = 1;
+						if(doorMoving.transform.position.x > doorClosed.transform.position.x)
+						{
+							moving = false;
+							moveStart = false;
+						}
+					}
+					doorMoving.rigidbody2D.velocity = new Vector2(speed * speedMod * Time.deltaTime, 0);
+				}
 			}
 			else
 			{
