@@ -24,11 +24,12 @@ public class SwitchController : MonoBehaviour {
 		if(locked && !forceOpen)
 		{
 			GetComponent<SpriteRenderer>().sprite = sprites[0];
-			if(door.doorOpen)
-				return;
+
 			if(!rotateAPlataform)
 			{
-				door.doorOpen = true;
+				if(!door.doorOpen)
+					return;
+				door.doorOpen = false;
 				door.moving = true;
 				return;
 			}
@@ -36,11 +37,12 @@ public class SwitchController : MonoBehaviour {
 		else
 		{
 			GetComponent<SpriteRenderer>().sprite = sprites[1];
-			if(!door.doorOpen)
-				return;
+
 			if(!rotateAPlataform)
 			{
-				door.doorOpen = false;
+				if(door.doorOpen)
+					return;
+				door.doorOpen = true;
 				door.moving = true;
 				return;
 			}
