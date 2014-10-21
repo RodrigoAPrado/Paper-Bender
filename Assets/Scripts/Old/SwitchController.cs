@@ -4,8 +4,7 @@ using System.Collections;
 public class SwitchController : MonoBehaviour {
 	
 	public Sprite[] sprites;
-	public GameObject switchLight;
-	public GameObject door;
+	public DoorController door;
 	public bool rotateAPlataform;
 	public Transform right;
 	public Transform left;
@@ -25,20 +24,24 @@ public class SwitchController : MonoBehaviour {
 		if(locked && !forceOpen)
 		{
 			GetComponent<SpriteRenderer>().sprite = sprites[0];
+			if(door.doorOpen)
+				return;
 			if(!rotateAPlataform)
 			{
-				switchLight.GetComponent<SpriteRenderer>().sprite = sprites[0];
-				door.SetActive(true);
+				door.doorOpen = true;
+				door.moving = true;
 				return;
 			}
 		}
 		else
 		{
 			GetComponent<SpriteRenderer>().sprite = sprites[1];
+			if(!door.doorOpen)
+				return;
 			if(!rotateAPlataform)
 			{
-				switchLight.GetComponent<SpriteRenderer>().sprite = sprites[1];
-				door.SetActive(false);
+				door.doorOpen = false;
+				door.moving = true;
 				return;
 			}
 		}
