@@ -12,6 +12,9 @@ public class PaperToBeCut : MonoBehaviour {
 
 	public GameObject[] paperSpawn;
 
+	public GameObject thisScissors;
+	bool scissorsSet;
+
 	bool entrance;
 	bool exit;
 	// Use this for initialization
@@ -21,6 +24,22 @@ public class PaperToBeCut : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		if(!scissorsSet)
+		{
+			if(thisScissors != null)
+			{
+				scissorsSet = true;
+			}
+		}
+		if(scissorsSet)
+		{
+			if(thisScissors == null)
+			{
+				entrance = true;
+				exit = true;
+			}
+		}
 		if(Physics2D.OverlapArea(leftEntrance.position, rightEntrance.position, scissors))
 		{
 			entrance = true;
