@@ -22,8 +22,8 @@ public class SoundManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		print("IndoorMusic: " + indoorMusic.time);
-		print("OutdoorMusic: " + outdoorMusic.time);
+//		print("IndoorMusic: " + indoorMusic.time);
+//		print("OutdoorMusic: " + outdoorMusic.time);
 		/*if(outdoorMusic.time >= musicEnd)
 		{
 			outdoorMusic.time = 0;

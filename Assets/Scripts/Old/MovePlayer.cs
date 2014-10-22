@@ -34,6 +34,7 @@ public class MovePlayer : MonoBehaviour {
 	[SerializeField]float jumpSpeed = 10;
 	bool paperBall;
 	public bool flipStart;
+	bool adjustJumpSpeed;
 
 	SpriteRenderer bendZoneSprite;
 	float opacity;
@@ -44,7 +45,7 @@ public class MovePlayer : MonoBehaviour {
 
 	public bool bending;
 	bool bended;
-
+	float normalSpeed;
 	PaperBendB paperToBend;
 
 	//Animations
@@ -53,7 +54,7 @@ public class MovePlayer : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+		normalSpeed = 5;
 		bendZoneSprite = GameObject.FindGameObjectWithTag("PlayerBendZone").gameObject.GetComponent<SpriteRenderer>();
 		currentDist = new float[2];
 		//avatarSprite = GameObject.FindGameObjectWithTag("PlayerSprite").transform;
@@ -101,7 +102,21 @@ public class MovePlayer : MonoBehaviour {
 		}
 		if(moving)
 		{
-
+			if(jumpedOnce && !adjustJumpSpeed)
+			{
+				float distance = transform.position.x - mouseClicked;
+				if(distance < 0)
+				{
+					distance *= -1;
+				}
+				distance = distance/0.64f;
+				if(distance > 10)
+					distance = 10;
+				moveSpeed = 1 + (distance * 0.4f);
+				adjustJumpSpeed = true;
+			}
+			if(!adjustJumpSpeed || grounded)
+				moveSpeed = normalSpeed;
 			rigidbody2D.velocity = new Vector2(moveSpeed * speed, rigidbody2D.velocity.y);
 			float dist = mouseClicked - transform.position.x;
 			currentDistCounter ++;
@@ -110,7 +125,9 @@ public class MovePlayer : MonoBehaviour {
 				currentDistCounter = 0;
 			}
 			currentDist[currentDistCounter] = dist;
-			if(grounded){
+			if(grounded)
+			{
+				adjustJumpSpeed = false;
 				if(!dontJump)
 					CheckJump();
 			}
@@ -146,6 +163,7 @@ public class MovePlayer : MonoBehaviour {
 				anim.SetBool("Bend", false);
 				dontJump = false;
 				jumpedOnce = false;
+				adjustJumpSpeed = false;
 			}
 		}
 		if(animationCounter > 0)
@@ -347,13 +365,13 @@ public class MovePlayer : MonoBehaviour {
 		mouseClicked = mouseInfo;
 		moving = true;
 		GravityModifier();
-		if(mouseClicked > transform.position.x + 0.96f)
+		if(mouseClicked > transform.position.x + 0.32f)
 		{
 			speed = 1;
 			if(!facingRight)
 				Flip ();
 		}
-		if(mouseClicked < transform.position.x - 0.96f)
+		if(mouseClicked < transform.position.x - 0.32f)
 		{
 			speed = -1;
 			if(facingRight)

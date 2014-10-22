@@ -416,6 +416,8 @@ public class BanditControllerNeo : MonoBehaviour {
 	}
 	void DetectPlayer()
 	{
+		if(!grounded || jumping)
+			return;
 		if(Physics2D.OverlapCircle(transform.position, range, playerLayer))
 		{
 
