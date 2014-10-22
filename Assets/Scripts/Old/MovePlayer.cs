@@ -51,6 +51,8 @@ public class MovePlayer : MonoBehaviour {
 	//Animations
 	[SerializeField] Animator anim;
 	float animationCounter;
+	bool jumping;
+	float jumpCounter;
 
 	// Use this for initialization
 	void Start () {
@@ -66,6 +68,22 @@ public class MovePlayer : MonoBehaviour {
 
 	void FixedUpdate()
 	{
+		if(jumping)
+		{
+
+			if(jumpCounter > 0.5f)
+			{
+				if(grounded)
+				{
+					jumping = false;
+					jumpCounter = 0;
+				}
+			}
+			else
+			{
+				jumpCounter += Time.deltaTime;
+			}
+		}
 
 		if(!moving && grounded)
 		{
@@ -87,6 +105,7 @@ public class MovePlayer : MonoBehaviour {
 		}
 		bendZoneSprite.color = new Color(1,1,1,opacity - 1);
 		GravityModifier();
+
 
 
 		anim.SetBool("Moving", moving);
@@ -174,6 +193,19 @@ public class MovePlayer : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
+		if(jumping)
+		{
+			anim.SetBool("Jump", true);
+		}
+		if((jumping && rigidbody2D.velocity.y < 0) || (!jumping && !grounded))
+		{
+			anim.SetBool("Fall", true);
+		}
+		if(grounded)
+		{
+			anim.SetBool("Jump", false);
+			anim.SetBool("Fall", false);
+		}
 		//print (currentGround.tag);
 	}
 	void CheckClimb(int jumpHeight)
@@ -246,6 +278,7 @@ public class MovePlayer : MonoBehaviour {
 			rigidbody2D.gravityScale = 1;
 			rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, jumpSpeed);
 			jumpedOnce = true;
+			jumping = true;
 			return;
 		}
 	}
