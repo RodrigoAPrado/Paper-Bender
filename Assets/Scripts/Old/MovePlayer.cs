@@ -68,22 +68,6 @@ public class MovePlayer : MonoBehaviour {
 
 	void FixedUpdate()
 	{
-		if(jumping)
-		{
-
-			if(jumpCounter > 0.5f)
-			{
-				if(grounded)
-				{
-					jumping = false;
-					jumpCounter = 0;
-				}
-			}
-			else
-			{
-				jumpCounter += Time.deltaTime;
-			}
-		}
 
 		if(!moving && grounded)
 		{
@@ -195,9 +179,26 @@ public class MovePlayer : MonoBehaviour {
 	{
 		if(jumping)
 		{
+			
+			if(jumpCounter > 0.5f)
+			{
+				if(grounded)
+				{
+					jumping = false;
+					jumpCounter = 0;
+				}
+			}
+			else
+			{
+				jumpCounter += Time.deltaTime;
+			}
+		}
+
+		if(jumping)
+		{
 			anim.SetBool("Jump", true);
 		}
-		if((jumping && rigidbody2D.velocity.y < 0) || (!jumping && !grounded))
+		if((rigidbody2D.velocity.y < 0 && jumping) || (!grounded && !jumping))
 		{
 			anim.SetBool("Fall", true);
 		}
