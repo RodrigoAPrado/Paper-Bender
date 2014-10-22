@@ -99,6 +99,8 @@ public class BanditControllerNeo : MonoBehaviour {
 
 	float timer = 0;
 
+	float debugTimmer;
+
 	// Use this for initialization
 	void Start () {
 		player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -187,6 +189,10 @@ public class BanditControllerNeo : MonoBehaviour {
 			if(anim.GetCurrentAnimatorStateInfo(0).IsName("Bandit_Run"))
 				scared = false;
 		}
+		if(isOnStart)
+		{
+			debugTimmer = 0;
+		}
 		if(walk)
 		{
 			if(scared)
@@ -203,6 +209,37 @@ public class BanditControllerNeo : MonoBehaviour {
 				speed = -1;
 			else
 				speed = 1;
+			if(debugTimmer < 8)
+			{
+				debugTimmer += Time.deltaTime;
+			}
+			else
+			{
+				transform.position = currentWayPoint.position;
+				debugTimmer = 0;
+			}
+			if(speed == -1)
+			{
+				if(transform.position.x < currentWayPoint.position.x)
+				{
+					speed = 0;
+				}
+				if(transform.position.x < currentWayPoint.position.x - 0.16)
+				{
+					transform.position = currentWayPoint.position;
+				}
+			}
+			else
+			{
+				if(transform.position.x > currentWayPoint.position.x)
+				{
+					speed = 0;
+				}
+				if(transform.position.x > currentWayPoint.position.x + 0.16)
+				{
+					transform.position = currentWayPoint.position;
+				}
+			}
 			if(isOnStart)
 			{
 				if(!Physics2D.OverlapCircle(wayPointCheck.position, 0.1f, wayPointsLayer))
@@ -233,6 +270,7 @@ public class BanditControllerNeo : MonoBehaviour {
 						//detectSide = false;
 						if(bWP.dontStopHere)
 						{
+							debugTimmer = 0;
 							/*if(bWP.autoNextWayPoint != null)
 							{
 								if(bWP.jumpHere)
