@@ -196,6 +196,7 @@
      <Compile Include="Assets\Scripts\BanditWayPointNeo.cs" />
      <Compile Include="Assets\Scripts\BendSpriteController.cs" />
      <Compile Include="Assets\Scripts\ChangeScene.cs" />
+     <Compile Include="Assets\Scripts\Cheats.cs" />
      <Compile Include="Assets\Scripts\ClearBandit.cs" />
      <Compile Include="Assets\Scripts\DevelopStageSelect.cs" />
      <Compile Include="Assets\Scripts\DoorController.cs" />
@@ -224,6 +225,7 @@
      <Compile Include="Assets\Scripts\Old\SeesawController.cs" />
      <Compile Include="Assets\Scripts\Old\SwitchController.cs" />
      <Compile Include="Assets\Scripts\PaperBallActivate.cs" />
+     <Compile Include="Assets\Scripts\PaperBallSound.cs" />
      <Compile Include="Assets\Scripts\PaperDurexChecker.cs" />
      <Compile Include="Assets\Scripts\PaperMaker.cs" />
      <Compile Include="Assets\Scripts\PaperToBeCut.cs" />

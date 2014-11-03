@@ -101,6 +101,8 @@ public class BanditControllerNeo : MonoBehaviour {
 
 	float debugTimmer;
 
+	public AudioClip scaredSound;
+
 	// Use this for initialization
 	void Start () {
 		player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -479,6 +481,7 @@ public class BanditControllerNeo : MonoBehaviour {
 					else
 						currentWayPoint = bWP.wayPointLeft;*/
 					scared = true;
+					audio.PlayOneShot(scaredSound);
 					DecideWayPoint(false);
 					return;
 				}
@@ -503,6 +506,7 @@ public class BanditControllerNeo : MonoBehaviour {
 						currentWayPoint = bWP.wayPointRight;
 						*/
 					scared = true;
+					audio.PlayOneShot(scaredSound);
 					DecideWayPoint(true);
 					return;
 				}
