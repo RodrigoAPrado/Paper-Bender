@@ -276,6 +276,11 @@ public class MovePlayer : MonoBehaviour {
 		}
 		if(mouseClickedHeight > heightToJump.position.y + 0.32f && !jumpedOnce)
 		{
+            float distanceMouseClicked = mouseClicked - transform.position.x;
+            if (distanceMouseClicked < 0)
+                distanceMouseClicked *= -1;
+            if (distanceMouseClicked > 3)
+                return;
 			rigidbody2D.gravityScale = 1;
 			rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, jumpSpeed);
 			jumpedOnce = true;
