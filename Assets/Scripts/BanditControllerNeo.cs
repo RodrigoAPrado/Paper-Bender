@@ -217,7 +217,7 @@ public class BanditControllerNeo : MonoBehaviour {
 			}
 			else
 			{
-				transform.position = currentWayPoint.position;
+				transform.position = new Vector2(currentWayPoint.position.x, currentWayPoint.position.y + 1);
 				debugTimmer = 0;
 			}
 			if(speed == -1)
@@ -228,7 +228,7 @@ public class BanditControllerNeo : MonoBehaviour {
 				}
 				if(transform.position.x < currentWayPoint.position.x - 0.16)
 				{
-					transform.position = currentWayPoint.position;
+					transform.position = new Vector2(currentWayPoint.position.x, currentWayPoint.position.y + 1);
 				}
 			}
 			else
