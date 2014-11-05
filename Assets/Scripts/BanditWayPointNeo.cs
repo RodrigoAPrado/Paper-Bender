@@ -39,10 +39,12 @@ public class BanditWayPointNeo : MonoBehaviour {
 
 	public bool dontStopHere;
 	public int maxHeight;
+	public int increaseUltraHeightBy;
+	int ultraHeight;
 	// Use this for initialization
 	void Start () 
 	{
-	
+		ultraHeight = 7 + increaseUltraHeightBy;
 	}
 	
 	// Update is called once per frame
@@ -77,7 +79,7 @@ public class BanditWayPointNeo : MonoBehaviour {
 					if(trueHeight > maxHeight)
 						trueHeight = maxHeight;
 				}
-				if(trueHeight < 7)
+				if(trueHeight < ultraHeight)
 				{
 					if(!startHeight)
 					{
