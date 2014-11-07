@@ -211,7 +211,7 @@ public class BanditControllerNeo : MonoBehaviour {
 				speed = -1;
 			else
 				speed = 1;
-			if(debugTimmer < 8)
+			if(debugTimmer < 5)
 			{
 				debugTimmer += Time.deltaTime;
 			}

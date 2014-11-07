@@ -5,7 +5,7 @@ public class TemplePuzzle : MonoBehaviour {
 
 
 	public GameObject[] puzzle;
-	public GameObject door;
+	public DoorController door;
 	// Use this for initialization
 	void Start () {
 	
@@ -18,10 +18,16 @@ public class TemplePuzzle : MonoBehaviour {
 
 			if(!puzzle[i].activeSelf)
 			{
-				door.SetActive(true);
+				if(!door.doorOpen)
+					return;
+				door.doorOpen = false;
+				door.moving = true;
 				return;
 			}
 		}
-		door.SetActive(false);
+		if(door.doorOpen)
+			return;
+		door.doorOpen = true;
+		door.moving = true;
 	}
 }
