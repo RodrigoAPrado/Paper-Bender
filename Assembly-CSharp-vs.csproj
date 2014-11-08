@@ -240,6 +240,7 @@
      <Compile Include="Assets\Scripts\Spritetypefull.cs" />
      <Compile Include="Assets\Scripts\StageManager.cs" />
      <Compile Include="Assets\Scripts\StageManagerMaster.cs" />
+     <Compile Include="Assets\Scripts\StartTalk.cs" />
      <Compile Include="Assets\Scripts\SwitchControllerWall.cs" />
      <Compile Include="Assets\Scripts\TemplePuzzle.cs" />
      <Compile Include="Assets\Scripts\TheFuckingEnd.cs" />

@@ -21,9 +21,11 @@ public class PositionDetect : MonoBehaviour {
 	public bool firstFollow;
 
 	public Vector3[] cameraPositions;
+	NPCDialogController nPC;
 		
 
 	void Start () {
+		nPC = GameObject.FindGameObjectWithTag("ChatBox").GetComponent<NPCDialogController>();
 		targetSprite = GameObject.FindGameObjectWithTag("TargetSprite").gameObject;
 		character = GameObject.FindGameObjectWithTag("Player").transform;
 		movePlayer = character.gameObject.GetComponent<MovePlayer>();
@@ -34,7 +36,7 @@ public class PositionDetect : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if(Time.timeScale == 0)
+		if(Time.timeScale == 0 || nPC.onChat)
 		{
 			return;
 		}
@@ -59,10 +61,14 @@ public class PositionDetect : MonoBehaviour {
 		{
 			if(!movePlayer.grounded || movePlayer.bending)
 				return;
-
 			RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, 1, bendingLayer);
 			if(hit.collider != null)
 			{
+				if(hit.collider.tag=="ChatStart")
+				{
+					hit.collider.gameObject.GetComponent<StartTalk>().SetTalkOn();
+					return;
+				}
 				if(hit.collider.tag=="NextStage")
 				{
 					hit.collider.gameObject.GetComponent<NextStage>().Clicked();

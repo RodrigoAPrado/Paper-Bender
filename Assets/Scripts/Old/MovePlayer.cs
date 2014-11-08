@@ -53,9 +53,10 @@ public class MovePlayer : MonoBehaviour {
 	float animationCounter;
 	bool jumping;
 	float jumpCounter;
-
+	NPCDialogController nPC;
 	// Use this for initialization
 	void Start () {
+		nPC = GameObject.FindGameObjectWithTag("ChatBox").GetComponent<NPCDialogController>();
 		normalSpeed = 5;
 		bendZoneSprite = GameObject.FindGameObjectWithTag("PlayerBendZone").gameObject.GetComponent<SpriteRenderer>();
 		currentDist = new float[2];
@@ -363,7 +364,7 @@ public class MovePlayer : MonoBehaviour {
 	}
 	public void Flip()
 	{
-		if(Time.timeScale == 0)
+		if(Time.timeScale == 0 || nPC.onChat)
 		{
 			return;
 		}
