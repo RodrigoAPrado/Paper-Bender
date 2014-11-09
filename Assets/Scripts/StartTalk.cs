@@ -5,7 +5,7 @@ public class StartTalk : MonoBehaviour {
 
 	NPCDialogController nPC;
 	public string[] thisText;
-	public NPCDialogController.allAvatar thisAvatar;
+	public NPCDialogController.allAvatar[] thisAvatar;
 	SpriteRenderer sRenderer;
 	BoxCollider2D bCollider;
 	// Use this for initialization
