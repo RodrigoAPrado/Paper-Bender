@@ -171,6 +171,12 @@ public class NGUISettings
 
 #region Convenience accessor properties
 
+	static public bool showTransformHandles
+	{
+		get { return GetBool("NGUI Transform Handles", false); }
+		set { SetBool("NGUI Transform Handles", value); }
+	}
+
 	static public bool minimalisticLook
 	{
 		get { return GetBool("NGUI Minimalistic", false); }
@@ -298,6 +304,12 @@ public class NGUISettings
 		set { SetInt("NGUI Font Size", value); }
 	}
 
+	static public bool fontKerning
+	{
+		get { return GetBool("NGUI Font Kerning", true); }
+		set { SetBool("NGUI Font Kerning", value); }
+	}
+
 	static public FontStyle fontStyle
 	{
 		get { return GetEnum("NGUI Font Style", FontStyle.Normal); }
@@ -344,6 +356,12 @@ public class NGUISettings
 	{
 		get { return GetBool("NGUI Packing", true); }
 		set { SetBool("NGUI Packing", value); }
+	}
+
+	static public bool trueColorAtlas
+	{
+		get { return GetBool("NGUI Truecolor", true); }
+		set { SetBool("NGUI Truecolor", value); }
 	}
 
 	static public bool forceSquareAtlas
@@ -430,7 +448,6 @@ public class NGUISettings
 		return w;
 	}
 
-#if !UNITY_3_5 && !UNITY_4_0 && !UNITY_4_1 && !UNITY_4_2
 	/// <summary>
 	/// Convenience method -- add a UnityEngine.Sprite.
 	/// </summary>
@@ -445,7 +462,7 @@ public class NGUISettings
 		w.height = 100;
 		return w;
 	}
-#endif
+
 	/// <summary>
 	/// Convenience method -- add a sprite.
 	/// </summary>
@@ -569,6 +586,9 @@ public class NGUISettings
 		SetInt("Font Size", lbl.fontSize);
 		SetEnum("Font Style", lbl.fontStyle);
 		SetEnum("Overflow", lbl.overflowMethod);
+		SetBool("UseFloatSpacing", lbl.useFloatSpacing);
+		SetFloat("FloatSpacingX", lbl.floatSpacingX);
+		SetFloat("FloatSpacingY", lbl.floatSpacingY);
 		SetInt("SpacingX", lbl.spacingX);
 		SetInt("SpacingY", lbl.spacingY);
 		SetInt("MaxLines", lbl.maxLineCount);
@@ -598,6 +618,7 @@ public class NGUISettings
 		sp.centerType = GetEnum<UISprite.AdvancedType>("Center Type", UISprite.AdvancedType.Sliced);
 		sp.fillAmount = GetFloat("Fill", sp.fillAmount);
 		sp.fillDirection = GetEnum<UISprite.FillDirection>("FDir", sp.fillDirection);
+		NGUITools.SetDirty(sp);
 	}
 
 	/// <summary>
@@ -626,6 +647,9 @@ public class NGUISettings
 		}
 
 		lbl.overflowMethod = GetEnum<UILabel.Overflow>("Overflow", lbl.overflowMethod);
+		lbl.useFloatSpacing = GetBool("UseFloatSpacing", lbl.useFloatSpacing);
+		lbl.floatSpacingX = GetFloat("FloatSpacingX", lbl.floatSpacingX);
+		lbl.floatSpacingY = GetFloat("FloatSpacingY", lbl.floatSpacingY);
 		lbl.spacingX = GetInt("SpacingX", lbl.spacingX);
 		lbl.spacingY = GetInt("SpacingY", lbl.spacingY);
 		lbl.maxLineCount = GetInt("MaxLines", lbl.maxLineCount);
@@ -639,5 +663,6 @@ public class NGUISettings
 		float x = GetFloat("Effect X", lbl.effectDistance.x);
 		float y = GetFloat("Effect Y", lbl.effectDistance.y);
 		lbl.effectDistance = new Vector2(x, y);
+		NGUITools.SetDirty(lbl);
 	}
 }

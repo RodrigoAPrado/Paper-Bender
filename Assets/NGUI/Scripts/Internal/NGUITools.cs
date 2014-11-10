@@ -107,8 +107,13 @@ static public class NGUITools
 
 			if (mListener != null && mListener.enabled && NGUITools.GetActive(mListener.gameObject))
 			{
+#if UNITY_4_3 || UNITY_4_5 || UNITY_4_6
 				AudioSource source = mListener.audio;
+#else
+				AudioSource source = mListener.GetComponent<AudioSource>();
+#endif
 				if (source == null) source = mListener.gameObject.AddComponent<AudioSource>();
+				source.priority = 50;
 				source.pitch = pitch;
 				source.PlayOneShot(clip, volume);
 				return source;
@@ -121,36 +126,36 @@ static public class NGUITools
 	/// New WWW call can fail if the crossdomain policy doesn't check out. Exceptions suck. It's much more elegant to check for null instead.
 	/// </summary>
 
-	static public WWW OpenURL (string url)
-	{
-#if UNITY_FLASH
-		Debug.LogError("WWW is not yet implemented in Flash");
-		return null;
-#else
-		WWW www = null;
-		try { www = new WWW(url); }
-		catch (System.Exception ex) { Debug.LogError(ex.Message); }
-		return www;
-#endif
-	}
+//    static public WWW OpenURL (string url)
+//    {
+//#if UNITY_FLASH
+//        Debug.LogError("WWW is not yet implemented in Flash");
+//        return null;
+//#else
+//        WWW www = null;
+//        try { www = new WWW(url); }
+//        catch (System.Exception ex) { Debug.LogError(ex.Message); }
+//        return www;
+//#endif
+//    }
 
-	/// <summary>
-	/// New WWW call can fail if the crossdomain policy doesn't check out. Exceptions suck. It's much more elegant to check for null instead.
-	/// </summary>
+//    /// <summary>
+//    /// New WWW call can fail if the crossdomain policy doesn't check out. Exceptions suck. It's much more elegant to check for null instead.
+//    /// </summary>
 
-	static public WWW OpenURL (string url, WWWForm form)
-	{
-		if (form == null) return OpenURL(url);
-#if UNITY_FLASH
-		Debug.LogError("WWW is not yet implemented in Flash");
-		return null;
-#else
-		WWW www = null;
-		try { www = new WWW(url, form); }
-		catch (System.Exception ex) { Debug.LogError(ex != null ? ex.Message : "<null>"); }
-		return www;
-#endif
-	}
+//    static public WWW OpenURL (string url, WWWForm form)
+//    {
+//        if (form == null) return OpenURL(url);
+//#if UNITY_FLASH
+//        Debug.LogError("WWW is not yet implemented in Flash");
+//        return null;
+//#else
+//        WWW www = null;
+//        try { www = new WWW(url, form); }
+//        catch (System.Exception ex) { Debug.LogError(ex != null ? ex.Message : "<null>"); }
+//        return www;
+//#endif
+//    }
 
 	/// <summary>
 	/// Same as Random.Range, but the returned value is between min and max, inclusive.
@@ -210,12 +215,17 @@ static public class NGUITools
 		cam = Camera.main;
 		if (cam && (cam.cullingMask & layerMask) != 0) return cam;
 
+#if UNITY_4_3 || UNITY_FLASH
 		Camera[] cameras = NGUITools.FindActive<Camera>();
-
 		for (int i = 0, imax = cameras.Length; i < imax; ++i)
+#else
+		Camera[] cameras = new Camera[Camera.allCamerasCount];
+		int camerasFound = Camera.GetAllCameras(cameras);
+		for (int i = 0; i < camerasFound; ++i)
+#endif
 		{
 			cam = cameras[i];
-			if (cam && (cam.cullingMask & layerMask) != 0)
+			if (cam && cam.enabled && (cam.cullingMask & layerMask) != 0)
 				return cam;
 		}
 		return null;
@@ -248,7 +258,6 @@ static public class NGUITools
 			// Is there already another collider present? If so, do nothing.
 			if (col != null) return;
 
-#if !UNITY_4_0 && !UNITY_4_1 && !UNITY_4_2
 			// 2D collider
 			BoxCollider2D box2 = go.GetComponent<BoxCollider2D>();
 
@@ -273,10 +282,9 @@ static public class NGUITools
 				return;
 			}
 			else
-#endif
 			{
 				box = go.AddComponent<BoxCollider>();
-#if !UNITY_3_5 && UNITY_EDITOR
+#if UNITY_EDITOR
 				UnityEditor.Undo.RegisterCreatedObjectUndo(box, "Add Collider");
 #endif
 				box.isTrigger = true;
@@ -313,10 +321,8 @@ static public class NGUITools
 				UpdateWidgetCollider(bc, considerInactive);
 				return;
 			}
-#if !UNITY_4_0 && !UNITY_4_1 && !UNITY_4_2
 			BoxCollider2D box2 = go.GetComponent<BoxCollider2D>();
 			if (box2 != null) UpdateWidgetCollider(box2, considerInactive);
-#endif
 		}
 	}
 
@@ -333,9 +339,20 @@ static public class NGUITools
 
 			if (w != null)
 			{
-				Vector3[] corners = w.localCorners;
-				box.center = Vector3.Lerp(corners[0], corners[2], 0.5f);
-				box.size = corners[2] - corners[0];
+				Vector4 dr = w.drawRegion;
+
+				if (dr.x != 0f || dr.y != 0f || dr.z != 1f || dr.w != 1f)
+				{
+					Vector4 region = w.drawingDimensions;
+					box.center = new Vector3((region.x + region.z) * 0.5f, (region.y + region.w) * 0.5f);
+					box.size = new Vector3(region.z - region.x, region.w - region.y);
+				}
+				else
+				{
+					Vector3[] corners = w.localCorners;
+					box.center = Vector3.Lerp(corners[0], corners[2], 0.5f);
+					box.size = corners[2] - corners[0];
+				}
 			}
 			else
 			{
@@ -363,13 +380,21 @@ static public class NGUITools
 			if (w != null)
 			{
 				Vector3[] corners = w.localCorners;
+#if UNITY_4_3 || UNITY_4_5 || UNITY_4_6
 				box.center = Vector3.Lerp(corners[0], corners[2], 0.5f);
+#else
+				box.offset = Vector3.Lerp(corners[0], corners[2], 0.5f);
+#endif
 				box.size = corners[2] - corners[0];
 			}
 			else
 			{
 				Bounds b = NGUIMath.CalculateRelativeWidgetBounds(go.transform, considerInactive);
+#if UNITY_4_3 || UNITY_4_5 || UNITY_4_6
 				box.center = b.center;
+#else
+				box.offset = b.center;
+#endif
 				box.size = new Vector2(b.size.x, b.size.y);
 			}
 #if UNITY_EDITOR
@@ -531,7 +556,11 @@ static public class NGUITools
 			for (int i = 0, imax = widgets.Length; i < imax; ++i)
 			{
 				UIWidget w = widgets[i];
+#if UNITY_4_3 || UNITY_4_5 || UNITY_4_6
 				if (w.cachedGameObject != go && (w.collider != null || w.GetComponent<Collider2D>() != null)) continue;
+#else
+				if (w.cachedGameObject != go && (w.GetComponent<Collider>() != null || w.GetComponent<Collider2D>() != null)) continue;
+#endif
 				depth = Mathf.Max(depth, w.depth);
 			}
 			return depth + 1;
@@ -566,11 +595,15 @@ static public class NGUITools
 			}
 			else
 			{
+				panel = FindInParents<UIPanel>(go);
+				if (panel == null) return 0;
+
 				UIWidget[] widgets = go.GetComponentsInChildren<UIWidget>(true);
 
 				for (int i = 0, imax = widgets.Length; i < imax; ++i)
 				{
 					UIWidget w = widgets[i];
+					if (w.panel != panel) continue;
 #if UNITY_EDITOR
 					RegisterUndo(w, "Depth Change");
 #endif
@@ -620,7 +653,24 @@ static public class NGUITools
 
 	static public void NormalizeWidgetDepths ()
 	{
-		UIWidget[] list = FindActive<UIWidget>();
+		NormalizeWidgetDepths(FindActive<UIWidget>());
+	}
+
+	/// <summary>
+	/// Normalize the depths of all the widgets in the scene, making them start from 0 and remain in order.
+	/// </summary>
+
+	static public void NormalizeWidgetDepths (GameObject go)
+	{
+		NormalizeWidgetDepths(go.GetComponentsInChildren<UIWidget>());
+	}
+
+	/// <summary>
+	/// Normalize the depths of all the widgets in the scene, making them start from 0 and remain in order.
+	/// </summary>
+
+	static public void NormalizeWidgetDepths (UIWidget[] list)
+	{
 		int size = list.Length;
 
 		if (size > 0)
@@ -700,8 +750,34 @@ static public class NGUITools
 	{
 		// Find the existing UI Root
 		UIRoot root = (trans != null) ? NGUITools.FindInParents<UIRoot>(trans.gameObject) : null;
+
 		if (root == null && UIRoot.list.Count > 0)
-			root = UIRoot.list[0];
+		{
+			foreach (UIRoot r in UIRoot.list)
+			{
+				if (r.gameObject.layer == layer)
+				{
+					root = r;
+					break;
+				}
+			}
+		}
+
+		// If we are working with a different UI type, we need to treat it as a brand-new one instead
+		if (root != null)
+		{
+			UICamera cam = root.GetComponentInChildren<UICamera>();
+
+#if UNITY_4_3 || UNITY_4_5 || UNITY_4_6
+			if (cam != null && cam.camera.isOrthoGraphic == advanced3D)
+#else
+			if (cam != null && cam.GetComponent<Camera>().orthographic == advanced3D)
+#endif
+			{
+				trans = null;
+				root = null;
+			}
+		}
 
 		// If no root found, create one
 		if (root == null)
@@ -717,12 +793,12 @@ static public class NGUITools
 			if (advanced3D)
 			{
 				go.name = "UI Root (3D)";
-				root.scalingStyle = UIRoot.Scaling.FixedSize;
+				root.scalingStyle = UIRoot.Scaling.Constrained;
 			}
 			else
 			{
 				go.name = "UI Root";
-				root.scalingStyle = UIRoot.Scaling.PixelPerfect;
+				root.scalingStyle = UIRoot.Scaling.Flexible;
 			}
 		}
 
@@ -859,7 +935,20 @@ static public class NGUITools
 		widget.width = 100;
 		widget.height = 100;
 		widget.depth = depth;
-		widget.gameObject.layer = go.layer;
+		return widget;
+	}
+
+	/// <summary>
+	/// Add a new widget of specified type.
+	/// </summary>
+
+	static public T AddWidget<T> (GameObject go, int depth) where T : UIWidget
+	{
+		// Create the widget and place it above other widgets
+		T widget = AddChild<T>(go);
+		widget.width = 100;
+		widget.height = 100;
+		widget.depth = depth;
 		return widget;
 	}
 
@@ -902,11 +991,14 @@ static public class NGUITools
 	static public T FindInParents<T> (GameObject go) where T : Component
 	{
 		if (go == null) return null;
-#if UNITY_FLASH
+		// Commented out because apparently it causes Unity 4.5.3 to lag horribly:
+		// http://www.tasharen.com/forum/index.php?topic=10882.0
+//#if UNITY_4_3
+ #if UNITY_FLASH
 		object comp = go.GetComponent<T>();
-#else
+ #else
 		T comp = go.GetComponent<T>();
-#endif
+ #endif
 		if (comp == null)
 		{
 			Transform t = go.transform.parent;
@@ -917,11 +1009,14 @@ static public class NGUITools
 				t = t.parent;
 			}
 		}
-#if UNITY_FLASH
+ #if UNITY_FLASH
 		return (T)comp;
-#else
+ #else
 		return comp;
-#endif
+ #endif
+//#else
+//		return go.GetComponentInParent<T>();
+//#endif
 	}
 
 	/// <summary>
@@ -931,11 +1026,12 @@ static public class NGUITools
 	static public T FindInParents<T> (Transform trans) where T : Component
 	{
 		if (trans == null) return null;
-#if UNITY_FLASH
+#if UNITY_4_3
+ #if UNITY_FLASH
 		object comp = trans.GetComponent<T>();
-#else
+ #else
 		T comp = trans.GetComponent<T>();
-#endif
+ #endif
 		if (comp == null)
 		{
 			Transform t = trans.transform.parent;
@@ -946,10 +1042,13 @@ static public class NGUITools
 				t = t.parent;
 			}
 		}
-#if UNITY_FLASH
+ #if UNITY_FLASH
 		return (T)comp;
-#else
+ #else
 		return comp;
+ #endif
+#else
+		return trans.GetComponentInParent<T>();
 #endif
 	}
 
@@ -1346,7 +1445,11 @@ static public class NGUITools
 
 	static public T AddMissingComponent<T> (this GameObject go) where T : Component
 	{
+#if UNITY_FLASH
+		object comp = go.GetComponent<T>();
+#else
 		T comp = go.GetComponent<T>();
+#endif
 		if (comp == null)
 		{
 #if UNITY_EDITOR
@@ -1355,7 +1458,11 @@ static public class NGUITools
 #endif
 			comp = go.AddComponent<T>();
 		}
+#if UNITY_FLASH
+		return (T)comp;
+#else
 		return comp;
+#endif
 	}
 
 	// Temporary variable to avoid GC allocation
@@ -1394,11 +1501,43 @@ static public class NGUITools
 
 	static public Vector3[] GetSides (this Camera cam, float depth, Transform relativeTo)
 	{
-		mSides[0] = cam.ViewportToWorldPoint(new Vector3(0f, 0.5f, depth));
-		mSides[1] = cam.ViewportToWorldPoint(new Vector3(0.5f, 1f, depth));
-		mSides[2] = cam.ViewportToWorldPoint(new Vector3(1f, 0.5f, depth));
-		mSides[3] = cam.ViewportToWorldPoint(new Vector3(0.5f, 0f, depth));
+#if UNITY_4_3 || UNITY_4_5 || UNITY_4_6
+		if (cam.isOrthoGraphic)
+#else
+		if (cam.orthographic)
+#endif
+		{
+			float os = cam.orthographicSize;
+			float x0 = -os;
+			float x1 = os;
+			float y0 = -os;
+			float y1 = os;
 
+			Rect rect = cam.rect;
+			Vector2 size = screenSize;
+			float aspect = size.x / size.y;
+			aspect *= rect.width / rect.height;
+			x0 *= aspect;
+			x1 *= aspect;
+
+			// We want to ignore the scale, as scale doesn't affect the camera's view region in Unity
+			Transform t = cam.transform;
+			Quaternion rot = t.rotation;
+			Vector3 pos = t.position;
+
+			mSides[0] = rot * (new Vector3(x0, 0f, depth)) + pos;
+			mSides[1] = rot * (new Vector3(0f, y1, depth)) + pos;
+			mSides[2] = rot * (new Vector3(x1, 0f, depth)) + pos;
+			mSides[3] = rot * (new Vector3(0f, y0, depth)) + pos;
+		}
+		else
+		{
+			mSides[0] = cam.ViewportToWorldPoint(new Vector3(0f, 0.5f, depth));
+			mSides[1] = cam.ViewportToWorldPoint(new Vector3(0.5f, 1f, depth));
+			mSides[2] = cam.ViewportToWorldPoint(new Vector3(1f, 0.5f, depth));
+			mSides[3] = cam.ViewportToWorldPoint(new Vector3(0.5f, 0f, depth));
+		}
+		
 		if (relativeTo != null)
 		{
 			for (int i = 0; i < 4; ++i)
@@ -1413,7 +1552,8 @@ static public class NGUITools
 
 	static public Vector3[] GetWorldCorners (this Camera cam)
 	{
-		return cam.GetWorldCorners(Mathf.Lerp(cam.nearClipPlane, cam.farClipPlane, 0.5f), null);
+		float depth = Mathf.Lerp(cam.nearClipPlane, cam.farClipPlane, 0.5f);
+		return cam.GetWorldCorners(depth, null);
 	}
 
 	/// <summary>
@@ -1440,10 +1580,42 @@ static public class NGUITools
 
 	static public Vector3[] GetWorldCorners (this Camera cam, float depth, Transform relativeTo)
 	{
-		mSides[0] = cam.ViewportToWorldPoint(new Vector3(0f, 0f, depth));
-		mSides[1] = cam.ViewportToWorldPoint(new Vector3(0f, 1f, depth));
-		mSides[2] = cam.ViewportToWorldPoint(new Vector3(1f, 1f, depth));
-		mSides[3] = cam.ViewportToWorldPoint(new Vector3(1f, 0f, depth));
+#if UNITY_4_3 || UNITY_4_5 || UNITY_4_6
+		if (cam.isOrthoGraphic)
+#else
+		if (cam.orthographic)
+#endif
+		{
+			float os = cam.orthographicSize;
+			float x0 = -os;
+			float x1 = os;
+			float y0 = -os;
+			float y1 = os;
+
+			Rect rect = cam.rect;
+			Vector2 size = screenSize;
+			float aspect = size.x / size.y;
+			aspect *= rect.width / rect.height;
+			x0 *= aspect;
+			x1 *= aspect;
+
+			// We want to ignore the scale, as scale doesn't affect the camera's view region in Unity
+			Transform t = cam.transform;
+			Quaternion rot = t.rotation;
+			Vector3 pos = t.position;
+
+			mSides[0] = rot * (new Vector3(x0, y0, depth)) + pos;
+			mSides[1] = rot * (new Vector3(x0, y1, depth)) + pos;
+			mSides[2] = rot * (new Vector3(x1, y1, depth)) + pos;
+			mSides[3] = rot * (new Vector3(x1, y0, depth)) + pos;
+		}
+		else
+		{
+			mSides[0] = cam.ViewportToWorldPoint(new Vector3(0f, 0f, depth));
+			mSides[1] = cam.ViewportToWorldPoint(new Vector3(0f, 1f, depth));
+			mSides[2] = cam.ViewportToWorldPoint(new Vector3(1f, 1f, depth));
+			mSides[3] = cam.ViewportToWorldPoint(new Vector3(1f, 0f, depth));
+		}
 
 		if (relativeTo != null)
 		{
@@ -1466,6 +1638,7 @@ static public class NGUITools
 		return string.IsNullOrEmpty(method) ? type : type + "/" + method;
 	}
 
+#if UNITY_EDITOR || !UNITY_FLASH
 	/// <summary>
 	/// Execute the specified function on the target game object.
 	/// </summary>
@@ -1476,7 +1649,7 @@ static public class NGUITools
 
 		foreach (T comp in comps)
 		{
-#if UNITY_WEBPLAYER || UNITY_FLASH || UNITY_METRO || UNITY_WP8
+#if !UNITY_EDITOR && (UNITY_WEBPLAYER || UNITY_FLASH || UNITY_METRO || UNITY_WP8)
 			comp.SendMessage(funcName, SendMessageOptions.DontRequireReceiver);
 #else
 			MethodInfo method = comp.GetType().GetMethod(funcName, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
@@ -1510,4 +1683,43 @@ static public class NGUITools
 		ExecuteAll<UIPanel>(root, "Update");
 		ExecuteAll<UIPanel>(root, "LateUpdate");
 	}
+#endif
+
+#if UNITY_EDITOR
+	static int mSizeFrame = -1;
+	static System.Reflection.MethodInfo s_GetSizeOfMainGameView;
+	static Vector2 mGameSize = Vector2.one;
+
+	/// <summary>
+	/// Size of the game view cannot be retrieved from Screen.width and Screen.height when the game view is hidden.
+	/// </summary>
+
+	static public Vector2 screenSize
+	{
+		get
+		{
+			int frame = Time.frameCount;
+
+			if (mSizeFrame != frame || !Application.isPlaying)
+			{
+				mSizeFrame = frame;
+
+				if (s_GetSizeOfMainGameView == null)
+				{
+					System.Type type = System.Type.GetType("UnityEditor.GameView,UnityEditor");
+					s_GetSizeOfMainGameView = type.GetMethod("GetSizeOfMainGameView",
+						System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Static);
+				}
+				mGameSize = (Vector2)s_GetSizeOfMainGameView.Invoke(null, null);
+			}
+			return mGameSize;
+		}
+	}
+#else
+	/// <summary>
+	/// Size of the game view cannot be retrieved from Screen.width and Screen.height when the game view is hidden.
+	/// </summary>
+
+	static public Vector2 screenSize { get { return new Vector2(Screen.width, Screen.height); } }
+#endif
 }
