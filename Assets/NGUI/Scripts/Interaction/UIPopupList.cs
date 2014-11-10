@@ -108,10 +108,23 @@ public class UIPopupList : UIWidgetContainer
 	public Position position = Position.Auto;
 
 	/// <summary>
+	/// Label alignment to use.
+	/// </summary>
+
+	public NGUIText.Alignment alignment = NGUIText.Alignment.Left;
+
+	/// <summary>
 	/// New line-delimited list of items.
 	/// </summary>
 
 	public List<string> items = new List<string>();
+
+	/// <summary>
+	/// You can associate arbitrary data to be associated with your entries if you like.
+	/// The only downside is that this must be done via code.
+	/// </summary>
+
+	public List<object> itemData = new List<object>();
 
 	/// <summary>
 	/// Amount of padding added to labels.
@@ -149,6 +162,20 @@ public class UIPopupList : UIWidgetContainer
 
 	public bool isLocalized = false;
 
+	public enum OpenOn
+	{
+		ClickOrTap,
+		RightClick,
+		DoubleClick,
+		Manual,
+	}
+
+	/// <summary>
+	/// What kind of click is needed in order to open the popup list.
+	/// </summary>
+
+	public OpenOn openOn = OpenOn.ClickOrTap;
+
 	/// <summary>
 	/// Callbacks triggered when the popup list gets a new item selection.
 	/// </summary>
@@ -157,14 +184,13 @@ public class UIPopupList : UIWidgetContainer
 
 	// Currently selected item
 	[HideInInspector][SerializeField] string mSelectedItem;
-
-	UIPanel mPanel;
-	GameObject mChild;
-	UISprite mBackground;
-	UISprite mHighlight;
-	UILabel mHighlightedLabel = null;
-	List<UILabel> mLabelList = new List<UILabel>();
-	float mBgBorder = 0f;
+	[HideInInspector][SerializeField] UIPanel mPanel;
+	[HideInInspector][SerializeField] GameObject mChild;
+	[HideInInspector][SerializeField] UISprite mBackground;
+	[HideInInspector][SerializeField] UISprite mHighlight;
+	[HideInInspector][SerializeField] UILabel mHighlightedLabel = null;
+	[HideInInspector][SerializeField] List<UILabel> mLabelList = new List<UILabel>();
+	[HideInInspector][SerializeField] float mBgBorder = 0f;
 
 	// Deprecated functionality
 	[HideInInspector][SerializeField] GameObject eventReceiver;
@@ -212,6 +238,19 @@ public class UIPopupList : UIWidgetContainer
 		}
 	}
 
+	/// <summary>
+	/// Item data associated with the current selection.
+	/// </summary>
+
+	public object data
+	{
+		get
+		{
+			int index = items.IndexOf(mSelectedItem);
+			return index > -1 && index < itemData.Count ? itemData[index] : null;
+		}
+	}
+
 	[System.Obsolete("Use 'value' instead")]
 	public string selection { get { return value; } set { this.value = value; } }
 
@@ -250,6 +289,36 @@ public class UIPopupList : UIWidgetContainer
 	/// </summary>
 
 	float activeFontScale { get { return (trueTypeFont != null || bitmapFont == null) ? 1f : (float)fontSize / bitmapFont.defaultSize; } }
+
+	/// <summary>
+	/// Clear the popup list's contents.
+	/// </summary>
+
+	public void Clear ()
+	{
+		items.Clear();
+		itemData.Clear();
+	}
+
+	/// <summary>
+	/// Add a new item to the popup list.
+	/// </summary>
+
+	public void AddItem (string text)
+	{
+		items.Add(text);
+		itemData.Add(null);
+	}
+
+	/// <summary>
+	/// Add a new item to the popup list.
+	/// </summary>
+
+	public void AddItem (string text, object data)
+	{
+		items.Add(text);
+		itemData.Add(data);
+	}
 
 	/// <summary>
 	/// Trigger all event notification callbacks.
@@ -425,7 +494,7 @@ public class UIPopupList : UIWidgetContainer
 				if (!mTweening)
 				{
 					mTweening = true;
-					StartCoroutine(UpdateTweenPosition());
+					StartCoroutine("UpdateTweenPosition");
 				}
 			}
 		}
@@ -437,14 +506,13 @@ public class UIPopupList : UIWidgetContainer
 
 	Vector3 GetHighlightPosition ()
 	{
-		if (mHighlightedLabel == null) return Vector3.zero;
+		if (mHighlightedLabel == null || mHighlight == null) return Vector3.zero;
 		UISpriteData sp = mHighlight.GetAtlasSprite();
 		if (sp == null) return Vector3.zero;
 
 		float scaleFactor = atlas.pixelSize;
 		float offsetX = sp.borderLeft * scaleFactor;
 		float offsetY = sp.borderTop * scaleFactor;
-
 		return mHighlightedLabel.cachedTransform.localPosition + new Vector3(-offsetX, offsetY, 1f);
 	}
 
@@ -552,6 +620,12 @@ public class UIPopupList : UIWidgetContainer
 	}
 
 	/// <summary>
+	/// Close the popup list when disabled.
+	/// </summary>
+
+	void OnDisable () { Close(); }
+
+	/// <summary>
 	/// Get rid of the popup dialog when the selection gets lost.
 	/// </summary>
 
@@ -655,6 +729,43 @@ public class UIPopupList : UIWidgetContainer
 
 	void OnClick()
 	{
+		if (openOn == OpenOn.DoubleClick || openOn == OpenOn.Manual) return;
+		if (openOn == OpenOn.RightClick && UICamera.currentTouchID != -2) return;
+		Show();
+	}
+
+	/// <summary>
+	/// Show the popup list on double-click.
+	/// </summary>
+
+	void OnDoubleClick () { if (openOn == OpenOn.DoubleClick) Show(); }
+
+	/// <summary>
+	/// Used to keep an eye on the selected object, closing the popup if it changes.
+	/// </summary>
+
+	IEnumerator CloseIfUnselected ()
+	{
+		GameObject go = UICamera.selectedObject;
+
+		for (; ; )
+		{
+			yield return null;
+
+			if (UICamera.selectedObject != go)
+			{
+				Close();
+				break;
+			}
+		}
+	}
+
+	/// <summary>
+	/// Show the popup list dialog.
+	/// </summary>
+
+	public void Show ()
+	{
 		if (enabled && NGUITools.GetActive(gameObject) && mChild == null && atlas != null && isValid && items.Count > 0)
 		{
 			mLabelList.Clear();
@@ -679,7 +790,28 @@ public class UIPopupList : UIWidgetContainer
 
 			Transform t = mChild.transform;
 			t.parent = myTrans.parent;
-			t.localPosition = bounds.min;
+			Vector3 min;
+			Vector3 max;
+			Vector3 pos;
+
+			// Manually triggered popup list on some other game object
+			if (openOn == OpenOn.Manual && UICamera.selectedObject != gameObject && bounds.size == Vector3.zero)
+			{
+				StopCoroutine("CloseIfUnselected");
+				min = t.parent.InverseTransformPoint(mPanel.anchorCamera.ScreenToWorldPoint(UICamera.lastTouchPosition));
+				max = min;
+				t.localPosition = min;
+				pos = t.position;
+				StartCoroutine("CloseIfUnselected");
+			}
+			else
+			{
+				min = bounds.min;
+				max = bounds.max;
+				t.localPosition = min;
+				pos = myTrans.position;
+			}
+
 			t.localRotation = Quaternion.identity;
 			t.localScale = Vector3.one;
 
@@ -707,8 +839,11 @@ public class UIPopupList : UIWidgetContainer
 			float dynScale = activeFontScale;
 			float labelHeight = fontHeight * dynScale;
 			float x = 0f, y = -padding.y;
-			int labelFontSize = (bitmapFont != null) ? bitmapFont.defaultSize : fontSize;
 			List<UILabel> labels = new List<UILabel>();
+
+			// Clear the selection if it's no longer present
+			if (!items.Contains(mSelectedItem))
+				mSelectedItem = null;
 
 			// Run through all items and create labels for each one
 			for (int i = 0, imax = items.Count; i < imax; ++i)
@@ -720,14 +855,13 @@ public class UIPopupList : UIWidgetContainer
 				lbl.pivot = UIWidget.Pivot.TopLeft;
 				lbl.bitmapFont = bitmapFont;
 				lbl.trueTypeFont = trueTypeFont;
-				lbl.fontSize = labelFontSize;
+				lbl.fontSize = fontSize;
 				lbl.fontStyle = fontStyle;
 				lbl.text = isLocalized ? Localization.Get(s) : s;
 				lbl.color = textColor;
-				lbl.cachedTransform.localPosition = new Vector3(bgPadding.x + padding.x, y, -1f);
+				lbl.cachedTransform.localPosition = new Vector3(bgPadding.x + padding.x - lbl.pivotOffset.x, y, -1f);
 				lbl.overflowMethod = UILabel.Overflow.ResizeFreely;
-				lbl.MakePixelPerfect();
-				if (dynScale != 1f) lbl.cachedTransform.localScale = Vector3.one * dynScale;
+				lbl.alignment = alignment;
 				labels.Add(lbl);
 
 				y -= labelHeight;
@@ -752,15 +886,16 @@ public class UIPopupList : UIWidgetContainer
 			// The triggering widget's width should be the minimum allowed width
 			x = Mathf.Max(x, bounds.size.x * dynScale - (bgPadding.x + padding.x) * 2f);
 
-			float cx = x / dynScale;
-			Vector3 bcCenter = new Vector3(cx * 0.5f, -fontHeight * 0.5f, 0f);
-			Vector3 bcSize = new Vector3(cx, (labelHeight + padding.y) / dynScale, 1f);
+			float cx = x;
+			Vector3 bcCenter = new Vector3(cx * 0.5f, -labelHeight * 0.5f, 0f);
+			Vector3 bcSize = new Vector3(cx, (labelHeight + padding.y), 1f);
 
 			// Run through all labels and add colliders
 			for (int i = 0, imax = labels.Count; i < imax; ++i)
 			{
 				UILabel lbl = labels[i];
 				NGUITools.AddWidgetCollider(lbl.gameObject);
+				lbl.autoResizeBoxCollider = false;
 				BoxCollider bc = lbl.GetComponent<BoxCollider>();
 
 				if (bc != null)
@@ -769,22 +904,33 @@ public class UIPopupList : UIWidgetContainer
 					bc.center = bcCenter;
 					bc.size = bcSize;
 				}
-#if !UNITY_4_0 && !UNITY_4_1 && !UNITY_4_2
 				else
 				{
 					BoxCollider2D b2d = lbl.GetComponent<BoxCollider2D>();
+#if UNITY_4_3 || UNITY_4_5 || UNITY_4_6
 					b2d.center = bcCenter;
+#else
+					b2d.offset = bcCenter;
+#endif
 					b2d.size = bcSize;
 				}
-#endif
 			}
 
+			int lblWidth = Mathf.RoundToInt(x);
 			x += (bgPadding.x + padding.x) * 2f;
 			y -= bgPadding.y;
 
 			// Scale the background sprite to envelop the entire set of items
 			mBackground.width = Mathf.RoundToInt(x);
 			mBackground.height = Mathf.RoundToInt(-y + bgPadding.y);
+
+			// Set the label width to make alignment work
+			for (int i = 0, imax = labels.Count; i < imax; ++i)
+			{
+				UILabel lbl = labels[i];
+				lbl.overflowMethod = UILabel.Overflow.ShrinkContent;
+				lbl.width = lblWidth;
+			}
 
 			// Scale the highlight sprite to envelop a single item
 			float scaleFactor = 2f * atlas.pixelSize;
@@ -797,11 +943,11 @@ public class UIPopupList : UIWidgetContainer
 
 			if (position == Position.Auto)
 			{
-				UICamera cam = UICamera.FindCameraForLayer(gameObject.layer);
+				UICamera cam = UICamera.FindCameraForLayer((UICamera.selectedObject ?? gameObject).layer);
 
 				if (cam != null)
 				{
-					Vector3 viewPos = cam.cachedCamera.WorldToViewportPoint(myTrans.position);
+					Vector3 viewPos = cam.cachedCamera.WorldToViewportPoint(pos);
 					placeAbove = (viewPos.y < 0.5f);
 				}
 			}
@@ -819,8 +965,15 @@ public class UIPopupList : UIWidgetContainer
 			// If we need to place the popup list above the item, we need to reposition everything by the size of the list
 			if (placeAbove)
 			{
-				t.localPosition = new Vector3(bounds.min.x, bounds.max.y - y - bgPadding.y, bounds.min.z);
+				t.localPosition = new Vector3(min.x, max.y - y - bgPadding.y, min.z);
 			}
+
+			min = t.localPosition;
+			max.x = min.x + mBackground.width;
+			max.y = min.y + mBackground.height;
+			max.z = min.z;
+			Vector3 offset = mPanel.CalculateConstrainOffset(min, max);
+			t.localPosition += offset;
 		}
 		else OnSelect(false);
 	}

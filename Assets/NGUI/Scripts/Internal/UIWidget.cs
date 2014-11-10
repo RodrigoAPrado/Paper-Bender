@@ -35,12 +35,56 @@ public class UIWidget : UIRect
 	[HideInInspector][SerializeField] protected int mDepth = 0;
 
 	public delegate void OnDimensionsChanged ();
+	public delegate void OnPostFillCallback (UIWidget widget, int bufferOffset, BetterList<Vector3> verts, BetterList<Vector2> uvs, BetterList<Color32> cols);
 
 	/// <summary>
 	/// Notification triggered when the widget's dimensions or position changes.
 	/// </summary>
 
 	public OnDimensionsChanged onChange;
+
+	/// <summary>
+	/// Notification triggered after the widget's buffer has been filled.
+	/// </summary>
+
+	public OnPostFillCallback onPostFill;
+
+	/// <summary>
+	/// Callback triggered when the widget is about to be renderered (OnWillRenderObject).
+	/// NOTE: This property is only exposed for the sake of speed to avoid property execution.
+	/// In most cases you will want to use UIWidget.onRender instead.
+	/// </summary>
+
+	public UIDrawCall.OnRenderCallback mOnRender;
+
+	/// <summary>
+	/// Set the callback that will be triggered when the widget is being rendered (OnWillRenderObject).
+	/// This is where you would set material properties and shader values.
+	/// </summary>
+
+	public UIDrawCall.OnRenderCallback onRender
+	{
+		get
+		{
+			return mOnRender;
+		}
+		set
+		{
+#if UNITY_FLASH
+			if (!(mOnRender == value))
+#else
+			if (mOnRender != value)
+#endif
+			{
+#if !UNITY_FLASH
+				if (drawCall != null && drawCall.onRender != null && mOnRender != null)
+					drawCall.onRender -= mOnRender;
+#endif
+				mOnRender = value;
+				if (drawCall != null) drawCall.onRender += value;
+			}
+		}
+	}
 
 	/// <summary>
 	/// If set to 'true', the box collider's dimensions will be adjusted to always match the widget whenever it resizes.
@@ -569,13 +613,13 @@ public class UIWidget : UIRect
 	{
 		get
 		{
+#if UNITY_4_3 || UNITY_4_5 || UNITY_4_6
 			BoxCollider box = collider as BoxCollider;
-			if (box != null) return true;
-#if !UNITY_4_0 && !UNITY_4_1 && !UNITY_4_2
-			return GetComponent<BoxCollider2D>() != null;
 #else
-            return false;
+			BoxCollider box = GetComponent<Collider>() as BoxCollider;
 #endif
+			if (box != null) return true;
+			return GetComponent<BoxCollider2D>() != null;
 		}
 	}
 
@@ -829,13 +873,14 @@ public class UIWidget : UIRect
 	/// Remove this widget from the panel.
 	/// </summary>
 
-	protected void RemoveFromPanel ()
+	public void RemoveFromPanel ()
 	{
 		if (panel != null)
 		{
 			panel.RemoveWidget(this);
 			panel = null;
 		}
+		drawCall = null;
 #if UNITY_EDITOR
 		mOldTex = null;
 		mOldShader = null;
@@ -875,12 +920,6 @@ public class UIWidget : UIRect
 				mOldShader = shader;
 			}
 
-			if (panel != null)
-			{
-				panel.RemoveWidget(this);
-				panel = null;
-			}
-
 			aspectRatio = (keepAspectRatio == AspectRatioSource.Free) ?
 				(float)mWidth / mHeight : Mathf.Max(0.01f, aspectRatio);
 
@@ -892,7 +931,16 @@ public class UIWidget : UIRect
 			{
 				mHeight = Mathf.RoundToInt(mWidth / aspectRatio);
 			}
-			CreatePanel();
+
+			if (!Application.isPlaying)
+			{
+				if (panel != null)
+				{
+					panel.RemoveWidget(this);
+					panel = null;
+				}
+				CreatePanel();
+			}
 		}
 		else
 		{
@@ -1261,11 +1309,15 @@ public class UIWidget : UIRect
 	{
 		get
 		{
+#if UNITY_4_3 || UNITY_4_5 || UNITY_4_6
 			if (showHandlesWithMoveTool)
 			{
 				return UnityEditor.Tools.current == UnityEditor.Tool.Move;
 			}
 			return UnityEditor.Tools.current == UnityEditor.Tool.View;
+#else
+			return UnityEditor.Tools.current == UnityEditor.Tool.Rect;
+#endif
 		}
 	}
 
@@ -1424,7 +1476,7 @@ public class UIWidget : UIRect
 				if (geometry.hasVertices)
 				{
 					// Want to see what's being filled? Uncomment this line.
-					//Debug.Log("Fill " + name + " (" + Time.time + ")");
+					//Debug.Log("Fill " + name + " (" + Time.frameCount + ")");
 
 					if (mMatrixFrame != frame)
 					{
@@ -1506,5 +1558,10 @@ public class UIWidget : UIRect
 	/// Virtual function called by the UIPanel that fills the buffers.
 	/// </summary>
 
-	virtual public void OnFill(BetterList<Vector3> verts, BetterList<Vector2> uvs, BetterList<Color32> cols) { }
+	virtual public void OnFill(BetterList<Vector3> verts, BetterList<Vector2> uvs, BetterList<Color32> cols)
+	{
+		// Call this in your derived classes:
+		//if (onPostFill != null)
+		//	onPostFill(this, verts.size, verts, uvs, cols);
+	}
 }

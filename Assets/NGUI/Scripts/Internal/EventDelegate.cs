@@ -32,13 +32,16 @@ public class EventDelegate
 		public Object obj;
 		public string field;
 
+		public Parameter () { }
+		public Parameter (Object obj, string field) { this.obj = obj; this.field = field; }
+		public Parameter (object val) { mValue = val; }
+
+		[System.NonSerialized] object mValue;
+
+#if REFLECTION_SUPPORT
 		[System.NonSerialized]
 		public System.Type expectedType = typeof(void);
 
-		public Parameter () { }
-		public Parameter (Object obj, string field) { this.obj = obj; this.field = field; }
-
-#if REFLECTION_SUPPORT
 		// Cached values
 		[System.NonSerialized] public bool cached = false;
 		[System.NonSerialized] public PropertyInfo propInfo;
@@ -52,6 +55,8 @@ public class EventDelegate
 		{
 			get
 			{
+				if (mValue != null) return mValue;
+
 				if (!cached)
 				{
 					cached = true;
@@ -72,7 +77,15 @@ public class EventDelegate
 				}
 				if (propInfo != null) return propInfo.GetValue(obj, null);
 				if (fieldInfo != null) return fieldInfo.GetValue(obj);
-				return obj;
+				if (obj != null) return obj;
+#if !NETFX_CORE
+				if (expectedType != null && expectedType.IsValueType) return null;
+#endif
+				return System.Convert.ChangeType(null, expectedType);
+			}
+			set
+			{
+				mValue = value;
 			}
 		}
 
@@ -84,13 +97,18 @@ public class EventDelegate
 		{
 			get
 			{
+				if (mValue != null) return mValue.GetType();
 				if (obj == null) return typeof(void);
 				return obj.GetType();
 			}
 		}
-#else
-		public object value { get { return obj; } }
-		public System.Type type { get { return typeof(void); } }
+#else // REFLECTION_SUPPORT
+		public object value { get { if (mValue != null) return mValue; return obj; } }
+ #if UNITY_EDITOR || !UNITY_FLASH
+		public System.Type type { get { if (mValue != null) return mValue.GetType(); return typeof(void); } }
+ #else
+		public System.Type type { get { if (mValue != null) return mValue.GetType(); return null; } }
+ #endif
 #endif
 	}
 
@@ -111,6 +129,7 @@ public class EventDelegate
 	[System.NonSerialized] bool mCached = false;
 #if REFLECTION_SUPPORT
 	[System.NonSerialized] MethodInfo mMethod;
+	[System.NonSerialized] ParameterInfo[] mParameterInfos;
 	[System.NonSerialized] object[] mArgs;
 #endif
 
@@ -132,6 +151,7 @@ public class EventDelegate
 			mCached = false;
 #if REFLECTION_SUPPORT
 			mMethod = null;
+			mParameterInfos = null;
 #endif
 			mParameters = null;
 		}
@@ -155,6 +175,7 @@ public class EventDelegate
 			mCached = false;
 #if REFLECTION_SUPPORT
 			mMethod = null;
+			mParameterInfos = null;
 #endif
 			mParameters = null;
 		}
@@ -338,10 +359,9 @@ public class EventDelegate
 			if (mTarget != null && !string.IsNullOrEmpty(mMethodName))
 			{
 				System.Type type = mTarget.GetType();
-
+ #if NETFX_CORE
 				try
 				{
-#if NETFX_CORE
 					IEnumerable<MethodInfo> methods = type.GetRuntimeMethods();
 
 					foreach (MethodInfo mi in methods)
@@ -352,25 +372,33 @@ public class EventDelegate
 							break;
 						}
 					}
-#else
-					for (mMethod = null; ; )
-					{
-#if UNITY_WP8
-						mMethod = type.GetMethod(mMethodName);
-						if (mMethod == null)
-#endif
-						mMethod = type.GetMethod(mMethodName, BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public);
-						if (mMethod != null) break;
-						type = type.BaseType;
-						if (type == null) break;
-					}
-#endif
 				}
 				catch (System.Exception ex)
 				{
 					Debug.LogError("Failed to bind " + type + "." + mMethodName + "\n" +  ex.Message);
 					return;
 				}
+ #else // NETFX_CORE
+				for (mMethod = null; type != null; )
+				{
+					try
+					{
+						mMethod = type.GetMethod(mMethodName, BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public);
+						if (mMethod != null) break;
+					}
+					catch (System.Exception) { }
+  #if UNITY_WP8
+					// For some odd reason Type.GetMethod(name, bindingFlags) doesn't seem to work on WP8...
+					try
+					{
+						mMethod = type.GetMethod(mMethodName);
+						if (mMethod != null) break;
+					}
+					catch (System.Exception) { }
+  #endif
+					type = type.BaseType;
+				}
+ #endif // NETFX_CORE
 
 				if (mMethod == null)
 				{
@@ -385,16 +413,16 @@ public class EventDelegate
 				}
 
 				// Get the list of expected parameters
-				ParameterInfo[] info = mMethod.GetParameters();
+				mParameterInfos = mMethod.GetParameters();
 
-				if (info.Length == 0)
+				if (mParameterInfos.Length == 0)
 				{
 					// No parameters means we can create a simple delegate for it, optimizing the call
-#if NETFX_CORE
+ #if NETFX_CORE
 					mCachedCallback = (Callback)mMethod.CreateDelegate(typeof(Callback), mTarget);
-#else
+ #else
 					mCachedCallback = (Callback)System.Delegate.CreateDelegate(typeof(Callback), mTarget, mMethodName);
-#endif
+ #endif
 
 					mArgs = null;
 					mParameters = null;
@@ -403,19 +431,19 @@ public class EventDelegate
 				else mCachedCallback = null;
 
 				// Allocate the initial list of parameters
-				if (mParameters == null || mParameters.Length != info.Length)
+				if (mParameters == null || mParameters.Length != mParameterInfos.Length)
 				{
-					mParameters = new Parameter[info.Length];
+					mParameters = new Parameter[mParameterInfos.Length];
 					for (int i = 0, imax = mParameters.Length; i < imax; ++i)
 						mParameters[i] = new Parameter();
 				}
 
 				// Save the parameter type
 				for (int i = 0, imax = mParameters.Length; i < imax; ++i)
-					mParameters[i].expectedType = info[i].ParameterType;
+					mParameters[i].expectedType = mParameterInfos[i].ParameterType;
 			}
 		}
-#endif
+#endif // REFLECTION_SUPPORT
 	}
 
 	/// <summary>
@@ -500,17 +528,15 @@ public class EventDelegate
 					msg += ": " + ex.Message;
 					msg += "\n  Expected: ";
 
-					ParameterInfo[] pis = mMethod.GetParameters();
-
-					if (pis.Length == 0)
+					if (mParameterInfos.Length == 0)
 					{
 						msg += "no arguments";
 					}
 					else
 					{
-						msg += pis[0];
-						for (int i = 1; i < pis.Length; ++i)
-							msg += ", " + pis[i].ParameterType;
+						msg += mParameterInfos[0];
+						for (int i = 1; i < mParameterInfos.Length; ++i)
+							msg += ", " + mParameterInfos[i].ParameterType;
 					}
 
 					msg += "\n  Received: ";
@@ -530,7 +556,14 @@ public class EventDelegate
 				}
 
 				// Clear the parameters so that references are not kept
-				for (int i = 0, imax = mArgs.Length; i < imax;  ++i) mArgs[i] = null;
+				for (int i = 0, imax = mArgs.Length; i < imax; ++i)
+				{
+					if (mParameterInfos[i].IsIn || mParameterInfos[i].IsOut)
+					{
+						mParameters[i].value = mArgs[i];
+					}
+					mArgs[i] = null;
+				}
 			}
 			return true;
 		}
@@ -552,6 +585,7 @@ public class EventDelegate
 		mCached = false;
 #if REFLECTION_SUPPORT
 		mMethod = null;
+		mParameterInfos = null;
 		mArgs = null;
 #endif
 	}
@@ -588,7 +622,19 @@ public class EventDelegate
 
 				if (del != null)
 				{
+#if !UNITY_EDITOR && !UNITY_FLASH
+					try
+					{
+						del.Execute();
+					}
+					catch (System.Exception ex)
+					{
+						if (ex.InnerException != null) Debug.LogError(ex.InnerException.Message);
+						else Debug.LogError(ex.Message);
+					}
+#else
 					del.Execute();
+#endif
 
 					if (i >= list.Count) break;
 					if (list[i] != del) continue;
@@ -626,13 +672,16 @@ public class EventDelegate
 	/// Assign a new event delegate.
 	/// </summary>
 
-	static public void Set (List<EventDelegate> list, Callback callback)
+	static public EventDelegate Set (List<EventDelegate> list, Callback callback)
 	{
 		if (list != null)
 		{
+			EventDelegate del = new EventDelegate(callback);
 			list.Clear();
-			list.Add(new EventDelegate(callback));
+			list.Add(del);
+			return del;
 		}
+		return null;
 	}
 
 	/// <summary>
@@ -652,13 +701,13 @@ public class EventDelegate
 	/// Append a new event delegate to the list.
 	/// </summary>
 
-	static public void Add (List<EventDelegate> list, Callback callback) { Add(list, callback, false); }
+	static public EventDelegate Add (List<EventDelegate> list, Callback callback) { return Add(list, callback, false); }
 
 	/// <summary>
 	/// Append a new event delegate to the list.
 	/// </summary>
 
-	static public void Add (List<EventDelegate> list, Callback callback, bool oneShot)
+	static public EventDelegate Add (List<EventDelegate> list, Callback callback, bool oneShot)
 	{
 		if (list != null)
 		{
@@ -666,17 +715,16 @@ public class EventDelegate
 			{
 				EventDelegate del = list[i];
 				if (del != null && del.Equals(callback))
-					return;
+					return del;
 			}
 
 			EventDelegate ed = new EventDelegate(callback);
 			ed.oneShot = oneShot;
 			list.Add(ed);
+			return ed;
 		}
-		else
-		{
-			Debug.LogWarning("Attempting to add a callback to a list that's null");
-		}
+		Debug.LogWarning("Attempting to add a callback to a list that's null");
+		return null;
 	}
 
 	/// <summary>

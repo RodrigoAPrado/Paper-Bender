@@ -99,6 +99,13 @@ public class UIInput : MonoBehaviour
 	public bool hideInput = false;
 
 	/// <summary>
+	/// Whether all text will be selected when the input field gains focus.
+	/// </summary>
+
+	[System.NonSerialized]
+	public bool selectAllTextOnFocus = true;
+
+	/// <summary>
 	/// What kind of validation to use with the input field's data.
 	/// </summary>
 
@@ -117,10 +124,10 @@ public class UIInput : MonoBehaviour
 	public string savedAs;
 
 	/// <summary>
-	/// Object to select when Tab key gets pressed.
+	/// Don't use this anymore. Attach UIKeyNavigation instead.
 	/// </summary>
 
-	public GameObject selectOnTab;
+	[HideInInspector][SerializeField] GameObject selectOnTab;
 
 	/// <summary>
 	/// Color of the label when the input field has focus.
@@ -177,6 +184,7 @@ public class UIInput : MonoBehaviour
 #if MOBILE
 	// Unity fails to compile if the touch screen keyboard is used on a non-mobile device
 	static protected TouchScreenKeyboard mKeyboard;
+	static bool mWaitForKeyboard = false;
 #endif
 	[System.NonSerialized] protected int mSelectionStart = 0;
 	[System.NonSerialized] protected int mSelectionEnd = 0;
@@ -196,6 +204,7 @@ public class UIInput : MonoBehaviour
 	{
 		get
 		{
+			if (mDoInit) Init();
 			return mDefaultText;
 		}
 		set
@@ -214,7 +223,11 @@ public class UIInput : MonoBehaviour
 	{
 		get
 		{
-			return hideInput && label != null && !label.multiLine;
+#if UNITY_METRO
+			return true;
+#else
+			return hideInput && label != null && !label.multiLine && inputType != InputType.Password;
+#endif
 		}
 	}
 
@@ -244,7 +257,7 @@ public class UIInput : MonoBehaviour
 			mDrawStart = 0;
 
 			// BB10's implementation has a bug in Unity
- #if UNITY_4_0 || UNITY_4_2 || UNITY_4_3
+ #if UNITY_4_3
 			if (Application.platform == RuntimePlatform.BB10Player)
  #else
 			if (Application.platform == RuntimePlatform.BlackBerryPlayer)
@@ -253,7 +266,6 @@ public class UIInput : MonoBehaviour
 
 			// Validate all input
 			value = Validate(value);
-
 #if MOBILE
 			if (isSelected && mKeyboard != null && mCached != value)
 			{
@@ -420,6 +432,19 @@ public class UIInput : MonoBehaviour
 
 	void Start ()
 	{
+		if (selectOnTab != null)
+		{
+			UIKeyNavigation nav = GetComponent<UIKeyNavigation>();
+
+			if (nav == null)
+			{
+				nav = gameObject.AddComponent<UIKeyNavigation>();
+				nav.onDown = selectOnTab;
+			}
+			selectOnTab = null;
+			NGUITools.SetDirty(this);
+		}
+
 		if (mLoadSavedValue && !string.IsNullOrEmpty(savedAs)) LoadValue();
 		else value = mValue.Replace("\\n", "\n");
 	}
@@ -462,14 +487,34 @@ public class UIInput : MonoBehaviour
 		}
 	}
 
+#if !MOBILE
+	[System.NonSerialized] UIInputOnGUI mOnGUI;
+#endif
 	/// <summary>
 	/// Selection event, sent by the EventSystem.
 	/// </summary>
 
 	protected virtual void OnSelect (bool isSelected)
 	{
-		if (isSelected) OnSelectEvent();
-		else OnDeselectEvent();
+		if (isSelected)
+		{
+#if !MOBILE
+			if (mOnGUI == null)
+				mOnGUI = gameObject.AddComponent<UIInputOnGUI>();
+#endif
+			OnSelectEvent();
+		}
+		else
+		{
+#if !MOBILE
+			if (mOnGUI != null)
+			{
+				Destroy(mOnGUI);
+				mOnGUI = null;
+			}
+#endif
+			OnDeselectEvent();
+		}
 	}
 
 	/// <summary>
@@ -500,6 +545,7 @@ public class UIInput : MonoBehaviour
 #if MOBILE
 			if (mKeyboard != null)
 			{
+				mWaitForKeyboard = false;
 				mKeyboard.active = false;
 				mKeyboard = null;
 			}
@@ -523,7 +569,7 @@ public class UIInput : MonoBehaviour
 	/// Update the text based on input.
 	/// </summary>
 	
-	void Update ()
+	protected virtual void Update ()
 	{
 #if UNITY_EDITOR
 		if (!Application.isPlaying) return;
@@ -531,23 +577,35 @@ public class UIInput : MonoBehaviour
 		if (isSelected)
 		{
 			if (mDoInit) Init();
-
+#if MOBILE
+			// Wait for the keyboard to open. Apparently mKeyboard.active will return 'false' for a while in some cases.
+			if (mWaitForKeyboard)
+			{
+				if (mKeyboard != null && !mKeyboard.active) return;
+				mWaitForKeyboard = false;
+			}
+#endif
 			// Unity has issues bringing up the keyboard properly if it's in "hideInput" mode and you happen
 			// to select one input in the same Update as de-selecting another.
 			if (mSelectMe != -1 && mSelectMe != Time.frameCount)
 			{
 				mSelectMe = -1;
-
+				mSelectionEnd = string.IsNullOrEmpty(mValue) ? 0 : mValue.Length;
+				mDrawStart = 0;
+				mSelectionStart = selectAllTextOnFocus ? 0 : mSelectionEnd;
 				label.color = activeTextColor;
 #if MOBILE
 				if (Application.platform == RuntimePlatform.IPhonePlayer
 					|| Application.platform == RuntimePlatform.Android
-					|| Application.platform == RuntimePlatform.WP8Player
-#if UNITY_4_0 || UNITY_4_2 || UNITY_4_3
+				    || Application.platform == RuntimePlatform.WP8Player
+ #if UNITY_4_3
 					|| Application.platform == RuntimePlatform.BB10Player
-#else
+ #else
 					|| Application.platform == RuntimePlatform.BlackBerryPlayer
-#endif
+					|| Application.platform == RuntimePlatform.MetroPlayerARM
+					|| Application.platform == RuntimePlatform.MetroPlayerX64
+					|| Application.platform == RuntimePlatform.MetroPlayerX86
+ #endif
 				)
 				{
 					string val;
@@ -557,27 +615,38 @@ public class UIInput : MonoBehaviour
 					{
 						TouchScreenKeyboard.hideInput = true;
 						kt = (TouchScreenKeyboardType)((int)keyboardType);
+ #if UNITY_METRO
+						val = "";
+ #else
 						val = "|";
+ #endif
 					}
 					else if (inputType == InputType.Password)
 					{
 						TouchScreenKeyboard.hideInput = false;
 						kt = TouchScreenKeyboardType.Default;
 						val = mValue;
+						mSelectionStart = mSelectionEnd;
 					}
 					else
 					{
 						TouchScreenKeyboard.hideInput = false;
 						kt = (TouchScreenKeyboardType)((int)keyboardType);
 						val = mValue;
+						mSelectionStart = mSelectionEnd;
 					}
 
+					mWaitForKeyboard = true;
 					mKeyboard = (inputType == InputType.Password) ?
 						TouchScreenKeyboard.Open(val, kt, false, false, true) :
-						TouchScreenKeyboard.Open(val, kt, inputType == InputType.AutoCorrect, label.multiLine && !hideInput, false, false, defaultText);
+						TouchScreenKeyboard.Open(val, kt, !inputShouldBeHidden && inputType == InputType.AutoCorrect,
+							label.multiLine && !hideInput, false, false, defaultText);
+ #if UNITY_METRO
+					mKeyboard.active = true;
+ #endif
 				}
 				else
-#endif
+#endif // MOBILE
 				{
 					Vector2 pos = (UICamera.current != null && UICamera.current.cachedCamera != null) ?
 						UICamera.current.cachedCamera.WorldToScreenPoint(label.worldCorners[0]) :
@@ -585,18 +654,20 @@ public class UIInput : MonoBehaviour
 					pos.y = Screen.height - pos.y;
 					Input.imeCompositionMode = IMECompositionMode.On;
 					Input.compositionCursorPos = pos;
-
-					mSelectionStart = 0;
-					mSelectionEnd = string.IsNullOrEmpty(mValue) ? 0 : mValue.Length;
-					mDrawStart = 0;
 				}
+
 				UpdateLabel();
+				if (string.IsNullOrEmpty(Input.inputString)) return;
 			}
 #if MOBILE
 			if (mKeyboard != null)
 			{
+ #if UNITY_METRO
+				string text = Input.inputString;
+				if (!string.IsNullOrEmpty(text)) Insert(text);
+ #else
 				string text = mKeyboard.text;
-
+ 
 				if (inputShouldBeHidden)
 				{
 					if (text != "|")
@@ -615,7 +686,7 @@ public class UIInput : MonoBehaviour
 					mCached = text;
 					value = text;
 				}
-
+ #endif // UNITY_METRO
 				if (mKeyboard.done || !mKeyboard.active)
 				{
 					if (!mKeyboard.wasCanceled) Submit();
@@ -625,14 +696,8 @@ public class UIInput : MonoBehaviour
 				}
 			}
 			else
-#endif
+#endif // MOBILE
 			{
-				if (selectOnTab != null && Input.GetKeyDown(KeyCode.Tab))
-				{
-					UICamera.selectedObject = selectOnTab;
-					return;
-				}
-
 				string ime = Input.compositionString;
 
 				// There seems to be an inconsistency between IME on Windows, and IME on OSX.
@@ -683,16 +748,6 @@ public class UIInput : MonoBehaviour
 	}
 
 	/// <summary>
-	/// Unfortunately Unity 4.3 and earlier doesn't offer a way to properly process events outside of OnGUI.
-	/// </summary>
-
-	void OnGUI ()
-	{
-		if (isSelected && Event.current.rawType == EventType.KeyDown)
-			ProcessEvent(Event.current);
-	}
-
-	/// <summary>
 	/// Perform a backspace operation.
 	/// </summary>
 
@@ -709,11 +764,12 @@ public class UIInput : MonoBehaviour
 		}
 	}
 
+#if !MOBILE
 	/// <summary>
 	/// Handle the specified event.
 	/// </summary>
 
-	protected virtual bool ProcessEvent (Event ev)
+	public virtual bool ProcessEvent (Event ev)
 	{
 		if (label == null) return false;
 
@@ -727,6 +783,9 @@ public class UIInput : MonoBehaviour
 		bool ctrl = isMac ?
 			((ev.modifiers & EventModifiers.Command) != 0) :
 			((ev.modifiers & EventModifiers.Control) != 0);
+
+		// http://www.tasharen.com/forum/index.php?topic=10780.0
+		if ((ev.modifiers & EventModifiers.Alt) != 0) ctrl = false;
 
 		bool shift = ((ev.modifiers & EventModifiers.Shift) != 0);
 
@@ -947,6 +1006,7 @@ public class UIInput : MonoBehaviour
 		}
 		return false;
 	}
+#endif
 
 	/// <summary>
 	/// Insert the specified text string into the current input value, respecting selection and validation.
@@ -964,11 +1024,18 @@ public class UIInput : MonoBehaviour
 		// Append the new text
 		for (int i = 0, imax = text.Length; i < imax; ++i)
 		{
+			// If we have an input validator, validate the input first
+			char c = text[i];
+
+			if (c == '\b')
+			{
+				DoBackspace();
+				continue;
+			}
+
 			// Can't go past the character limit
 			if (characterLimit > 0 && sb.Length + rl >= characterLimit) break;
 
-			// If we have an input validator, validate the input first
-			char c = text[i];
 			if (onValidate != null) c = onValidate(sb.ToString(), sb.Length, c);
 			else if (validation != Validation.None) c = Validate(sb.ToString(), sb.Length, c);
 
@@ -1042,7 +1109,7 @@ public class UIInput : MonoBehaviour
 		Ray ray = UICamera.currentRay;
 		Plane p = new Plane(corners[0], corners[1], corners[2]);
 		float dist;
-		return p.Raycast(ray, out dist) ? mDrawStart + label.GetCharacterIndexAtPosition(ray.GetPoint(dist)) : 0;
+		return p.Raycast(ray, out dist) ? mDrawStart + label.GetCharacterIndexAtPosition(ray.GetPoint(dist), false) : 0;
 	}
 
 	/// <summary>
