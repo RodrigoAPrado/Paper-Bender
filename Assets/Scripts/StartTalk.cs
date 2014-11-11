@@ -6,6 +6,7 @@ public class StartTalk : MonoBehaviour {
 	NPCDialogController nPC;
 	public string[] thisText;
 	public NPCDialogController.allAvatar[] thisAvatar;
+	public AudioClip[] thisAudioClips;
 	SpriteRenderer sRenderer;
 	BoxCollider2D bCollider;
 	// Use this for initialization
@@ -31,6 +32,6 @@ public class StartTalk : MonoBehaviour {
 	}
 	public void SetTalkOn()
 	{
-		nPC.SetDialogueScript(thisText, thisAvatar);
+		nPC.SetDialogueScript(thisText, thisAvatar, thisAudioClips);
 	}
 }

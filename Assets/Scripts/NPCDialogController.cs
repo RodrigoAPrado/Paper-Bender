@@ -17,6 +17,7 @@ public class NPCDialogController : MonoBehaviour {
 	string displayString = "";
 	public bool onChat;
 	public Texture[] avatarImage;
+	AudioClip[] avatarClip;
 	public enum allAvatar
 	{
 		Abutre,
@@ -34,6 +35,8 @@ public class NPCDialogController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		dialogueScript = new string[0];
+		avatarLineUp = new allAvatar[0];
+		avatarClip = new AudioClip[0];
 		currentLine = 0;
 		gText = transform.FindChild("Text").gameObject.GetComponent<GUIText>();
 		gTextureAvatar = transform.FindChild("Avatar").gameObject.GetComponent<GUITexture>();
@@ -110,7 +113,7 @@ public class NPCDialogController : MonoBehaviour {
 			break;
 		}
 	}
-	public void SetDialogueScript(string[] dialogue, allAvatar[] dialogueAvatar)
+	public void SetDialogueScript(string[] dialogue, allAvatar[] dialogueAvatar, AudioClip[] dialogueClips)
 	{
 		dialogueScript = new string[dialogue.Length];
 		for(int i = 0; i < dialogue.Length; i++)
@@ -122,10 +125,16 @@ public class NPCDialogController : MonoBehaviour {
 		{
 			avatarLineUp[j] = dialogueAvatar[j];
 		}
+		avatarClip = new AudioClip[dialogueClips.Length];
+		for(int k = 0; k < dialogueClips.Length; k++)
+		{
+			avatarClip[k]= dialogueClips[k];
+		}
 		print (dialogueAvatar[0]);
 		currentLine = 0;
 		fullString = dialogueScript[currentLine];
 		thisAvatar = avatarLineUp[currentLine];
+		audio.PlayOneShot(avatarClip[currentLine]);
 		onChat = true;
 	}
 	void LetterAppearance()
@@ -148,7 +157,12 @@ public class NPCDialogController : MonoBehaviour {
 				}
 				else
 				{
+					audio.Stop();
 					currentLine ++;
+					if(currentLine < avatarClip.Length)
+					{	
+						audio.PlayOneShot(avatarClip[currentLine]);
+					}
 					currentLetter = 0;
 					return;
 				}
