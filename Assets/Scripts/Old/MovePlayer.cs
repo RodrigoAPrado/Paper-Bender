@@ -69,7 +69,6 @@ public class MovePlayer : MonoBehaviour {
 
 	void FixedUpdate()
 	{
-
 		if(!moving && grounded)
 		{
 			if(opacity < 1.6F)
@@ -178,6 +177,11 @@ public class MovePlayer : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
+		if(nPC.onChat || Time.timeScale == 0)
+		{
+			moving = false;
+			jumpedOnce = false;
+		}
 		if(jumping)
 		{
 			

@@ -202,6 +202,7 @@
      <Compile Include="Assets\Scripts\ClearBandit.cs" />
      <Compile Include="Assets\Scripts\DevelopStageSelect.cs" />
      <Compile Include="Assets\Scripts\DoorController.cs" />
+     <Compile Include="Assets\Scripts\EventTrigger.cs" />
      <Compile Include="Assets\Scripts\FloorMaker.cs" />
      <Compile Include="Assets\Scripts\IndoorSoundManager.cs" />
      <Compile Include="Assets\Scripts\KeepTalkingAnimation.cs" />
