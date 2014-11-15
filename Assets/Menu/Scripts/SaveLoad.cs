@@ -12,7 +12,7 @@ public class SaveLoad : MonoBehaviour {
 	// Update is called once per frame
 	void OnClick()
 	{
-		if(ES2.Load<bool>("file" + thisSave.ToString() + ".txt?tag=init"))
+        if(ES2.Load<bool>("file" + thisSave.ToString() + ".txt?tag=init"))
 		{
 			print ("save");
 		}
