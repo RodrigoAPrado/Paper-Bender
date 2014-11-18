@@ -1,0 +1,229 @@
+fileFormatVersion: 2
+guid: 46e8f9a030097b94eb1e7f95398ac91a
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: Villager_TalkStart_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 333
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Villager_TalkStart_1
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 1536
+        width: 333
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Villager_TalkStart_2
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 1536
+        width: 333
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Villager_TalkStart_3
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 1536
+        width: 333
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Villager_TalkStart_4
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 1536
+        width: 333
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Villager_TalkStart_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 333
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Villager_TalkStart_6
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 1024
+        width: 333
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Villager_TalkStart_7
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 1024
+        width: 333
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Villager_TalkStart_8
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 1024
+        width: 333
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Villager_TalkStart_9
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 1024
+        width: 333
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Villager_TalkStart_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 333
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Villager_TalkStart_11
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 512
+        width: 333
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Villager_TalkStart_12
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 512
+        width: 333
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Villager_TalkStart_13
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 512
+        width: 333
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Villager_TalkStart_14
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 512
+        width: 333
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Villager_TalkStart_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 333
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Villager_TalkStart_16
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 0
+        width: 333
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Villager_TalkStart_17
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 0
+        width: 333
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Villager_TalkStart_18
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 0
+        width: 333
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Villager_TalkStart_19
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 0
+        width: 333
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 
