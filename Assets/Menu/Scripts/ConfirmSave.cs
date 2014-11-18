@@ -53,8 +53,8 @@ public class ConfirmSave : MonoBehaviour {
 			CreateScreen.SetActive(false);
 			break;
 		case saveButtons.ConfirmLoad:
-			print ("GameLoaded");
 			ES2.Save(fM.chosenSave,"currentSave.txt");
+			Application.LoadLevel("StageLoader");
 			break;
 		case saveButtons.CancelLoad:
 			FilesScreen.SetActive(true);

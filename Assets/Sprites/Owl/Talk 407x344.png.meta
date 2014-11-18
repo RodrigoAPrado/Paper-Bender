@@ -1,0 +1,229 @@
+fileFormatVersion: 2
+guid: aa2d4f232b0c7f94690328489005b256
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: Talk 407x344_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1032
+        width: 407
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Talk 407x344_1
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 1032
+        width: 407
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Talk 407x344_2
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 1032
+        width: 407
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Talk 407x344_3
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 1032
+        width: 407
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Talk 407x344_4
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 1032
+        width: 407
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Talk 407x344_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 688
+        width: 407
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Talk 407x344_6
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 688
+        width: 407
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Talk 407x344_7
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 688
+        width: 407
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Talk 407x344_8
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 688
+        width: 407
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Talk 407x344_9
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 688
+        width: 407
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Talk 407x344_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 344
+        width: 407
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Talk 407x344_11
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 344
+        width: 407
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Talk 407x344_12
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 344
+        width: 407
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Talk 407x344_13
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 344
+        width: 407
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Talk 407x344_14
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 344
+        width: 407
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Talk 407x344_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 407
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Talk 407x344_16
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 0
+        width: 407
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Talk 407x344_17
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 0
+        width: 407
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Talk 407x344_18
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 0
+        width: 407
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Talk 407x344_19
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 0
+        width: 407
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 
