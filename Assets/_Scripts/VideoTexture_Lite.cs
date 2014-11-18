@@ -37,6 +37,8 @@ public class VideoTexture_Lite : MonoBehaviour
 	
 	int intIndex = 0;
 	int lastIndex = -1;
+
+	public string nextScene;
 	
 	AttachedAudio myAudio = new AttachedAudio(); // Creates an audio class for audio management 
 			
@@ -97,7 +99,7 @@ public class VideoTexture_Lite : MonoBehaviour
 				
 		if (intIndex != lastIndex)	
 		{
-		
+			Debug.Log(FileName + indexStr);
 			indexStr = string.Format("{0:" + digitsFormat + "}", intIndex); 
 			
 			if (DigitsLocation == digitsLocation.Postfix)
@@ -107,10 +109,9 @@ public class VideoTexture_Lite : MonoBehaviour
 			
 			lastIndex = intIndex;
 		}
-		
-		
-		
-		
+
+		if(index == lastFrame)
+			Application.LoadLevel(nextScene);
 	}
 	
 	void OnGUI()
