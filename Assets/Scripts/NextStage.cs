@@ -10,6 +10,10 @@ public class NextStage : MonoBehaviour {
 	//remover essas aqui depois
 	int checkLevel;
 	public int addLevel;
+	public bool changeSaveProgress;
+	public int saveProgressToChange;
+	public bool changeStageProgress;
+	public int stageProgressToChange;
 	// Use this for initialization
 	void Start () {
 		if(Camera.main.GetComponent<ChangeScene>() != null)
@@ -50,10 +54,19 @@ public class NextStage : MonoBehaviour {
 	}
 	public void Clicked()
 	{
-		checkLevel = PlayerPrefs.GetInt("DevelopLevel");
+		//checkLevel = PlayerPrefs.GetInt("DevelopLevel");
 		if(checkLevel < addLevel)
 		{
-			PlayerPrefs.SetInt("DevelopLevel", addLevel);
+			//PlayerPrefs.SetInt("DevelopLevel", addLevel);
+		}
+		int stageLoader = ES2.Load<int>("currentSave.txt");
+		int currentProgress = ES2.Load<int>("file" + stageLoader.ToString() + ".txt?tag=gProgEvent");
+		if(changeSaveProgress)
+		{
+			if(currentProgress < saveProgressToChange)
+			{
+				ES2.Save(saveProgressToChange, "file" + stageLoader.ToString() + ".txt?tag=gProgEvent");
+			}
 		}
 		gameObject.tag = "NextStageNote";
 		DontDestroyOnLoad(gameObject);

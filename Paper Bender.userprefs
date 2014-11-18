@@ -1,11 +1,15 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Menu\Scripts\ConfirmSave.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\StartTalk.cs">
     <Files>
-      <File FileName="Assets\Menu\Scripts\SaveLoad.cs" Line="14" Column="32" />
-      <File FileName="Assets\Scripts\FileManager.cs" Line="9" Column="24" />
-      <File FileName="Assets\Scripts\SaveManager.cs" Line="85" Column="35" />
-      <File FileName="Assets\Menu\Scripts\ConfirmSave.cs" Line="48" Column="25" />
+      <File FileName="Assets\Menu\Scripts\SaveLoad.cs" Line="86" Column="1" />
+      <File FileName="Assets\Scripts\FileManager.cs" Line="37" Column="1" />
+      <File FileName="Assets\Scripts\SaveManager.cs" Line="93" Column="1" />
+      <File FileName="Assets\Menu\Scripts\ConfirmSave.cs" Line="57" Column="41" />
+      <File FileName="Assets\Scripts\StageLoader.cs" Line="23" Column="11" />
+      <File FileName="Assets\Scripts\NextStage.cs" Line="70" Column="4" />
+      <File FileName="Assets\Scripts\EventTrigger.cs" Line="18" Column="45" />
+      <File FileName="Assets\Scripts\StartTalk.cs" Line="38" Column="61" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

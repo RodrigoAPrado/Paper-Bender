@@ -9,6 +9,8 @@ public class StartTalk : MonoBehaviour {
 	public AudioClip[] thisAudioClips;
 	SpriteRenderer sRenderer;
 	BoxCollider2D bCollider;
+	public GameObject nPCAvatar;
+	public LayerMask player;
 	// Use this for initialization
 	void Start () {
 		nPC = GameObject.FindGameObjectWithTag("ChatBox").GetComponent<NPCDialogController>();
@@ -19,15 +21,32 @@ public class StartTalk : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
+
 		if(nPC.onChat)
 		{
+			if(nPCAvatar != null)
+			{
+				nPCAvatar.GetComponent<Animator>().SetBool("Talk", true);
+			}
 			bCollider.enabled = false;
 			sRenderer.enabled = false;
 		}
 		else
 		{
-			bCollider.enabled = true;
-			sRenderer.enabled = true;
+			if(nPCAvatar != null)
+			{
+				nPCAvatar.GetComponent<Animator>().SetBool("Talk", false);
+			}
+			if(!Physics2D.OverlapCircle(transform.position, 5, player))
+			{
+				bCollider.enabled = false;
+				sRenderer.enabled = false;
+			}
+			else
+			{
+				bCollider.enabled = true;
+				sRenderer.enabled = true;
+			}
 		}
 	}
 	public void SetTalkOn()
