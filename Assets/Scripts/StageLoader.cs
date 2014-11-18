@@ -16,7 +16,10 @@ public class StageLoader : MonoBehaviour {
 		}
 		switch(currentProgress)
 		{
-			default:
+		default:
+			print ("Error");
+			break;
+			case 0:
 			print ("Current is " + currentProgress.ToString());
 			Application.LoadLevel(scenesToLoad[0]);
 			break;
@@ -33,7 +36,27 @@ public class StageLoader : MonoBehaviour {
 			ES2.Save(2, "file" + stageLoader.ToString() + ".txt?tag=gProgEvent");
 			Application.LoadLevel(scenesToLoad[2]);
 			break;
-
+		case 4:
+			print ("Current is " + currentProgress.ToString());
+			Application.LoadLevel(scenesToLoad[4]);
+			break;
+		case 5:
+			print ("Current is " + currentProgress.ToString());
+			Application.LoadLevel(scenesToLoad[5]);	
+			break;
+		case 6:
+			print ("Current is " + currentProgress.ToString());
+			Application.LoadLevel(scenesToLoad[6]);	
+			break;
+		case 7:
+			print ("Current is " + currentProgress.ToString());
+			Application.LoadLevel(scenesToLoad[7]);	
+		break;
+		case 8:
+			print ("Changed back to 7");
+			ES2.Save(7, "file" + stageLoader.ToString() + ".txt?tag=gProgEvent");
+			Application.LoadLevel(scenesToLoad[7]);
+			break;
 		}
 	}
 	

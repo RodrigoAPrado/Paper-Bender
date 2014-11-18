@@ -61,11 +61,19 @@ public class NextStage : MonoBehaviour {
 		}
 		int stageLoader = ES2.Load<int>("currentSave.txt");
 		int currentProgress = ES2.Load<int>("file" + stageLoader.ToString() + ".txt?tag=gProgEvent");
+		int currentStageProgress = ES2.Load<int>("file" + stageLoader.ToString() + ".txt?tag=gProgStages");
 		if(changeSaveProgress)
 		{
 			if(currentProgress < saveProgressToChange)
 			{
 				ES2.Save(saveProgressToChange, "file" + stageLoader.ToString() + ".txt?tag=gProgEvent");
+			}
+		}
+		if(changeStageProgress)
+		{
+			if(currentStageProgress < stageProgressToChange)
+			{
+				ES2.Save(stageProgressToChange, "file" + stageLoader.ToString() + ".txt?tag=gProgStages");
 			}
 		}
 		gameObject.tag = "NextStageNote";
