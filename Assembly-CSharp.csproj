@@ -49,6 +49,8 @@
      <Compile Include="Assets\Menu\Scripts\ActivateOnClick.cs" />
      <Compile Include="Assets\Menu\Scripts\CloseLevels.cs" />
      <Compile Include="Assets\Menu\Scripts\ConfirmSave.cs" />
+     <Compile Include="Assets\Menu\Scripts\ConfirmWorld.cs" />
+     <Compile Include="Assets\Menu\Scripts\ExitWorldMap.cs" />
      <Compile Include="Assets\Menu\Scripts\LoadLevel.cs" />
      <Compile Include="Assets\Menu\Scripts\ReturnMenu.cs" />
      <Compile Include="Assets\Menu\Scripts\SaveLoad.cs" />
@@ -199,6 +201,7 @@
      <Compile Include="Assets\Scripts\BanditWayPoint.cs" />
      <Compile Include="Assets\Scripts\BanditWayPointNeo.cs" />
      <Compile Include="Assets\Scripts\BendSpriteController.cs" />
+     <Compile Include="Assets\Scripts\CallWorldMap.cs" />
      <Compile Include="Assets\Scripts\ChangeScene.cs" />
      <Compile Include="Assets\Scripts\Cheats.cs" />
      <Compile Include="Assets\Scripts\ClearBandit.cs" />
@@ -256,6 +259,7 @@
      <Compile Include="Assets\Scripts\TileSpriteManager.cs" />
      <Compile Include="Assets\Scripts\UltraRangeStatueController.cs" />
      <Compile Include="Assets\Scripts\WaterController.cs" />
+     <Compile Include="Assets\Scripts\WorldManager.cs" />
      <Compile Include="Assets\_Scripts\VideoTexture_Lite.cs" />
      <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
      <None Include="Assets\NGUI\ReadMe - 3.6.3.txt" />

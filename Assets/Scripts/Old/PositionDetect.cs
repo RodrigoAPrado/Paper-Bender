@@ -64,6 +64,11 @@ public class PositionDetect : MonoBehaviour {
 			RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, 1, bendingLayer);
 			if(hit.collider != null)
 			{
+				if(hit.collider.tag=="WorldMap")
+				{
+					hit.collider.gameObject.GetComponent<CallWorldMap>().LoadWorldMapSelect();
+					return;
+				}
 				if(hit.collider.tag=="ChatStart")
 				{
 					hit.collider.gameObject.GetComponent<StartTalk>().SetTalkOn();
