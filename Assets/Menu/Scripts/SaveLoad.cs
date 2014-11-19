@@ -20,7 +20,7 @@ public class SaveLoad : MonoBehaviour {
 		world = transform.FindChild("Save").transform.FindChild("World").GetComponent<UILabel>();
 		percent = transform.FindChild("Save").transform.FindChild("Percent").GetComponent<UILabel>();
 		int i = ES2.Load<int>("file" + thisSave.ToString() + ".txt?tag=gProgStages");
-		percent.text = ((i/maxStages) * 100).ToString() + "%";
+		percent.text = ((i*100)/maxStages).ToString() + "%";
 		int j = ES2.Load<int>("file" + thisSave.ToString() + ".txt?tag=curW");
 		switch(j)
 		{
@@ -50,6 +50,9 @@ public class SaveLoad : MonoBehaviour {
 	// Update is called once per frame
 	void OnClick()
 	{
+		print (ES2.Load<int>("file" + thisSave.ToString() + ".txt?tag=gProgStages"));
+		
+		print (ES2.Load<int>("file" + thisSave.ToString() + ".txt?tag=gProgEvent"));
 		if(load)
 		{
 	        if(ES2.Load<bool>("file" + thisSave.ToString() + ".txt?tag=init"))

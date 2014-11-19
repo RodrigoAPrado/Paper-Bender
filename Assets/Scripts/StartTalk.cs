@@ -11,8 +11,21 @@ public class StartTalk : MonoBehaviour {
 	BoxCollider2D bCollider;
 	public GameObject nPCAvatar;
 	public LayerMask player;
+	Transform playerNPC;
+	public bool ignoreScale;
+	int scale;
+	float nPCAvatarScale;
 	// Use this for initialization
 	void Start () {
+		scale = 1;
+		if(nPCAvatar != null)
+		{
+			if(nPCAvatar.transform.localScale.x < 0)
+				nPCAvatarScale = -nPCAvatar.transform.localScale.x;
+			else
+				nPCAvatarScale = nPCAvatar.transform.localScale.x;
+		}
+		playerNPC = GameObject.FindGameObjectWithTag("Player").transform;
 		nPC = GameObject.FindGameObjectWithTag("ChatBox").GetComponent<NPCDialogController>();
 		bCollider = GetComponent<BoxCollider2D>();
 		sRenderer = GetComponent<SpriteRenderer>();
@@ -21,12 +34,25 @@ public class StartTalk : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-
 		if(nPC.onChat)
 		{
 			if(nPCAvatar != null)
 			{
 				nPCAvatar.GetComponent<Animator>().SetBool("Talk", true);
+				if(nPCAvatar.transform.position.x >= playerNPC.position.x)
+				{
+					if(scale == 1)
+					{
+						scale = -1;
+					}
+				}
+				if(nPCAvatar.transform.position.x < playerNPC.position.x)
+				{
+					if(scale == -1)
+					{
+						scale = 1;
+					}
+				}
 			}
 			bCollider.enabled = false;
 			sRenderer.enabled = false;
@@ -47,6 +73,10 @@ public class StartTalk : MonoBehaviour {
 				bCollider.enabled = true;
 				sRenderer.enabled = true;
 			}
+		}
+		if(nPCAvatar != null)
+		{
+			nPCAvatar.transform.localScale = new Vector2(nPCAvatarScale * scale, nPCAvatar.transform.localScale.y);
 		}
 	}
 	public void SetTalkOn()
