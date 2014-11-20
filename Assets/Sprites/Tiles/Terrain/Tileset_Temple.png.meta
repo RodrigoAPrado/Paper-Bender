@@ -48,1585 +48,1585 @@ TextureImporter:
     - name: Tileset_Temple_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 749
-        width: 65
-        height: 65
+        x: 0
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
     - name: Tileset_Temple_1
       rect:
         serializedVersion: 2
-        x: 84
-        y: 749
-        width: 65
-        height: 65
+        x: 74
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
     - name: Tileset_Temple_2
       rect:
         serializedVersion: 2
-        x: 158
-        y: 749
-        width: 65
-        height: 65
+        x: 148
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_3
       rect:
         serializedVersion: 2
-        x: 232
-        y: 749
-        width: 65
-        height: 65
+        x: 222
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_4
       rect:
         serializedVersion: 2
-        x: 306
-        y: 749
-        width: 65
-        height: 65
+        x: 296
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_5
       rect:
         serializedVersion: 2
-        x: 380
-        y: 749
-        width: 65
-        height: 65
+        x: 370
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_6
       rect:
         serializedVersion: 2
-        x: 454
-        y: 749
-        width: 65
-        height: 65
+        x: 444
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_7
       rect:
         serializedVersion: 2
-        x: 528
-        y: 749
-        width: 64
-        height: 65
+        x: 518
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_8
       rect:
         serializedVersion: 2
-        x: 602
-        y: 749
-        width: 65
-        height: 65
+        x: 592
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_9
       rect:
         serializedVersion: 2
-        x: 676
-        y: 749
-        width: 65
-        height: 65
+        x: 666
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_10
       rect:
         serializedVersion: 2
-        x: 750
-        y: 749
-        width: 64
-        height: 65
+        x: 740
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_11
       rect:
         serializedVersion: 2
-        x: 823
-        y: 749
-        width: 65
-        height: 65
+        x: 814
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_12
       rect:
         serializedVersion: 2
-        x: 897
-        y: 750
+        x: 888
+        y: 740
         width: 66
-        height: 64
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_13
       rect:
         serializedVersion: 2
-        x: 971
-        y: 749
-        width: 65
-        height: 65
+        x: 962
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_14
       rect:
         serializedVersion: 2
-        x: 1045
-        y: 749
-        width: 65
-        height: 65
+        x: 1036
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_15
       rect:
         serializedVersion: 2
-        x: 1119
-        y: 750
-        width: 65
-        height: 64
+        x: 1110
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_16
       rect:
         serializedVersion: 2
-        x: 10
-        y: 675
-        width: 65
-        height: 65
+        x: 0
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
     - name: Tileset_Temple_17
       rect:
         serializedVersion: 2
-        x: 84
-        y: 675
-        width: 65
-        height: 65
+        x: 74
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_18
       rect:
         serializedVersion: 2
-        x: 158
-        y: 675
-        width: 65
-        height: 65
+        x: 148
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
     - name: Tileset_Temple_19
       rect:
         serializedVersion: 2
-        x: 232
-        y: 675
-        width: 65
-        height: 65
+        x: 222
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
     - name: Tileset_Temple_20
       rect:
         serializedVersion: 2
-        x: 306
-        y: 675
-        width: 65
-        height: 65
+        x: 296
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
     - name: Tileset_Temple_21
       rect:
         serializedVersion: 2
-        x: 380
-        y: 675
-        width: 65
-        height: 65
+        x: 370
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_22
       rect:
         serializedVersion: 2
-        x: 454
-        y: 675
-        width: 65
-        height: 65
+        x: 444
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_23
       rect:
         serializedVersion: 2
-        x: 528
-        y: 675
-        width: 65
-        height: 65
+        x: 518
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_24
       rect:
         serializedVersion: 2
-        x: 602
-        y: 675
-        width: 65
-        height: 65
+        x: 592
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_25
       rect:
         serializedVersion: 2
-        x: 676
-        y: 675
-        width: 65
-        height: 65
+        x: 666
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_26
       rect:
         serializedVersion: 2
-        x: 750
-        y: 675
-        width: 65
-        height: 65
+        x: 740
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_27
       rect:
         serializedVersion: 2
-        x: 824
-        y: 675
-        width: 65
-        height: 65
+        x: 814
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_28
       rect:
         serializedVersion: 2
-        x: 898
-        y: 676
-        width: 65
-        height: 64
+        x: 888
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_29
       rect:
         serializedVersion: 2
-        x: 972
-        y: 675
-        width: 64
-        height: 65
+        x: 962
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_30
       rect:
         serializedVersion: 2
-        x: 1045
-        y: 675
-        width: 65
-        height: 65
+        x: 1036
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_31
       rect:
         serializedVersion: 2
-        x: 1120
-        y: 676
-        width: 64
-        height: 64
+        x: 1110
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_32
       rect:
         serializedVersion: 2
-        x: 10
-        y: 601
-        width: 65
-        height: 65
+        x: 0
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
     - name: Tileset_Temple_33
       rect:
         serializedVersion: 2
-        x: 84
-        y: 601
-        width: 65
-        height: 65
+        x: 74
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
     - name: Tileset_Temple_34
       rect:
         serializedVersion: 2
-        x: 158
-        y: 601
-        width: 65
-        height: 65
+        x: 148
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
     - name: Tileset_Temple_35
       rect:
         serializedVersion: 2
-        x: 232
-        y: 601
-        width: 65
-        height: 65
+        x: 222
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_36
       rect:
         serializedVersion: 2
-        x: 306
-        y: 601
-        width: 65
-        height: 65
+        x: 296
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_37
       rect:
         serializedVersion: 2
-        x: 380
-        y: 601
-        width: 65
-        height: 65
+        x: 370
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_38
       rect:
         serializedVersion: 2
-        x: 454
-        y: 601
-        width: 65
-        height: 65
+        x: 444
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_39
       rect:
         serializedVersion: 2
-        x: 528
-        y: 601
-        width: 65
-        height: 65
+        x: 518
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_40
       rect:
         serializedVersion: 2
-        x: 602
-        y: 601
-        width: 65
-        height: 65
+        x: 592
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_41
       rect:
         serializedVersion: 2
-        x: 676
-        y: 601
-        width: 65
-        height: 65
+        x: 666
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_42
       rect:
         serializedVersion: 2
-        x: 750
-        y: 601
-        width: 65
-        height: 65
+        x: 740
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_43
       rect:
         serializedVersion: 2
-        x: 824
-        y: 601
-        width: 65
-        height: 65
+        x: 814
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_44
       rect:
         serializedVersion: 2
-        x: 898
-        y: 602
-        width: 64
-        height: 64
+        x: 888
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_45
       rect:
         serializedVersion: 2
-        x: 972
-        y: 601
-        width: 64
-        height: 65
+        x: 962
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_46
       rect:
         serializedVersion: 2
-        x: 1046
-        y: 601
-        width: 64
-        height: 65
+        x: 1036
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_47
       rect:
         serializedVersion: 2
-        x: 1119
-        y: 602
-        width: 65
-        height: 64
+        x: 1110
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_48
       rect:
         serializedVersion: 2
-        x: 10
-        y: 527
-        width: 65
-        height: 65
+        x: 0
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_49
       rect:
         serializedVersion: 2
-        x: 84
-        y: 527
-        width: 65
-        height: 65
+        x: 74
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_50
       rect:
         serializedVersion: 2
-        x: 158
-        y: 527
-        width: 65
-        height: 65
+        x: 148
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_51
       rect:
         serializedVersion: 2
-        x: 232
-        y: 527
-        width: 65
-        height: 65
+        x: 222
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_52
       rect:
         serializedVersion: 2
-        x: 306
-        y: 527
-        width: 65
-        height: 65
+        x: 296
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_53
       rect:
         serializedVersion: 2
-        x: 380
-        y: 527
-        width: 65
-        height: 65
+        x: 370
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_54
       rect:
         serializedVersion: 2
-        x: 454
-        y: 527
-        width: 65
-        height: 65
+        x: 444
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_55
       rect:
         serializedVersion: 2
-        x: 528
-        y: 527
-        width: 65
-        height: 65
+        x: 518
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_56
       rect:
         serializedVersion: 2
-        x: 602
-        y: 527
-        width: 65
-        height: 65
+        x: 592
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_57
       rect:
         serializedVersion: 2
-        x: 676
-        y: 527
-        width: 65
-        height: 65
+        x: 666
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_58
       rect:
         serializedVersion: 2
-        x: 750
-        y: 527
-        width: 65
-        height: 65
+        x: 740
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_59
       rect:
         serializedVersion: 2
-        x: 824
-        y: 527
-        width: 65
-        height: 65
+        x: 814
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_60
       rect:
         serializedVersion: 2
-        x: 898
-        y: 528
-        width: 65
-        height: 64
+        x: 888
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_61
       rect:
         serializedVersion: 2
-        x: 972
-        y: 527
-        width: 65
-        height: 65
+        x: 962
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_62
       rect:
         serializedVersion: 2
-        x: 1046
-        y: 528
-        width: 65
-        height: 64
+        x: 1036
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_63
       rect:
         serializedVersion: 2
-        x: 1120
-        y: 528
-        width: 65
-        height: 64
+        x: 1110
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_64
       rect:
         serializedVersion: 2
-        x: 10
-        y: 454
-        width: 64
-        height: 64
+        x: 0
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_65
       rect:
         serializedVersion: 2
-        x: 83
-        y: 453
-        width: 65
-        height: 65
+        x: 74
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_66
       rect:
         serializedVersion: 2
-        x: 157
-        y: 453
-        width: 65
-        height: 65
+        x: 148
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_67
       rect:
         serializedVersion: 2
-        x: 231
-        y: 453
-        width: 65
-        height: 65
+        x: 222
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_68
       rect:
         serializedVersion: 2
-        x: 305
-        y: 453
-        width: 65
-        height: 65
+        x: 296
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_69
       rect:
         serializedVersion: 2
-        x: 379
-        y: 453
-        width: 65
-        height: 65
+        x: 370
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_70
       rect:
         serializedVersion: 2
-        x: 453
-        y: 453
-        width: 65
-        height: 65
+        x: 444
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_71
       rect:
         serializedVersion: 2
-        x: 527
-        y: 453
-        width: 65
-        height: 65
+        x: 518
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_72
       rect:
         serializedVersion: 2
-        x: 601
-        y: 453
-        width: 65
-        height: 65
+        x: 592
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_73
       rect:
         serializedVersion: 2
-        x: 675
-        y: 453
-        width: 65
-        height: 65
+        x: 666
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_74
       rect:
         serializedVersion: 2
-        x: 749
-        y: 453
-        width: 65
-        height: 65
+        x: 740
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_75
       rect:
         serializedVersion: 2
-        x: 823
-        y: 453
-        width: 65
-        height: 65
+        x: 814
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_76
       rect:
         serializedVersion: 2
-        x: 897
-        y: 454
-        width: 65
-        height: 64
+        x: 888
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_77
       rect:
         serializedVersion: 2
-        x: 971
-        y: 454
-        width: 65
-        height: 64
+        x: 962
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_78
       rect:
         serializedVersion: 2
-        x: 1045
-        y: 453
-        width: 65
-        height: 65
+        x: 1036
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_79
       rect:
         serializedVersion: 2
-        x: 1119
-        y: 454
-        width: 65
-        height: 64
+        x: 1110
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_80
       rect:
         serializedVersion: 2
-        x: 9
-        y: 380
+        x: 0
+        y: 370
         width: 66
-        height: 65
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_81
       rect:
         serializedVersion: 2
-        x: 83
-        y: 380
-        width: 65
-        height: 65
+        x: 74
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_82
       rect:
         serializedVersion: 2
-        x: 157
-        y: 380
-        width: 65
-        height: 65
+        x: 148
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_83
       rect:
         serializedVersion: 2
-        x: 231
-        y: 380
-        width: 65
-        height: 65
+        x: 222
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_84
       rect:
         serializedVersion: 2
-        x: 305
-        y: 380
-        width: 65
-        height: 65
+        x: 296
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_85
       rect:
         serializedVersion: 2
-        x: 378
-        y: 381
-        width: 65
-        height: 65
+        x: 370
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_86
       rect:
         serializedVersion: 2
-        x: 453
-        y: 380
-        width: 65
-        height: 65
+        x: 444
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_87
       rect:
         serializedVersion: 2
-        x: 527
-        y: 380
-        width: 65
-        height: 65
+        x: 518
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_88
       rect:
         serializedVersion: 2
-        x: 601
-        y: 380
-        width: 65
-        height: 65
+        x: 592
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_89
       rect:
         serializedVersion: 2
-        x: 675
-        y: 380
-        width: 65
-        height: 65
+        x: 666
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_90
       rect:
         serializedVersion: 2
-        x: 749
-        y: 380
-        width: 65
-        height: 65
+        x: 740
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_91
       rect:
         serializedVersion: 2
-        x: 823
-        y: 380
-        width: 65
-        height: 65
+        x: 814
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_92
       rect:
         serializedVersion: 2
-        x: 897
-        y: 380
+        x: 888
+        y: 370
         width: 66
-        height: 65
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_93
       rect:
         serializedVersion: 2
-        x: 971
-        y: 380
-        width: 65
-        height: 65
+        x: 962
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_94
       rect:
         serializedVersion: 2
-        x: 1045
-        y: 380
-        width: 65
-        height: 65
+        x: 1036
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_95
       rect:
         serializedVersion: 2
-        x: 1119
-        y: 380
-        width: 65
-        height: 65
+        x: 1110
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_96
       rect:
         serializedVersion: 2
-        x: 10
-        y: 306
-        width: 65
-        height: 64
+        x: 0
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_97
       rect:
         serializedVersion: 2
-        x: 83
-        y: 306
-        width: 65
-        height: 65
+        x: 74
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_98
       rect:
         serializedVersion: 2
-        x: 157
-        y: 306
-        width: 65
-        height: 64
+        x: 148
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_99
       rect:
         serializedVersion: 2
-        x: 232
-        y: 306
-        width: 65
-        height: 64
+        x: 222
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_100
       rect:
         serializedVersion: 2
-        x: 306
-        y: 306
-        width: 65
-        height: 65
+        x: 296
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_101
       rect:
         serializedVersion: 2
-        x: 380
-        y: 306
-        width: 65
-        height: 65
+        x: 370
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_102
       rect:
         serializedVersion: 2
-        x: 453
-        y: 306
-        width: 65
-        height: 65
+        x: 444
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_103
       rect:
         serializedVersion: 2
-        x: 527
-        y: 306
-        width: 65
-        height: 65
+        x: 518
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_104
       rect:
         serializedVersion: 2
-        x: 601
-        y: 306
-        width: 65
-        height: 65
+        x: 592
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_105
       rect:
         serializedVersion: 2
-        x: 675
-        y: 306
-        width: 65
-        height: 65
+        x: 666
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_106
       rect:
         serializedVersion: 2
-        x: 749
-        y: 306
-        width: 65
-        height: 65
+        x: 740
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_107
       rect:
         serializedVersion: 2
-        x: 823
-        y: 306
-        width: 65
-        height: 65
+        x: 814
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_108
       rect:
         serializedVersion: 2
-        x: 897
-        y: 306
-        width: 65
-        height: 65
+        x: 888
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_109
       rect:
         serializedVersion: 2
-        x: 971
-        y: 306
-        width: 65
-        height: 65
+        x: 962
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_110
       rect:
         serializedVersion: 2
-        x: 1045
-        y: 306
-        width: 65
-        height: 65
+        x: 1036
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_111
       rect:
         serializedVersion: 2
-        x: 1119
-        y: 306
-        width: 65
-        height: 65
+        x: 1110
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_112
       rect:
         serializedVersion: 2
-        x: 9
-        y: 242
+        x: 0
+        y: 222
         width: 66
-        height: 54
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_113
       rect:
         serializedVersion: 2
-        x: 83
-        y: 243
-        width: 65
-        height: 54
+        x: 74
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_114
       rect:
         serializedVersion: 2
-        x: 157
-        y: 243
-        width: 65
-        height: 54
+        x: 148
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_115
       rect:
         serializedVersion: 2
-        x: 231
-        y: 242
-        width: 65
-        height: 54
+        x: 222
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_116
       rect:
         serializedVersion: 2
-        x: 305
-        y: 243
-        width: 65
-        height: 54
+        x: 296
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_117
       rect:
         serializedVersion: 2
-        x: 379
-        y: 243
-        width: 65
-        height: 54
+        x: 370
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_118
       rect:
         serializedVersion: 2
-        x: 453
-        y: 243
-        width: 65
-        height: 54
+        x: 444
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_119
       rect:
         serializedVersion: 2
-        x: 527
-        y: 243
-        width: 65
-        height: 54
+        x: 518
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_120
       rect:
         serializedVersion: 2
-        x: 601
-        y: 243
-        width: 65
-        height: 54
+        x: 592
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_121
       rect:
         serializedVersion: 2
-        x: 675
-        y: 243
-        width: 65
-        height: 54
+        x: 666
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_122
       rect:
         serializedVersion: 2
-        x: 749
-        y: 243
-        width: 65
-        height: 54
+        x: 740
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_123
       rect:
         serializedVersion: 2
-        x: 823
-        y: 243
-        width: 65
-        height: 54
+        x: 814
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_124
       rect:
         serializedVersion: 2
-        x: 897
-        y: 243
+        x: 888
+        y: 222
         width: 66
-        height: 54
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_125
       rect:
         serializedVersion: 2
-        x: 971
-        y: 243
-        width: 65
-        height: 54
+        x: 962
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_126
       rect:
         serializedVersion: 2
-        x: 1045
-        y: 243
-        width: 65
-        height: 54
+        x: 1036
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_127
       rect:
         serializedVersion: 2
-        x: 1119
-        y: 243
-        width: 65
-        height: 54
+        x: 1110
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_128
       rect:
         serializedVersion: 2
-        x: 9
-        y: 158
-        width: 65
-        height: 64
+        x: 0
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_129
       rect:
         serializedVersion: 2
-        x: 83
-        y: 158
-        width: 65
-        height: 65
+        x: 74
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_130
       rect:
         serializedVersion: 2
-        x: 157
-        y: 158
-        width: 65
-        height: 65
+        x: 148
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_131
       rect:
         serializedVersion: 2
-        x: 231
-        y: 158
-        width: 65
-        height: 64
+        x: 222
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_132
       rect:
         serializedVersion: 2
-        x: 305
-        y: 158
-        width: 65
-        height: 65
+        x: 296
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_133
       rect:
         serializedVersion: 2
-        x: 379
-        y: 158
-        width: 65
-        height: 65
+        x: 370
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_134
       rect:
         serializedVersion: 2
-        x: 453
-        y: 158
-        width: 65
-        height: 65
+        x: 444
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_135
       rect:
         serializedVersion: 2
-        x: 527
-        y: 158
-        width: 65
-        height: 65
+        x: 518
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_136
       rect:
         serializedVersion: 2
-        x: 601
-        y: 158
-        width: 65
-        height: 65
+        x: 592
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_137
       rect:
         serializedVersion: 2
-        x: 675
-        y: 158
-        width: 65
-        height: 65
+        x: 666
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_138
       rect:
         serializedVersion: 2
-        x: 749
-        y: 158
-        width: 65
-        height: 65
+        x: 740
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_139
       rect:
         serializedVersion: 2
-        x: 823
-        y: 158
-        width: 65
-        height: 65
+        x: 814
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_140
       rect:
         serializedVersion: 2
-        x: 897
-        y: 158
-        width: 65
-        height: 65
+        x: 888
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_141
       rect:
         serializedVersion: 2
-        x: 971
-        y: 158
-        width: 65
-        height: 65
+        x: 962
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_142
       rect:
         serializedVersion: 2
-        x: 1045
-        y: 158
-        width: 65
-        height: 65
+        x: 1036
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_143
       rect:
         serializedVersion: 2
-        x: 1119
-        y: 158
-        width: 65
-        height: 65
+        x: 1110
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_144
       rect:
         serializedVersion: 2
-        x: 9
-        y: 84
+        x: 0
+        y: 74
         width: 66
-        height: 64
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_145
       rect:
         serializedVersion: 2
-        x: 83
-        y: 84
+        x: 74
+        y: 74
         width: 66
-        height: 65
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_146
       rect:
         serializedVersion: 2
-        x: 157
-        y: 84
+        x: 148
+        y: 74
         width: 66
-        height: 65
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_147
       rect:
         serializedVersion: 2
-        x: 231
-        y: 84
+        x: 222
+        y: 74
         width: 66
-        height: 64
+        height: 66
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
     - name: Tileset_Temple_148
       rect:
         serializedVersion: 2
-        x: 305
-        y: 84
+        x: 296
+        y: 74
         width: 66
-        height: 65
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_149
       rect:
         serializedVersion: 2
-        x: 379
-        y: 84
+        x: 370
+        y: 74
         width: 66
-        height: 65
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_150
       rect:
         serializedVersion: 2
-        x: 453
-        y: 84
+        x: 444
+        y: 74
         width: 66
-        height: 65
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_151
       rect:
         serializedVersion: 2
-        x: 527
-        y: 84
-        width: 65
-        height: 65
+        x: 518
+        y: 74
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_152
       rect:
         serializedVersion: 2
-        x: 602
-        y: 84
-        width: 65
-        height: 65
+        x: 592
+        y: 74
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_153
       rect:
         serializedVersion: 2
-        x: 676
-        y: 84
-        width: 65
-        height: 65
+        x: 666
+        y: 74
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_154
       rect:
         serializedVersion: 2
-        x: 749
-        y: 84
+        x: 740
+        y: 74
         width: 66
-        height: 65
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_155
       rect:
         serializedVersion: 2
-        x: 823
-        y: 84
+        x: 814
+        y: 74
         width: 66
-        height: 65
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_156
       rect:
         serializedVersion: 2
-        x: 897
-        y: 84
+        x: 888
+        y: 74
         width: 66
-        height: 65
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_157
       rect:
         serializedVersion: 2
-        x: 971
-        y: 84
-        width: 65
-        height: 65
+        x: 962
+        y: 74
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_158
       rect:
         serializedVersion: 2
-        x: 1045
-        y: 84
-        width: 65
-        height: 65
+        x: 1036
+        y: 74
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_159
       rect:
         serializedVersion: 2
-        x: 1119
-        y: 84
-        width: 65
-        height: 65
+        x: 1110
+        y: 74
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_160
       rect:
         serializedVersion: 2
-        x: 10
-        y: 10
-        width: 64
-        height: 64
+        x: 0
+        y: 0
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_161
       rect:
         serializedVersion: 2
-        x: 83
-        y: 10
-        width: 65
-        height: 65
+        x: 74
+        y: 0
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_162
       rect:
         serializedVersion: 2
-        x: 157
-        y: 10
-        width: 65
-        height: 64
+        x: 148
+        y: 0
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_163
       rect:
         serializedVersion: 2
-        x: 232
-        y: 10
-        width: 65
-        height: 64
+        x: 222
+        y: 0
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_164
       rect:
         serializedVersion: 2
-        x: 306
-        y: 10
-        width: 65
-        height: 65
+        x: 296
+        y: 0
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_165
       rect:
         serializedVersion: 2
-        x: 380
-        y: 10
-        width: 65
-        height: 65
+        x: 370
+        y: 0
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_166
       rect:
         serializedVersion: 2
-        x: 454
-        y: 10
-        width: 64
-        height: 65
+        x: 444
+        y: 0
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_167
       rect:
         serializedVersion: 2
-        x: 527
-        y: 10
-        width: 65
-        height: 65
+        x: 518
+        y: 0
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_168
       rect:
         serializedVersion: 2
-        x: 601
-        y: 10
+        x: 592
+        y: 0
         width: 66
-        height: 65
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_169
       rect:
         serializedVersion: 2
-        x: 675
-        y: 10
-        width: 65
-        height: 65
+        x: 666
+        y: 0
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_170
       rect:
         serializedVersion: 2
-        x: 749
-        y: 10
-        width: 65
-        height: 65
+        x: 740
+        y: 0
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_171
       rect:
         serializedVersion: 2
-        x: 823
-        y: 10
-        width: 65
-        height: 65
+        x: 814
+        y: 0
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_172
       rect:
         serializedVersion: 2
-        x: 897
-        y: 10
-        width: 65
-        height: 65
+        x: 888
+        y: 0
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_173
       rect:
         serializedVersion: 2
-        x: 971
-        y: 10
-        width: 65
-        height: 65
+        x: 962
+        y: 0
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_174
       rect:
         serializedVersion: 2
-        x: 1045
-        y: 10
-        width: 65
-        height: 65
+        x: 1036
+        y: 0
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_175
       rect:
         serializedVersion: 2
-        x: 1119
-        y: 10
-        width: 65
-        height: 65
+        x: 1110
+        y: 0
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
   spritePackingTag: 
