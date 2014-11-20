@@ -21,9 +21,9 @@ TextureImporter:
   generateCubemap: 0
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 4096
+  maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
+    filterMode: 1
     aniso: 1
     mipBias: -1
     wrapMode: 1
@@ -49,1440 +49,1440 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 719
-        width: 65
-        height: 65
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_1
       rect:
         serializedVersion: 2
-        x: 71
-        y: 719
-        width: 65
-        height: 65
+        x: 74
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_2
       rect:
         serializedVersion: 2
-        x: 143
-        y: 719
-        width: 65
-        height: 65
+        x: 148
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_3
       rect:
         serializedVersion: 2
-        x: 215
-        y: 719
-        width: 65
-        height: 65
+        x: 222
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_4
       rect:
         serializedVersion: 2
-        x: 288
-        y: 719
-        width: 64
-        height: 65
+        x: 296
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_5
       rect:
         serializedVersion: 2
-        x: 359
-        y: 719
-        width: 65
-        height: 65
+        x: 370
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_6
       rect:
         serializedVersion: 2
-        x: 431
-        y: 719
-        width: 65
-        height: 65
+        x: 444
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_7
       rect:
         serializedVersion: 2
-        x: 503
-        y: 719
-        width: 65
-        height: 65
+        x: 518
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_8
       rect:
         serializedVersion: 2
-        x: 576
-        y: 719
-        width: 64
-        height: 65
+        x: 592
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_9
       rect:
         serializedVersion: 2
-        x: 647
-        y: 719
-        width: 65
-        height: 65
+        x: 666
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_10
       rect:
         serializedVersion: 2
-        x: 719
-        y: 719
-        width: 65
-        height: 65
+        x: 740
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_11
       rect:
         serializedVersion: 2
-        x: 791
-        y: 719
-        width: 65
-        height: 65
+        x: 814
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_12
       rect:
         serializedVersion: 2
-        x: 864
-        y: 720
-        width: 64
-        height: 64
+        x: 888
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_13
       rect:
         serializedVersion: 2
-        x: 935
-        y: 720
-        width: 65
-        height: 64
+        x: 962
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_14
       rect:
         serializedVersion: 2
-        x: 1007
-        y: 720
-        width: 65
-        height: 64
+        x: 1036
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_15
       rect:
         serializedVersion: 2
-        x: 1079
-        y: 720
-        width: 65
-        height: 64
+        x: 1110
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_16
       rect:
         serializedVersion: 2
         x: 0
-        y: 647
-        width: 65
-        height: 65
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_17
       rect:
         serializedVersion: 2
-        x: 71
-        y: 647
-        width: 65
-        height: 65
+        x: 74
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_18
       rect:
         serializedVersion: 2
-        x: 143
-        y: 647
-        width: 65
-        height: 65
+        x: 148
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_19
       rect:
         serializedVersion: 2
-        x: 215
-        y: 647
-        width: 65
-        height: 65
+        x: 222
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_20
       rect:
         serializedVersion: 2
-        x: 288
-        y: 647
-        width: 64
-        height: 65
+        x: 296
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_21
       rect:
         serializedVersion: 2
-        x: 359
-        y: 647
-        width: 65
-        height: 65
+        x: 370
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_22
       rect:
         serializedVersion: 2
-        x: 431
-        y: 647
-        width: 65
-        height: 65
+        x: 444
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_23
       rect:
         serializedVersion: 2
-        x: 503
-        y: 647
-        width: 65
-        height: 65
+        x: 518
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_24
       rect:
         serializedVersion: 2
-        x: 576
-        y: 647
-        width: 64
-        height: 65
+        x: 592
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_25
       rect:
         serializedVersion: 2
-        x: 647
-        y: 647
-        width: 65
-        height: 65
+        x: 666
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_26
       rect:
         serializedVersion: 2
-        x: 719
-        y: 647
-        width: 65
-        height: 65
+        x: 740
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_27
       rect:
         serializedVersion: 2
-        x: 791
-        y: 647
-        width: 65
-        height: 65
+        x: 814
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_28
       rect:
         serializedVersion: 2
-        x: 864
-        y: 648
-        width: 64
-        height: 64
+        x: 888
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_29
       rect:
         serializedVersion: 2
-        x: 936
-        y: 648
-        width: 64
-        height: 64
+        x: 962
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_30
       rect:
         serializedVersion: 2
-        x: 1008
-        y: 648
-        width: 64
-        height: 64
+        x: 1036
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_31
       rect:
         serializedVersion: 2
-        x: 1080
-        y: 648
-        width: 64
-        height: 64
+        x: 1110
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_32
       rect:
         serializedVersion: 2
         x: 0
-        y: 575
-        width: 65
-        height: 65
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_33
       rect:
         serializedVersion: 2
-        x: 72
-        y: 575
-        width: 65
-        height: 65
+        x: 74
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_34
       rect:
         serializedVersion: 2
-        x: 143
-        y: 575
-        width: 65
-        height: 65
+        x: 148
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_35
       rect:
         serializedVersion: 2
-        x: 215
-        y: 575
-        width: 65
-        height: 65
+        x: 222
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_36
       rect:
         serializedVersion: 2
-        x: 288
-        y: 575
-        width: 64
-        height: 65
+        x: 296
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_37
       rect:
         serializedVersion: 2
-        x: 359
-        y: 575
-        width: 65
+        x: 370
+        y: 592
+        width: 66
         height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_38
       rect:
         serializedVersion: 2
-        x: 431
-        y: 575
-        width: 65
+        x: 444
+        y: 592
+        width: 66
         height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_39
       rect:
         serializedVersion: 2
-        x: 503
-        y: 575
-        width: 65
+        x: 518
+        y: 592
+        width: 66
         height: 66
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_40
       rect:
         serializedVersion: 2
-        x: 576
-        y: 575
-        width: 64
-        height: 65
+        x: 592
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_41
       rect:
         serializedVersion: 2
-        x: 647
-        y: 575
-        width: 65
+        x: 666
+        y: 592
+        width: 66
         height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_42
       rect:
         serializedVersion: 2
-        x: 719
-        y: 575
-        width: 65
+        x: 740
+        y: 592
+        width: 66
         height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_43
       rect:
         serializedVersion: 2
-        x: 791
-        y: 575
-        width: 65
+        x: 814
+        y: 592
+        width: 66
         height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_44
       rect:
         serializedVersion: 2
-        x: 864
-        y: 576
-        width: 64
-        height: 64
+        x: 888
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_45
       rect:
         serializedVersion: 2
-        x: 935
-        y: 576
-        width: 65
-        height: 64
+        x: 962
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_46
       rect:
         serializedVersion: 2
-        x: 1007
-        y: 576
-        width: 65
-        height: 64
+        x: 1036
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_47
       rect:
         serializedVersion: 2
-        x: 1079
-        y: 576
-        width: 65
-        height: 64
+        x: 1110
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_48
       rect:
         serializedVersion: 2
         x: 0
-        y: 503
-        width: 65
-        height: 65
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_49
       rect:
         serializedVersion: 2
-        x: 72
-        y: 503
-        width: 65
-        height: 65
+        x: 74
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_50
       rect:
         serializedVersion: 2
-        x: 144
-        y: 503
-        width: 65
-        height: 65
+        x: 148
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_51
       rect:
         serializedVersion: 2
-        x: 216
-        y: 504
-        width: 64
-        height: 64
+        x: 222
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_52
       rect:
         serializedVersion: 2
-        x: 288
-        y: 504
-        width: 64
-        height: 65
+        x: 296
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_53
       rect:
         serializedVersion: 2
-        x: 359
-        y: 504
-        width: 65
-        height: 65
+        x: 370
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_54
       rect:
         serializedVersion: 2
-        x: 431
-        y: 504
-        width: 65
-        height: 65
+        x: 444
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_55
       rect:
         serializedVersion: 2
-        x: 503
-        y: 504
-        width: 65
-        height: 65
+        x: 518
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_56
       rect:
         serializedVersion: 2
-        x: 576
-        y: 504
-        width: 64
-        height: 65
+        x: 592
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_57
       rect:
         serializedVersion: 2
-        x: 647
-        y: 504
-        width: 65
-        height: 65
+        x: 666
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_58
       rect:
         serializedVersion: 2
-        x: 719
-        y: 504
-        width: 65
-        height: 65
+        x: 740
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_59
       rect:
         serializedVersion: 2
-        x: 791
-        y: 504
-        width: 65
-        height: 65
+        x: 814
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_60
       rect:
         serializedVersion: 2
-        x: 864
-        y: 504
-        width: 64
-        height: 64
+        x: 888
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_61
       rect:
         serializedVersion: 2
-        x: 936
-        y: 504
-        width: 64
-        height: 64
+        x: 962
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_62
       rect:
         serializedVersion: 2
-        x: 1008
-        y: 504
-        width: 64
-        height: 64
+        x: 1036
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_63
       rect:
         serializedVersion: 2
-        x: 1080
-        y: 504
-        width: 64
-        height: 64
+        x: 1110
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_64
       rect:
         serializedVersion: 2
         x: 0
-        y: 432
-        width: 64
-        height: 64
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_65
       rect:
         serializedVersion: 2
-        x: 72
-        y: 432
-        width: 64
-        height: 64
+        x: 74
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_66
       rect:
         serializedVersion: 2
-        x: 143
-        y: 431
-        width: 65
-        height: 65
+        x: 148
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_67
       rect:
         serializedVersion: 2
-        x: 215
-        y: 431
-        width: 65
-        height: 65
+        x: 222
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_68
       rect:
         serializedVersion: 2
-        x: 288
-        y: 432
-        width: 64
-        height: 65
+        x: 296
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_69
       rect:
         serializedVersion: 2
-        x: 359
-        y: 431
-        width: 65
+        x: 370
+        y: 444
+        width: 66
         height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_70
       rect:
         serializedVersion: 2
-        x: 431
-        y: 431
-        width: 65
+        x: 444
+        y: 444
+        width: 66
         height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_71
       rect:
         serializedVersion: 2
-        x: 503
-        y: 431
-        width: 65
+        x: 518
+        y: 444
+        width: 66
         height: 66
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_72
       rect:
         serializedVersion: 2
-        x: 576
-        y: 432
-        width: 64
-        height: 65
+        x: 592
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_73
       rect:
         serializedVersion: 2
-        x: 647
-        y: 431
-        width: 65
+        x: 666
+        y: 444
+        width: 66
         height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_74
       rect:
         serializedVersion: 2
-        x: 719
-        y: 431
-        width: 65
+        x: 740
+        y: 444
+        width: 66
         height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_75
       rect:
         serializedVersion: 2
-        x: 791
-        y: 431
-        width: 65
+        x: 814
+        y: 444
+        width: 66
         height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_76
       rect:
         serializedVersion: 2
-        x: 864
-        y: 432
-        width: 64
-        height: 64
+        x: 888
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_77
       rect:
         serializedVersion: 2
-        x: 935
-        y: 432
-        width: 65
-        height: 64
+        x: 962
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_78
       rect:
         serializedVersion: 2
-        x: 1007
-        y: 432
-        width: 65
-        height: 64
+        x: 1036
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_79
       rect:
         serializedVersion: 2
-        x: 1079
-        y: 432
-        width: 65
-        height: 64
+        x: 1110
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_80
       rect:
         serializedVersion: 2
         x: 0
-        y: 359
-        width: 65
-        height: 65
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_81
       rect:
         serializedVersion: 2
-        x: 71
-        y: 359
-        width: 65
-        height: 65
+        x: 74
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_82
       rect:
         serializedVersion: 2
-        x: 143
-        y: 360
-        width: 65
-        height: 65
+        x: 148
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_83
       rect:
         serializedVersion: 2
-        x: 215
-        y: 359
-        width: 65
-        height: 65
+        x: 222
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_84
       rect:
         serializedVersion: 2
-        x: 288
-        y: 359
-        width: 64
-        height: 65
+        x: 296
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_85
       rect:
         serializedVersion: 2
-        x: 359
-        y: 359
-        width: 65
-        height: 65
+        x: 370
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_86
       rect:
         serializedVersion: 2
-        x: 431
-        y: 359
-        width: 65
-        height: 65
+        x: 444
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_87
       rect:
         serializedVersion: 2
-        x: 503
-        y: 359
-        width: 65
-        height: 65
+        x: 518
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_88
       rect:
         serializedVersion: 2
-        x: 576
-        y: 359
-        width: 64
-        height: 65
+        x: 592
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_89
       rect:
         serializedVersion: 2
-        x: 647
-        y: 359
-        width: 65
-        height: 65
+        x: 666
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_90
       rect:
         serializedVersion: 2
-        x: 720
-        y: 359
-        width: 65
-        height: 65
+        x: 740
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_91
       rect:
         serializedVersion: 2
-        x: 791
-        y: 359
-        width: 65
-        height: 65
+        x: 814
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_92
       rect:
         serializedVersion: 2
-        x: 864
-        y: 360
-        width: 64
-        height: 65
+        x: 888
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_93
       rect:
         serializedVersion: 2
-        x: 935
-        y: 360
-        width: 65
-        height: 65
+        x: 962
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_94
       rect:
         serializedVersion: 2
-        x: 1007
-        y: 360
-        width: 65
-        height: 65
+        x: 1036
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_95
       rect:
         serializedVersion: 2
-        x: 1079
-        y: 360
-        width: 65
-        height: 32
+        x: 1110
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_96
       rect:
         serializedVersion: 2
         x: 0
-        y: 288
-        width: 65
-        height: 64
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_97
       rect:
         serializedVersion: 2
-        x: 71
-        y: 288
-        width: 65
-        height: 64
+        x: 74
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_98
       rect:
         serializedVersion: 2
-        x: 143
-        y: 288
-        width: 65
-        height: 64
+        x: 148
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_99
       rect:
         serializedVersion: 2
-        x: 215
-        y: 288
-        width: 65
-        height: 64
+        x: 222
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_100
       rect:
         serializedVersion: 2
-        x: 287
-        y: 288
-        width: 65
-        height: 65
+        x: 296
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_101
       rect:
         serializedVersion: 2
-        x: 359
-        y: 288
-        width: 65
-        height: 65
+        x: 370
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_102
       rect:
         serializedVersion: 2
-        x: 431
-        y: 288
-        width: 65
-        height: 65
+        x: 444
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_103
       rect:
         serializedVersion: 2
-        x: 503
-        y: 288
-        width: 65
-        height: 65
+        x: 518
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_104
       rect:
         serializedVersion: 2
-        x: 575
-        y: 288
-        width: 65
-        height: 65
+        x: 592
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_105
       rect:
         serializedVersion: 2
-        x: 647
-        y: 288
-        width: 65
-        height: 65
+        x: 666
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_106
       rect:
         serializedVersion: 2
-        x: 719
-        y: 288
-        width: 65
-        height: 65
+        x: 740
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_107
       rect:
         serializedVersion: 2
-        x: 791
-        y: 288
-        width: 65
-        height: 65
+        x: 814
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_108
       rect:
         serializedVersion: 2
-        x: 863
-        y: 288
-        width: 65
-        height: 64
+        x: 888
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_109
       rect:
         serializedVersion: 2
-        x: 935
-        y: 288
-        width: 65
-        height: 64
+        x: 962
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_110
       rect:
         serializedVersion: 2
-        x: 1007
-        y: 288
-        width: 65
-        height: 64
+        x: 1036
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_111
       rect:
         serializedVersion: 2
-        x: 1079
-        y: 288
-        width: 65
-        height: 64
+        x: 1110
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_112
       rect:
         serializedVersion: 2
         x: 0
-        y: 215
-        width: 65
-        height: 65
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_113
       rect:
         serializedVersion: 2
-        x: 71
-        y: 215
-        width: 65
-        height: 65
+        x: 74
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_114
       rect:
         serializedVersion: 2
-        x: 143
-        y: 215
-        width: 65
-        height: 65
+        x: 148
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_115
       rect:
         serializedVersion: 2
-        x: 215
-        y: 215
-        width: 65
-        height: 65
+        x: 222
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_116
       rect:
         serializedVersion: 2
-        x: 288
-        y: 216
-        width: 64
-        height: 65
+        x: 296
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_117
       rect:
         serializedVersion: 2
-        x: 359
-        y: 216
-        width: 65
-        height: 65
+        x: 370
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_118
       rect:
         serializedVersion: 2
-        x: 431
-        y: 216
-        width: 65
-        height: 65
+        x: 444
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_119
       rect:
         serializedVersion: 2
-        x: 503
-        y: 216
-        width: 65
-        height: 65
+        x: 518
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_120
       rect:
         serializedVersion: 2
-        x: 576
-        y: 216
-        width: 64
-        height: 65
+        x: 592
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_121
       rect:
         serializedVersion: 2
-        x: 647
-        y: 216
-        width: 65
-        height: 65
+        x: 666
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_122
       rect:
         serializedVersion: 2
-        x: 719
-        y: 216
-        width: 65
-        height: 65
+        x: 740
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_123
       rect:
         serializedVersion: 2
-        x: 791
-        y: 216
-        width: 65
-        height: 65
+        x: 814
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_124
       rect:
         serializedVersion: 2
-        x: 864
-        y: 216
-        width: 64
-        height: 65
+        x: 888
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_125
       rect:
         serializedVersion: 2
-        x: 935
-        y: 216
-        width: 65
-        height: 65
+        x: 962
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_126
       rect:
         serializedVersion: 2
-        x: 1007
-        y: 216
-        width: 65
-        height: 65
+        x: 1036
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_127
       rect:
         serializedVersion: 2
-        x: 1079
-        y: 216
-        width: 65
-        height: 65
+        x: 1110
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_128
       rect:
         serializedVersion: 2
         x: 0
-        y: 144
-        width: 65
-        height: 64
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_129
       rect:
         serializedVersion: 2
-        x: 71
-        y: 144
-        width: 65
-        height: 64
+        x: 74
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_130
       rect:
         serializedVersion: 2
-        x: 143
-        y: 144
-        width: 65
-        height: 64
+        x: 148
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_131
       rect:
         serializedVersion: 2
-        x: 215
-        y: 144
-        width: 65
-        height: 64
+        x: 222
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_132
       rect:
         serializedVersion: 2
-        x: 288
-        y: 144
-        width: 65
-        height: 65
+        x: 296
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_133
       rect:
         serializedVersion: 2
-        x: 359
-        y: 144
-        width: 65
-        height: 65
+        x: 370
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_134
       rect:
         serializedVersion: 2
-        x: 431
-        y: 144
-        width: 65
-        height: 65
+        x: 444
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_135
       rect:
         serializedVersion: 2
-        x: 503
-        y: 144
-        width: 65
-        height: 65
+        x: 518
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_136
       rect:
         serializedVersion: 2
-        x: 576
-        y: 144
-        width: 65
-        height: 65
+        x: 592
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_137
       rect:
         serializedVersion: 2
-        x: 647
-        y: 144
-        width: 65
-        height: 65
+        x: 666
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_138
       rect:
         serializedVersion: 2
-        x: 719
-        y: 144
-        width: 65
-        height: 65
+        x: 740
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_139
       rect:
         serializedVersion: 2
-        x: 791
-        y: 144
-        width: 65
-        height: 65
+        x: 814
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_140
       rect:
         serializedVersion: 2
-        x: 864
-        y: 144
-        width: 65
-        height: 64
+        x: 888
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_141
       rect:
         serializedVersion: 2
-        x: 935
-        y: 144
-        width: 65
-        height: 64
+        x: 962
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_142
       rect:
         serializedVersion: 2
-        x: 1007
-        y: 144
-        width: 65
-        height: 64
+        x: 1036
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_143
       rect:
         serializedVersion: 2
-        x: 1079
-        y: 144
-        width: 65
-        height: 64
+        x: 1110
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Swamp_Arvore-Folha_144
       rect:
         serializedVersion: 2
         x: 0
-        y: 71
-        width: 65
-        height: 65
+        y: 74
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_145
       rect:
         serializedVersion: 2
-        x: 71
-        y: 71
-        width: 65
-        height: 65
+        x: 74
+        y: 74
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_146
       rect:
         serializedVersion: 2
-        x: 143
-        y: 71
-        width: 65
-        height: 65
+        x: 148
+        y: 74
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_147
       rect:
         serializedVersion: 2
-        x: 215
-        y: 71
-        width: 65
-        height: 65
+        x: 222
+        y: 74
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_148
       rect:
         serializedVersion: 2
-        x: 288
-        y: 71
-        width: 64
+        x: 296
+        y: 74
+        width: 66
         height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_149
       rect:
         serializedVersion: 2
-        x: 359
-        y: 71
-        width: 65
+        x: 370
+        y: 74
+        width: 66
         height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_150
       rect:
         serializedVersion: 2
-        x: 431
-        y: 71
-        width: 65
+        x: 444
+        y: 74
+        width: 66
         height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_151
       rect:
         serializedVersion: 2
-        x: 503
-        y: 71
-        width: 65
+        x: 518
+        y: 74
+        width: 66
         height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_152
       rect:
         serializedVersion: 2
-        x: 576
-        y: 71
-        width: 64
+        x: 592
+        y: 74
+        width: 66
         height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_153
       rect:
         serializedVersion: 2
-        x: 647
-        y: 71
-        width: 65
+        x: 666
+        y: 74
+        width: 66
         height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_154
       rect:
         serializedVersion: 2
-        x: 719
-        y: 71
-        width: 65
+        x: 740
+        y: 74
+        width: 66
         height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_155
       rect:
         serializedVersion: 2
-        x: 791
-        y: 71
-        width: 65
+        x: 814
+        y: 74
+        width: 66
         height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_156
       rect:
         serializedVersion: 2
-        x: 864
-        y: 72
-        width: 64
-        height: 64
+        x: 888
+        y: 74
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_157
       rect:
         serializedVersion: 2
-        x: 935
-        y: 72
-        width: 65
-        height: 64
+        x: 962
+        y: 74
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_158
       rect:
         serializedVersion: 2
-        x: 1007
-        y: 72
-        width: 65
-        height: 64
+        x: 1036
+        y: 74
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_159
       rect:
         serializedVersion: 2
-        x: 1079
-        y: 72
-        width: 65
-        height: 64
+        x: 1110
+        y: 74
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_160
@@ -1490,143 +1490,143 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 65
-        height: 64
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_161
       rect:
         serializedVersion: 2
-        x: 71
+        x: 74
         y: 0
-        width: 65
-        height: 64
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_162
       rect:
         serializedVersion: 2
-        x: 143
+        x: 148
         y: 0
-        width: 65
-        height: 64
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_163
       rect:
         serializedVersion: 2
-        x: 215
+        x: 222
         y: 0
-        width: 65
-        height: 64
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_164
       rect:
         serializedVersion: 2
-        x: 288
+        x: 296
         y: 0
-        width: 64
-        height: 65
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_165
       rect:
         serializedVersion: 2
-        x: 359
+        x: 370
         y: 0
-        width: 65
-        height: 65
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_166
       rect:
         serializedVersion: 2
-        x: 431
+        x: 444
         y: 0
-        width: 65
-        height: 65
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_167
       rect:
         serializedVersion: 2
-        x: 503
+        x: 518
         y: 0
-        width: 65
-        height: 65
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_168
       rect:
         serializedVersion: 2
-        x: 576
+        x: 592
         y: 0
-        width: 64
-        height: 65
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_169
       rect:
         serializedVersion: 2
-        x: 647
+        x: 666
         y: 0
-        width: 65
-        height: 65
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_170
       rect:
         serializedVersion: 2
-        x: 719
+        x: 740
         y: 0
-        width: 65
-        height: 65
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_171
       rect:
         serializedVersion: 2
-        x: 791
+        x: 814
         y: 0
-        width: 65
-        height: 65
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_172
       rect:
         serializedVersion: 2
-        x: 864
+        x: 888
         y: 0
-        width: 64
-        height: 64
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_173
       rect:
         serializedVersion: 2
-        x: 935
+        x: 962
         y: 0
-        width: 65
-        height: 64
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_174
       rect:
         serializedVersion: 2
-        x: 1007
+        x: 1036
         y: 0
-        width: 65
-        height: 64
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Swamp_Arvore-Folha_175
       rect:
         serializedVersion: 2
-        x: 1079
+        x: 1110
         y: 0
-        width: 65
-        height: 64
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
   spritePackingTag: 

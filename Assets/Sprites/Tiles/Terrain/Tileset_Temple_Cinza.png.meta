@@ -23,7 +23,7 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
+    filterMode: 1
     aniso: 1
     mipBias: -1
     wrapMode: 1
@@ -49,1440 +49,1440 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 903
-        width: 65
-        height: 65
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_1
       rect:
         serializedVersion: 2
-        x: 70
-        y: 903
-        width: 65
-        height: 65
+        x: 74
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_2
       rect:
         serializedVersion: 2
-        x: 140
-        y: 903
-        width: 65
-        height: 65
+        x: 148
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_3
       rect:
         serializedVersion: 2
-        x: 210
-        y: 903
-        width: 65
-        height: 65
+        x: 222
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_4
       rect:
         serializedVersion: 2
-        x: 280
-        y: 903
-        width: 65
-        height: 65
+        x: 296
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_5
       rect:
         serializedVersion: 2
-        x: 350
-        y: 903
-        width: 65
-        height: 65
+        x: 370
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_6
       rect:
         serializedVersion: 2
-        x: 420
-        y: 903
-        width: 65
-        height: 65
+        x: 444
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_7
       rect:
         serializedVersion: 2
-        x: 490
-        y: 903
-        width: 65
-        height: 65
+        x: 518
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_8
       rect:
         serializedVersion: 2
-        x: 560
-        y: 903
-        width: 65
-        height: 65
+        x: 592
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_9
       rect:
         serializedVersion: 2
-        x: 630
-        y: 903
-        width: 65
-        height: 65
+        x: 666
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_10
       rect:
         serializedVersion: 2
-        x: 700
-        y: 903
-        width: 65
-        height: 65
+        x: 740
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_11
       rect:
         serializedVersion: 2
-        x: 770
-        y: 903
-        width: 65
-        height: 65
+        x: 814
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_12
       rect:
         serializedVersion: 2
-        x: 840
-        y: 903
-        width: 65
-        height: 65
+        x: 888
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_13
       rect:
         serializedVersion: 2
-        x: 910
-        y: 903
-        width: 65
-        height: 65
+        x: 962
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_14
       rect:
         serializedVersion: 2
-        x: 980
-        y: 903
-        width: 65
-        height: 65
+        x: 1036
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_15
       rect:
         serializedVersion: 2
-        x: 1050
-        y: 903
-        width: 65
-        height: 65
+        x: 1110
+        y: 740
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_16
       rect:
         serializedVersion: 2
-        x: 1
-        y: 808
-        width: 64
-        height: 64
+        x: 0
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_17
       rect:
         serializedVersion: 2
-        x: 71
-        y: 808
-        width: 64
-        height: 64
+        x: 74
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_18
       rect:
         serializedVersion: 2
-        x: 141
-        y: 808
-        width: 64
-        height: 64
+        x: 148
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_19
       rect:
         serializedVersion: 2
-        x: 211
-        y: 808
-        width: 64
-        height: 64
+        x: 222
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_20
       rect:
         serializedVersion: 2
-        x: 281
-        y: 808
-        width: 64
-        height: 64
+        x: 296
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_21
       rect:
         serializedVersion: 2
-        x: 351
-        y: 808
-        width: 64
-        height: 64
+        x: 370
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_22
       rect:
         serializedVersion: 2
-        x: 421
-        y: 808
-        width: 64
-        height: 64
+        x: 444
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_23
       rect:
         serializedVersion: 2
-        x: 491
-        y: 808
-        width: 64
-        height: 64
+        x: 518
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_24
       rect:
         serializedVersion: 2
-        x: 561
-        y: 808
-        width: 64
-        height: 64
+        x: 592
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_25
       rect:
         serializedVersion: 2
-        x: 631
-        y: 808
-        width: 64
-        height: 64
+        x: 666
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_26
       rect:
         serializedVersion: 2
-        x: 701
-        y: 808
-        width: 64
-        height: 64
+        x: 740
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_27
       rect:
         serializedVersion: 2
-        x: 771
-        y: 808
-        width: 64
-        height: 64
+        x: 814
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_28
       rect:
         serializedVersion: 2
-        x: 841
-        y: 808
-        width: 64
-        height: 64
+        x: 888
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_29
       rect:
         serializedVersion: 2
-        x: 911
-        y: 808
-        width: 64
-        height: 64
+        x: 962
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_30
       rect:
         serializedVersion: 2
-        x: 981
-        y: 808
-        width: 64
-        height: 64
+        x: 1036
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_31
       rect:
         serializedVersion: 2
-        x: 1051
-        y: 808
-        width: 64
-        height: 64
+        x: 1110
+        y: 666
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_32
       rect:
         serializedVersion: 2
         x: 0
-        y: 720
-        width: 65
-        height: 65
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_33
       rect:
         serializedVersion: 2
-        x: 70
-        y: 720
-        width: 65
-        height: 65
+        x: 74
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_34
       rect:
         serializedVersion: 2
-        x: 140
-        y: 720
-        width: 65
-        height: 65
+        x: 148
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_35
       rect:
         serializedVersion: 2
-        x: 210
-        y: 720
-        width: 65
-        height: 65
+        x: 222
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_36
       rect:
         serializedVersion: 2
-        x: 280
-        y: 720
-        width: 65
-        height: 65
+        x: 296
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_37
       rect:
         serializedVersion: 2
-        x: 350
-        y: 720
-        width: 65
-        height: 65
+        x: 370
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_38
       rect:
         serializedVersion: 2
-        x: 420
-        y: 720
-        width: 65
-        height: 65
+        x: 444
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_39
       rect:
         serializedVersion: 2
-        x: 490
-        y: 720
-        width: 65
-        height: 65
+        x: 518
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_40
       rect:
         serializedVersion: 2
-        x: 560
-        y: 720
-        width: 65
-        height: 65
+        x: 592
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_41
       rect:
         serializedVersion: 2
-        x: 630
-        y: 720
-        width: 65
-        height: 65
+        x: 666
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_42
       rect:
         serializedVersion: 2
-        x: 700
-        y: 720
-        width: 65
-        height: 65
+        x: 740
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_43
       rect:
         serializedVersion: 2
-        x: 770
-        y: 720
-        width: 65
-        height: 65
+        x: 814
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_44
       rect:
         serializedVersion: 2
-        x: 840
-        y: 720
-        width: 65
-        height: 65
+        x: 888
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_45
       rect:
         serializedVersion: 2
-        x: 910
-        y: 720
-        width: 65
-        height: 65
+        x: 962
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_46
       rect:
         serializedVersion: 2
-        x: 980
-        y: 720
-        width: 65
-        height: 65
+        x: 1036
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_47
       rect:
         serializedVersion: 2
-        x: 1050
-        y: 720
-        width: 65
-        height: 65
+        x: 1110
+        y: 592
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_48
       rect:
         serializedVersion: 2
-        x: 1
-        y: 642
-        width: 64
-        height: 64
+        x: 0
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_49
       rect:
         serializedVersion: 2
-        x: 71
-        y: 642
-        width: 64
-        height: 64
+        x: 74
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_50
       rect:
         serializedVersion: 2
-        x: 141
-        y: 642
-        width: 64
-        height: 64
+        x: 148
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_51
       rect:
         serializedVersion: 2
-        x: 211
-        y: 642
-        width: 64
-        height: 64
+        x: 222
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_52
       rect:
         serializedVersion: 2
-        x: 281
-        y: 642
-        width: 64
-        height: 64
+        x: 296
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_53
       rect:
         serializedVersion: 2
-        x: 351
-        y: 642
-        width: 64
-        height: 64
+        x: 370
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_54
       rect:
         serializedVersion: 2
-        x: 421
-        y: 642
-        width: 64
-        height: 64
+        x: 444
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_55
       rect:
         serializedVersion: 2
-        x: 491
-        y: 642
-        width: 64
-        height: 64
+        x: 518
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_56
       rect:
         serializedVersion: 2
-        x: 561
-        y: 642
-        width: 64
-        height: 64
+        x: 592
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_57
       rect:
         serializedVersion: 2
-        x: 631
-        y: 642
-        width: 64
-        height: 64
+        x: 666
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_58
       rect:
         serializedVersion: 2
-        x: 701
-        y: 642
-        width: 64
-        height: 64
+        x: 740
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_59
       rect:
         serializedVersion: 2
-        x: 771
-        y: 642
-        width: 64
-        height: 64
+        x: 814
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_60
       rect:
         serializedVersion: 2
-        x: 841
-        y: 642
-        width: 64
-        height: 64
+        x: 888
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_61
       rect:
         serializedVersion: 2
-        x: 911
-        y: 642
-        width: 64
-        height: 64
+        x: 962
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_62
       rect:
         serializedVersion: 2
-        x: 981
-        y: 642
-        width: 64
-        height: 64
+        x: 1036
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_63
       rect:
         serializedVersion: 2
-        x: 1051
-        y: 642
-        width: 64
-        height: 64
+        x: 1110
+        y: 518
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_64
       rect:
         serializedVersion: 2
         x: 0
-        y: 566
-        width: 65
-        height: 65
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_65
       rect:
         serializedVersion: 2
-        x: 70
-        y: 566
-        width: 65
-        height: 65
+        x: 74
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_66
       rect:
         serializedVersion: 2
-        x: 140
-        y: 566
-        width: 65
-        height: 65
+        x: 148
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_67
       rect:
         serializedVersion: 2
-        x: 210
-        y: 566
-        width: 65
-        height: 65
+        x: 222
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_68
       rect:
         serializedVersion: 2
-        x: 280
-        y: 566
-        width: 65
-        height: 65
+        x: 296
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_69
       rect:
         serializedVersion: 2
-        x: 350
-        y: 566
-        width: 65
-        height: 65
+        x: 370
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_70
       rect:
         serializedVersion: 2
-        x: 420
-        y: 566
-        width: 65
-        height: 65
+        x: 444
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_71
       rect:
         serializedVersion: 2
-        x: 490
-        y: 566
-        width: 65
-        height: 65
+        x: 518
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_72
       rect:
         serializedVersion: 2
-        x: 560
-        y: 566
-        width: 65
-        height: 65
+        x: 592
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_73
       rect:
         serializedVersion: 2
-        x: 630
-        y: 566
-        width: 65
-        height: 65
+        x: 666
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_74
       rect:
         serializedVersion: 2
-        x: 700
-        y: 566
-        width: 65
-        height: 65
+        x: 740
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_75
       rect:
         serializedVersion: 2
-        x: 770
-        y: 566
-        width: 65
-        height: 65
+        x: 814
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_76
       rect:
         serializedVersion: 2
-        x: 840
-        y: 566
-        width: 65
-        height: 65
+        x: 888
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_77
       rect:
         serializedVersion: 2
-        x: 910
-        y: 566
-        width: 65
-        height: 65
+        x: 962
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_78
       rect:
         serializedVersion: 2
-        x: 980
-        y: 566
-        width: 65
-        height: 65
+        x: 1036
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_79
       rect:
         serializedVersion: 2
-        x: 1050
-        y: 566
-        width: 65
-        height: 65
+        x: 1110
+        y: 444
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_80
       rect:
         serializedVersion: 2
         x: 0
-        y: 456
-        width: 65
-        height: 65
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_81
       rect:
         serializedVersion: 2
-        x: 70
-        y: 456
-        width: 65
-        height: 65
+        x: 74
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_82
       rect:
         serializedVersion: 2
-        x: 140
-        y: 456
-        width: 65
-        height: 65
+        x: 148
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_83
       rect:
         serializedVersion: 2
-        x: 210
-        y: 456
-        width: 65
-        height: 65
+        x: 222
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_84
       rect:
         serializedVersion: 2
-        x: 280
-        y: 456
-        width: 65
-        height: 65
+        x: 296
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_85
       rect:
         serializedVersion: 2
-        x: 350
-        y: 456
-        width: 65
-        height: 65
+        x: 370
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_86
       rect:
         serializedVersion: 2
-        x: 420
-        y: 456
-        width: 65
-        height: 65
+        x: 444
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_87
       rect:
         serializedVersion: 2
-        x: 490
-        y: 456
-        width: 65
-        height: 65
+        x: 518
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_88
       rect:
         serializedVersion: 2
-        x: 560
-        y: 456
-        width: 65
-        height: 65
+        x: 592
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_89
       rect:
         serializedVersion: 2
-        x: 630
-        y: 456
-        width: 65
-        height: 65
+        x: 666
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_90
       rect:
         serializedVersion: 2
-        x: 700
-        y: 456
-        width: 65
-        height: 65
+        x: 740
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_91
       rect:
         serializedVersion: 2
-        x: 770
-        y: 456
-        width: 65
-        height: 65
+        x: 814
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_92
       rect:
         serializedVersion: 2
-        x: 840
-        y: 456
-        width: 65
-        height: 65
+        x: 888
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_93
       rect:
         serializedVersion: 2
-        x: 910
-        y: 456
-        width: 65
-        height: 65
+        x: 962
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_94
       rect:
         serializedVersion: 2
-        x: 980
-        y: 456
-        width: 65
-        height: 65
+        x: 1036
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_95
       rect:
         serializedVersion: 2
-        x: 1050
-        y: 456
-        width: 65
-        height: 65
+        x: 1110
+        y: 370
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_96
       rect:
         serializedVersion: 2
         x: 0
-        y: 381
-        width: 65
-        height: 65
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_97
       rect:
         serializedVersion: 2
-        x: 70
-        y: 381
-        width: 65
-        height: 65
+        x: 74
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_98
       rect:
         serializedVersion: 2
-        x: 140
-        y: 381
-        width: 65
-        height: 65
+        x: 148
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_99
       rect:
         serializedVersion: 2
-        x: 210
-        y: 381
-        width: 65
-        height: 65
+        x: 222
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_100
       rect:
         serializedVersion: 2
-        x: 280
-        y: 381
-        width: 65
-        height: 65
+        x: 296
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_101
       rect:
         serializedVersion: 2
-        x: 350
-        y: 381
-        width: 65
-        height: 65
+        x: 370
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_102
       rect:
         serializedVersion: 2
-        x: 420
-        y: 381
-        width: 65
-        height: 65
+        x: 444
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_103
       rect:
         serializedVersion: 2
-        x: 490
-        y: 381
-        width: 65
-        height: 65
+        x: 518
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_104
       rect:
         serializedVersion: 2
-        x: 560
-        y: 381
-        width: 65
-        height: 65
+        x: 592
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_105
       rect:
         serializedVersion: 2
-        x: 630
-        y: 381
-        width: 65
-        height: 65
+        x: 666
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_106
       rect:
         serializedVersion: 2
-        x: 700
-        y: 381
-        width: 65
-        height: 65
+        x: 740
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_107
       rect:
         serializedVersion: 2
-        x: 770
-        y: 381
-        width: 65
-        height: 65
+        x: 814
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_108
       rect:
         serializedVersion: 2
-        x: 840
-        y: 381
-        width: 65
-        height: 65
+        x: 888
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_109
       rect:
         serializedVersion: 2
-        x: 910
-        y: 381
-        width: 65
-        height: 65
+        x: 962
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_110
       rect:
         serializedVersion: 2
-        x: 980
-        y: 381
-        width: 65
-        height: 65
+        x: 1036
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_111
       rect:
         serializedVersion: 2
-        x: 1050
-        y: 381
-        width: 65
-        height: 65
+        x: 1110
+        y: 296
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_112
       rect:
         serializedVersion: 2
         x: 0
-        y: 301
-        width: 65
-        height: 65
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_113
       rect:
         serializedVersion: 2
-        x: 70
-        y: 301
-        width: 65
-        height: 65
+        x: 74
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_114
       rect:
         serializedVersion: 2
-        x: 140
-        y: 301
-        width: 65
-        height: 65
+        x: 148
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_115
       rect:
         serializedVersion: 2
-        x: 210
-        y: 301
-        width: 65
-        height: 65
+        x: 222
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_116
       rect:
         serializedVersion: 2
-        x: 280
-        y: 301
-        width: 65
-        height: 65
+        x: 296
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_117
       rect:
         serializedVersion: 2
-        x: 350
-        y: 301
-        width: 65
-        height: 65
+        x: 370
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_118
       rect:
         serializedVersion: 2
-        x: 420
-        y: 301
-        width: 65
-        height: 65
+        x: 444
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_119
       rect:
         serializedVersion: 2
-        x: 490
-        y: 301
-        width: 65
-        height: 65
+        x: 518
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_120
       rect:
         serializedVersion: 2
-        x: 560
-        y: 301
-        width: 65
-        height: 65
+        x: 592
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_121
       rect:
         serializedVersion: 2
-        x: 630
-        y: 301
-        width: 65
-        height: 65
+        x: 666
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_122
       rect:
         serializedVersion: 2
-        x: 700
-        y: 301
-        width: 65
-        height: 65
+        x: 740
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_123
       rect:
         serializedVersion: 2
-        x: 770
-        y: 301
-        width: 65
-        height: 65
+        x: 814
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_124
       rect:
         serializedVersion: 2
-        x: 840
-        y: 301
-        width: 65
-        height: 65
+        x: 888
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_125
       rect:
         serializedVersion: 2
-        x: 910
-        y: 301
-        width: 65
-        height: 65
+        x: 962
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_126
       rect:
         serializedVersion: 2
-        x: 980
-        y: 301
-        width: 65
-        height: 65
+        x: 1036
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_127
       rect:
         serializedVersion: 2
-        x: 1050
-        y: 301
-        width: 65
-        height: 65
+        x: 1110
+        y: 222
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_128
       rect:
         serializedVersion: 2
         x: 0
-        y: 158
-        width: 65
-        height: 65
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_129
       rect:
         serializedVersion: 2
-        x: 70
-        y: 158
-        width: 65
-        height: 65
+        x: 74
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_130
       rect:
         serializedVersion: 2
-        x: 140
-        y: 158
-        width: 65
-        height: 65
+        x: 148
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_131
       rect:
         serializedVersion: 2
-        x: 210
-        y: 158
-        width: 65
-        height: 65
+        x: 222
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_132
       rect:
         serializedVersion: 2
-        x: 280
-        y: 158
-        width: 65
-        height: 65
+        x: 296
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_133
       rect:
         serializedVersion: 2
-        x: 350
-        y: 158
-        width: 65
-        height: 65
+        x: 370
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_134
       rect:
         serializedVersion: 2
-        x: 420
-        y: 158
-        width: 65
-        height: 65
+        x: 444
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_135
       rect:
         serializedVersion: 2
-        x: 490
-        y: 158
-        width: 65
-        height: 65
+        x: 518
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_136
       rect:
         serializedVersion: 2
-        x: 560
-        y: 158
-        width: 65
-        height: 65
+        x: 592
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_137
       rect:
         serializedVersion: 2
-        x: 630
-        y: 158
-        width: 65
-        height: 65
+        x: 666
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_138
       rect:
         serializedVersion: 2
-        x: 700
-        y: 158
-        width: 65
-        height: 65
+        x: 740
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_139
       rect:
         serializedVersion: 2
-        x: 770
-        y: 158
-        width: 65
-        height: 65
+        x: 814
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_140
       rect:
         serializedVersion: 2
-        x: 840
-        y: 158
-        width: 65
-        height: 65
+        x: 888
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_141
       rect:
         serializedVersion: 2
-        x: 910
-        y: 158
-        width: 65
-        height: 65
+        x: 962
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_142
       rect:
         serializedVersion: 2
-        x: 980
-        y: 158
-        width: 65
-        height: 65
+        x: 1036
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_143
       rect:
         serializedVersion: 2
-        x: 1050
-        y: 158
-        width: 65
-        height: 65
+        x: 1110
+        y: 148
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Tileset_Temple_Cinza_144
       rect:
         serializedVersion: 2
         x: 0
-        y: 86
-        width: 65
-        height: 65
+        y: 74
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_145
       rect:
         serializedVersion: 2
-        x: 70
-        y: 86
-        width: 65
-        height: 65
+        x: 74
+        y: 74
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_146
       rect:
         serializedVersion: 2
-        x: 140
-        y: 86
-        width: 65
-        height: 65
+        x: 148
+        y: 74
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_147
       rect:
         serializedVersion: 2
-        x: 210
-        y: 86
-        width: 65
-        height: 65
+        x: 222
+        y: 74
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_148
       rect:
         serializedVersion: 2
-        x: 280
-        y: 86
-        width: 65
-        height: 65
+        x: 296
+        y: 74
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_149
       rect:
         serializedVersion: 2
-        x: 350
-        y: 86
-        width: 65
-        height: 65
+        x: 370
+        y: 74
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_150
       rect:
         serializedVersion: 2
-        x: 420
-        y: 86
-        width: 65
-        height: 65
+        x: 444
+        y: 74
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_151
       rect:
         serializedVersion: 2
-        x: 490
-        y: 86
-        width: 65
-        height: 65
+        x: 518
+        y: 74
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_152
       rect:
         serializedVersion: 2
-        x: 560
-        y: 86
-        width: 65
-        height: 65
+        x: 592
+        y: 74
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_153
       rect:
         serializedVersion: 2
-        x: 630
-        y: 86
-        width: 65
-        height: 65
+        x: 666
+        y: 74
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_154
       rect:
         serializedVersion: 2
-        x: 700
-        y: 86
-        width: 65
-        height: 65
+        x: 740
+        y: 74
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_155
       rect:
         serializedVersion: 2
-        x: 770
-        y: 86
-        width: 65
-        height: 65
+        x: 814
+        y: 74
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_156
       rect:
         serializedVersion: 2
-        x: 840
-        y: 87
-        width: 65
-        height: 64
+        x: 888
+        y: 74
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_157
       rect:
         serializedVersion: 2
-        x: 910
-        y: 86
-        width: 65
-        height: 65
+        x: 962
+        y: 74
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_158
       rect:
         serializedVersion: 2
-        x: 980
-        y: 86
-        width: 65
-        height: 65
+        x: 1036
+        y: 74
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_159
       rect:
         serializedVersion: 2
-        x: 1050
-        y: 87
-        width: 65
-        height: 64
+        x: 1110
+        y: 74
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_160
@@ -1490,143 +1490,143 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 65
-        height: 65
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_161
       rect:
         serializedVersion: 2
-        x: 70
+        x: 74
         y: 0
-        width: 65
-        height: 65
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_162
       rect:
         serializedVersion: 2
-        x: 140
+        x: 148
         y: 0
-        width: 65
-        height: 65
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_163
       rect:
         serializedVersion: 2
-        x: 210
+        x: 222
         y: 0
-        width: 65
-        height: 65
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_164
       rect:
         serializedVersion: 2
-        x: 280
+        x: 296
         y: 0
-        width: 65
-        height: 65
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_165
       rect:
         serializedVersion: 2
-        x: 350
+        x: 370
         y: 0
-        width: 65
-        height: 65
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_166
       rect:
         serializedVersion: 2
-        x: 420
+        x: 444
         y: 0
-        width: 65
-        height: 65
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_167
       rect:
         serializedVersion: 2
-        x: 490
+        x: 518
         y: 0
-        width: 65
-        height: 65
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_168
       rect:
         serializedVersion: 2
-        x: 560
+        x: 592
         y: 0
-        width: 65
-        height: 65
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_169
       rect:
         serializedVersion: 2
-        x: 630
+        x: 666
         y: 0
-        width: 65
-        height: 65
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_170
       rect:
         serializedVersion: 2
-        x: 700
+        x: 740
         y: 0
-        width: 65
-        height: 65
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_171
       rect:
         serializedVersion: 2
-        x: 770
+        x: 814
         y: 0
-        width: 65
-        height: 65
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_172
       rect:
         serializedVersion: 2
-        x: 840
+        x: 888
         y: 0
-        width: 65
-        height: 65
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_173
       rect:
         serializedVersion: 2
-        x: 910
+        x: 962
         y: 0
-        width: 65
-        height: 65
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_174
       rect:
         serializedVersion: 2
-        x: 980
+        x: 1036
         y: 0
-        width: 65
-        height: 65
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Tileset_Temple_Cinza_175
       rect:
         serializedVersion: 2
-        x: 1050
+        x: 1110
         y: 0
-        width: 65
-        height: 65
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
   spritePackingTag: 
