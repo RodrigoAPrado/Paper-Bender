@@ -22,6 +22,7 @@ public class PositionDetect : MonoBehaviour {
 
 	public Vector3[] cameraPositions;
 	NPCDialogController nPC;
+	public GameObject touchParticle;
 		
 
 	void Start () {
@@ -61,6 +62,9 @@ public class PositionDetect : MonoBehaviour {
 		{
 			if(!movePlayer.grounded || movePlayer.bending)
 				return;
+			GameObject touchParticleActive = GameObject.Instantiate(touchParticle, new Vector3(mouseposition.x, mouseposition.y, 5), touchParticle.transform.rotation) as GameObject;
+			touchParticleActive.GetComponent<ParticleSystem>().particleSystem.renderer.sortingLayerName = "Particles";
+			GameObject.Destroy(touchParticleActive, 2);
 			RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, 1, bendingLayer);
 			if(hit.collider != null)
 			{
@@ -87,10 +91,12 @@ public class PositionDetect : MonoBehaviour {
 				if(hit.collider.tag=="PaperBendB")
 				{
 					//hit.collider.gameObject.GetComponent<PaperBendB>().BendPaper();
+					GameObject.Destroy(touchParticleActive);
 					movePlayer.BendAnimation(hit.collider.gameObject.GetComponent<PaperBendB>());
 					return;
 				}
 			}
+
 			hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, 1, ballLayer);
 			if(hit.collider != null)
 			{
