@@ -15,12 +15,14 @@ public class UltraRangeStatueController : MonoBehaviour {
 	float lightTime;
 	bool increase;
 	public UltraRangeStatueController otherStatue;
+	public ParticleSystem particleAura;
 	// Use this for initialization
 	void Start () {
 		cM = Camera.main.GetComponent<CameraMovement>();
 		lightTime = 0;
 		Color c = new Color(1,1,1,lightTime);
 		light.color = c;
+		particleAura.renderer.sortingLayerName = "Particles";
 	}
 	
 	// Update is called once per frame
@@ -32,18 +34,22 @@ public class UltraRangeStatueController : MonoBehaviour {
 		}
 		if(Physics2D.OverlapArea(left.position, right.position, player))
    	    {
+			//particleAura.Play();
 			range.enabled = false;
 			ultraRange.enabled = true;
 			working = true;
 		}
 		else
 		{
+			//particleAura.Stop ();
 			ultraRange.enabled = false;
 			range.enabled = true;
 			working = false;
 		}
 		if(working)
 		{
+			if(!particleAura.isPlaying)
+				particleAura.Play();
 			if(increase)
 			{
 				if(lightTime < 1)
@@ -61,6 +67,9 @@ public class UltraRangeStatueController : MonoBehaviour {
 		}
 		else
 		{
+			if(!particleAura.isStopped)
+				particleAura.Stop();
+
 			if(lightTime > 0)
 				lightTime -= Time.deltaTime * 0.5f;
 			else

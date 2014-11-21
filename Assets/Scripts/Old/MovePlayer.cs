@@ -54,6 +54,12 @@ public class MovePlayer : MonoBehaviour {
 	bool jumping;
 	float jumpCounter;
 	NPCDialogController nPC;
+	public GameObject jumpParticle;
+	public GameObject fallParticle;
+	bool fallTrigger;
+	public GameObject staffParticle;
+	bool staffTrigger;
+	public GameObject bendParticle;
 	// Use this for initialization
 	void Start () {
 		nPC = GameObject.FindGameObjectWithTag("ChatBox").GetComponent<NPCDialogController>();
@@ -101,7 +107,26 @@ public class MovePlayer : MonoBehaviour {
 		}
 		else
 		{
+			fallTrigger = true;
 			currentGround = null;
+		}
+		if(fallTrigger && grounded)
+		{
+			fallTrigger = false;
+			Vector3[] fallParticleRotation = new Vector3[2];
+			fallParticleRotation[0] = new Vector3(0, -90, 90);
+			fallParticleRotation[1] = new Vector3(0, 90, -90);
+			int j = 0;
+			for(float i = -0.2f; i< 0.5f; i += 0.4f)
+			{
+				GameObject fallParticleActive = GameObject.Instantiate(fallParticle, new Vector2(groundCheck.position.x, groundCheck.position.y), fallParticle.transform.rotation) as GameObject;
+				fallParticleActive.transform.eulerAngles = fallParticleRotation[j];
+				fallParticleActive.GetComponent<ParticleSystem>().particleSystem.renderer.sortingLayerName = "Particles";
+				fallParticleActive.GetComponent<ParticleSystem>().particleSystem.startRotation = Random.Range(0,89) + i*90;
+				fallParticleActive.GetComponent<ParticleSystem>().particleSystem.startSize = Random.Range(0.7f,0.9f);
+				GameObject.Destroy(fallParticleActive, 4);
+				j++;
+			}
 		}
 		if(moving)
 		{
@@ -158,20 +183,36 @@ public class MovePlayer : MonoBehaviour {
 			{
 				paperToBend.BendPaper();
 				bended = true;
+				anim.SetBool("Bend", false);
 			}
 			if(anim.GetCurrentAnimatorStateInfo(0).IsName("Priest_Idle") && animationCounter <= 0)
 			{
 				bending = false;
 				bended = false;
-				anim.SetBool("Bend", false);
 				dontJump = false;
 				jumpedOnce = false;
 				adjustJumpSpeed = false;
+				staffTrigger = false;
 			}
 		}
 		if(animationCounter > 0)
 		{
 			animationCounter -= Time.deltaTime;
+			if(animationCounter < 0)
+			{
+				animationCounter = 0;
+			}
+			if(animationCounter < 0.2f && !staffTrigger)
+			{
+				GameObject staffParticleActive = GameObject.Instantiate(staffParticle, new Vector2(groundCheck.position.x + (0.6f * speed), groundCheck.position.y + 1.43f), staffParticle.transform.rotation) as GameObject;
+				staffParticleActive.GetComponent<ParticleSystem>().particleSystem.renderer.sortingLayerName = "Particles";
+				GameObject.Destroy(staffParticleActive, 2);
+				staffTrigger = true;
+				GameObject bendParticleActive = GameObject.Instantiate(bendParticle, new Vector2(paperToBend.transform.position.x, paperToBend.transform.position.y), bendParticle.transform.rotation) as GameObject;
+				bendParticleActive.GetComponent<ParticleSystem>().particleSystem.renderer.sortingLayerName = "Particles";
+				GameObject.Destroy(bendParticleActive, 3);
+				//paperToBend.transform.position;
+			}
 		}
 	}
 	// Update is called once per frame
@@ -276,6 +317,21 @@ public class MovePlayer : MonoBehaviour {
 				rigidbody2D.gravityScale = 1;
 				rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, jumpSpeed);
 				jumpedOnce = true;
+				Vector3[] jumpParticleRotation = new Vector3[3];
+				jumpParticleRotation[0] = new Vector3(60, -90, 90);
+				jumpParticleRotation[1] = new Vector3(90, 180, 0);
+				jumpParticleRotation[2] = new Vector3(60, 90, -90);
+				int j = 0;
+				for(float i = -0.6f; i< 1; i += 0.6f)
+				{
+					GameObject jumpParticleActive = GameObject.Instantiate(jumpParticle, new Vector2(groundCheck.position.x + i, groundCheck.position.y + 0.4f), jumpParticle.transform.rotation) as GameObject;
+					jumpParticleActive.transform.eulerAngles = jumpParticleRotation[j];
+					jumpParticleActive.GetComponent<ParticleSystem>().particleSystem.renderer.sortingLayerName = "Particles";
+					jumpParticleActive.GetComponent<ParticleSystem>().particleSystem.startRotation = Random.Range(0,89) + i*90;
+					jumpParticleActive.GetComponent<ParticleSystem>().particleSystem.startSize = Random.Range(0.7f,0.9f);
+					GameObject.Destroy(jumpParticleActive, 4);
+					j++;
+				}
 			}
 			return;
 		}
@@ -290,6 +346,22 @@ public class MovePlayer : MonoBehaviour {
 			rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, jumpSpeed);
 			jumpedOnce = true;
 			jumping = true;
+			Vector3[] jumpParticleRotation = new Vector3[3];
+			jumpParticleRotation[0] = new Vector3(60, -90, 90);
+			jumpParticleRotation[1] = new Vector3(90, 180, 0);
+			jumpParticleRotation[2] = new Vector3(60, 90, -90);
+			int j = 0;
+			for(float i = -0.6f; i< 1; i += 0.6f)
+			{
+				GameObject jumpParticleActive = GameObject.Instantiate(jumpParticle, new Vector2(groundCheck.position.x + i, groundCheck.position.y + 0.4f), jumpParticle.transform.rotation) as GameObject;
+				jumpParticleActive.transform.eulerAngles = jumpParticleRotation[j];
+				jumpParticleActive.GetComponent<ParticleSystem>().particleSystem.renderer.sortingLayerName = "Particles";
+				jumpParticleActive.GetComponent<ParticleSystem>().particleSystem.startRotation = Random.Range(0,89) + i*90;
+				jumpParticleActive.GetComponent<ParticleSystem>().particleSystem.startSize = Random.Range(0.7f,0.9f);
+				GameObject.Destroy(jumpParticleActive, 4);
+				j++;
+			}
+
 			return;
 		}
 	}
@@ -400,6 +472,7 @@ public class MovePlayer : MonoBehaviour {
 			bending = true;
 			anim.SetBool("Bend", true);
 			animationCounter = 0.3f;
+
 		}
 	}
 	public void MoveCharacter(float mouseInfo, float mouseHeight, bool paperBallCheck)

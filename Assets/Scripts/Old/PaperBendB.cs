@@ -73,6 +73,10 @@ public class PaperBendB : MonoBehaviour {
 		else
 			return;
 	}
+	public void BendAnimation()
+	{
+
+	}
 	public void BendPaper()
 	{
 
