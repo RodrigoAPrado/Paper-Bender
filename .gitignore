@@ -27,6 +27,8 @@ $RECYCLE.BIN/
 
 # Icon must ends with two \r.
 Icon
+# Unity Meta Files
+.meta
 
 # Thumbnails
 ._*
