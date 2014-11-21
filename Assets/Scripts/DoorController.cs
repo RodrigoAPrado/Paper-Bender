@@ -12,15 +12,36 @@ public class DoorController : MonoBehaviour {
 	[SerializeField] float speedMod;
 	float speed;
 	[SerializeField] bool horizontal;
+	public ParticleSystem doorParticle;
+	public ParticleSystem doorParticleDust;
+	public GameObject fallParticle;
+	public Transform doorDustClosePosition;
 	// Use this for initialization
 	void Start () {
-	
+		if(doorParticle != null)
+		{
+			doorParticle.renderer.sortingLayerName = "Particles";
+		}
+		if(doorParticleDust != null)
+		{
+			doorParticleDust.renderer.sortingLayerName = "Particles";
+		}
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if(moving)
 		{
+			if(doorParticle != null)
+			{
+				if(!doorParticle.isPlaying)
+					doorParticle.Play();
+			}
+			if(doorParticleDust != null)
+			{
+				if(!doorParticleDust.isPlaying)
+					doorParticleDust.Play();
+			}
 			doorOpenned.SetActive(false);
 			doorClosed.SetActive(false);
 			doorMoving.SetActive(true);
@@ -65,6 +86,23 @@ public class DoorController : MonoBehaviour {
 						{
 							moving = false;
 							moveStart = false;
+							if(fallParticle != null && doorDustClosePosition != null)
+							{
+								Vector3[] fallParticleRotation = new Vector3[2];
+								fallParticleRotation[0] = new Vector3(0, -90, 90);
+								fallParticleRotation[1] = new Vector3(0, 90, -90);
+								int j = 0;
+								for(float i = -0.2f; i< 0.5f; i += 0.4f)
+								{
+									GameObject fallParticleActive = GameObject.Instantiate(fallParticle, new Vector2(doorDustClosePosition.position.x, doorDustClosePosition.position.y), fallParticle.transform.rotation) as GameObject;
+									fallParticleActive.transform.eulerAngles = fallParticleRotation[j];
+									fallParticleActive.GetComponent<ParticleSystem>().particleSystem.renderer.sortingLayerName = "Particles";
+									fallParticleActive.GetComponent<ParticleSystem>().particleSystem.startRotation = Random.Range(0,89) + i*90;
+									fallParticleActive.GetComponent<ParticleSystem>().particleSystem.startSize = Random.Range(1.1f,1.3f);
+									GameObject.Destroy(fallParticleActive, 4);
+									j++;
+								}
+							}
 						}
 					}
 					else
@@ -74,6 +112,23 @@ public class DoorController : MonoBehaviour {
 						{
 							moving = false;
 							moveStart = false;
+							if(fallParticle != null && doorDustClosePosition != null)
+							{
+								Vector3[] fallParticleRotation = new Vector3[2];
+								fallParticleRotation[0] = new Vector3(0, -90, 90);
+								fallParticleRotation[1] = new Vector3(0, 90, -90);
+								int j = 0;
+								for(float i = -0.2f; i< 0.5f; i += 0.4f)
+								{
+									GameObject fallParticleActive = GameObject.Instantiate(fallParticle, new Vector2(doorDustClosePosition.position.x, doorDustClosePosition.position.y), fallParticle.transform.rotation) as GameObject;
+									fallParticleActive.transform.eulerAngles = fallParticleRotation[j];
+									fallParticleActive.GetComponent<ParticleSystem>().particleSystem.renderer.sortingLayerName = "Particles";
+									fallParticleActive.GetComponent<ParticleSystem>().particleSystem.startRotation = Random.Range(0,89) + i*90;
+									fallParticleActive.GetComponent<ParticleSystem>().particleSystem.startSize = Random.Range(1.1f,1.3f);
+									GameObject.Destroy(fallParticleActive, 4);
+									j++;
+								}
+							}
 						}
 					}
 					doorMoving.rigidbody2D.velocity = new Vector2(speed * speedMod * Time.deltaTime, 0);
@@ -112,6 +167,23 @@ public class DoorController : MonoBehaviour {
 						{
 							moving = false;
 							moveStart = false;
+							if(fallParticle != null && doorDustClosePosition != null)
+							{
+								Vector3[] fallParticleRotation = new Vector3[2];
+								fallParticleRotation[0] = new Vector3(0, -90, 90);
+								fallParticleRotation[1] = new Vector3(0, 90, -90);
+								int j = 0;
+								for(float i = -0.2f; i< 0.5f; i += 0.4f)
+								{
+									GameObject fallParticleActive = GameObject.Instantiate(fallParticle, new Vector2(doorDustClosePosition.position.x, doorDustClosePosition.position.y), fallParticle.transform.rotation) as GameObject;
+									fallParticleActive.transform.eulerAngles = fallParticleRotation[j];
+									fallParticleActive.GetComponent<ParticleSystem>().particleSystem.renderer.sortingLayerName = "Particles";
+									fallParticleActive.GetComponent<ParticleSystem>().particleSystem.startRotation = Random.Range(0,89) + i*90;
+									fallParticleActive.GetComponent<ParticleSystem>().particleSystem.startSize = Random.Range(1.1f,1.3f);
+									GameObject.Destroy(fallParticleActive, 4);
+									j++;
+								}
+							}
 						}
 					}
 					else
@@ -121,6 +193,23 @@ public class DoorController : MonoBehaviour {
 						{
 							moving = false;
 							moveStart = false;
+							if(fallParticle != null && doorDustClosePosition != null)
+							{
+								Vector3[] fallParticleRotation = new Vector3[2];
+								fallParticleRotation[0] = new Vector3(0, -90, 90);
+								fallParticleRotation[1] = new Vector3(0, 90, -90);
+								int j = 0;
+								for(float i = -0.2f; i< 0.5f; i += 0.4f)
+								{
+									GameObject fallParticleActive = GameObject.Instantiate(fallParticle, new Vector2(doorDustClosePosition.position.x, doorDustClosePosition.position.y), fallParticle.transform.rotation) as GameObject;
+									fallParticleActive.transform.eulerAngles = fallParticleRotation[j];
+									fallParticleActive.GetComponent<ParticleSystem>().particleSystem.renderer.sortingLayerName = "Particles";
+									fallParticleActive.GetComponent<ParticleSystem>().particleSystem.startRotation = Random.Range(0,89) + i*90;
+									fallParticleActive.GetComponent<ParticleSystem>().particleSystem.startSize = Random.Range(1.1f,1.3f);
+									GameObject.Destroy(fallParticleActive, 4);
+									j++;
+								}
+							}
 						}
 					}
 					doorMoving.rigidbody2D.velocity = new Vector2(0, speed * speedMod * Time.deltaTime);
@@ -129,6 +218,16 @@ public class DoorController : MonoBehaviour {
 		}
 		else
 		{
+			if(doorParticle != null)
+			{
+				if(!doorParticle.isStopped)
+					doorParticle.Stop();
+			}
+			if(doorParticleDust != null)
+			{
+				if(!doorParticleDust.isStopped)
+					doorParticleDust.Stop();
+			}
 			doorOpenned.SetActive(false);
 			doorClosed.SetActive(false);
 			doorMoving.SetActive(false);
