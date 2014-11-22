@@ -232,6 +232,7 @@
      <Compile Include="Assets\Scripts\Old\MovingPlataformController.cs" />
      <Compile Include="Assets\Scripts\Old\PaperBend.cs" />
      <Compile Include="Assets\Scripts\Old\PaperBendB.cs" />
+     <Compile Include="Assets\Scripts\Old\PersistentObject.cs" />
      <Compile Include="Assets\Scripts\Old\PositionDetect.cs" />
      <Compile Include="Assets\Scripts\Old\PuzzleDurexController.cs" />
      <Compile Include="Assets\Scripts\Old\RotatingPlataform.cs" />
