@@ -47,6 +47,7 @@ public class ConfirmSave : MonoBehaviour {
 			fM.CheckFiles();
 			print ("GameLoaded");
 			ES2.Save(fM.chosenSave,"currentSave.txt");
+            Application.LoadLevel("StageLoader");
 			break;
 		case saveButtons.CancelCreate:
 			FilesScreen.SetActive(true);
