@@ -196,6 +196,7 @@
      <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
      <Compile Include="Assets\Old_Pause\scripts\btn_Pause.cs" />
+     <Compile Include="Assets\Scripts\AtlasTempleDoor.cs" />
      <Compile Include="Assets\Scripts\BanditController.cs" />
      <Compile Include="Assets\Scripts\BanditControllerNeo.cs" />
      <Compile Include="Assets\Scripts\BanditWayPoint.cs" />
@@ -241,6 +242,7 @@
      <Compile Include="Assets\Scripts\PaperDurexChecker.cs" />
      <Compile Include="Assets\Scripts\PaperMaker.cs" />
      <Compile Include="Assets\Scripts\PaperToBeCut.cs" />
+     <Compile Include="Assets\Scripts\ParticleDustEmitter.cs" />
      <Compile Include="Assets\Scripts\Pause.cs" />
      <Compile Include="Assets\Scripts\PuzzleDurexControllerNeo.cs" />
      <Compile Include="Assets\Scripts\SaveManager.cs" />

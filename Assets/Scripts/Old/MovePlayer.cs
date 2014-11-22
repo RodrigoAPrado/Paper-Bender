@@ -440,9 +440,11 @@ public class MovePlayer : MonoBehaviour {
 	}
 	public void Flip()
 	{
-		if(Time.timeScale == 0 || nPC.onChat)
-		{
-			return;
+		if(nPC != null){
+			if(Time.timeScale == 0 || nPC.onChat)
+			{
+				return;
+			}
 		}
 		Vector2 theScale = new Vector2(avatarSprite.localScale.x, avatarSprite.localScale.y);
 		theScale.x *= -1;
