@@ -6,6 +6,7 @@ public class FileManager : MonoBehaviour {
 	public GameObject[] fileEmpty;
 	public GameObject[] fileSave;
 	public GameObject[] fileErase;
+    public GameObject[] fileEmptyErase;
 	public int chosenSave;
 
 	// Use this for initialization
@@ -31,6 +32,7 @@ public class FileManager : MonoBehaviour {
 			int index = i+1;
 			print (ES2.Load<bool>("file" + index.ToString() + ".txt?tag=init"));
 			fileErase[i].SetActive(ES2.Load<bool>("file" + index.ToString() + ".txt?tag=init"));
+            fileEmptyErase[i].SetActive(!ES2.Load<bool>("file" + index.ToString() + ".txt?tag=init"));
 		}
 	}
 }
