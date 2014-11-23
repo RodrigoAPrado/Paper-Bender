@@ -40,6 +40,11 @@ public class SoundManager : MonoBehaviour {
 			currSource.volume = vol;
 		}
 		indoorMusic.volume = vol;
+
+        GameObject.Find("_NPCDialogController").GetComponent<AudioSource>().volume = 1;
+
+        Debug.Log("MAX VOL: " + maxVol);
+
 		ES2.Save (vol,"MusicVol");
 	}
 	

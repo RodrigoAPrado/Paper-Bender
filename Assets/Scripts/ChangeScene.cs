@@ -41,8 +41,11 @@ public class ChangeScene : MonoBehaviour {
 					else
 					{
                         begin = true;
-                        if (GameObject.Find("UI Button Pause") == null)
-                            GameObject.Instantiate(Resources.Load("UI Button Pause") as GameObject, new Vector3(6666, 6666, 0), new Quaternion(0, 0, 0, 0));
+                        if (GameObject.Find("UI Button Pause") != null)
+                            Destroy(GameObject.Find("UI Button Pause"));
+
+                        GameObject pauseUI = GameObject.Instantiate(Resources.Load("UI Button Pause") as GameObject, new Vector3(6666, 6666, 0), new Quaternion(0, 0, 0, 0)) as GameObject;
+                        pauseUI.name = "UI Button Pause";
 						opacity = 0;
 					}
 				}

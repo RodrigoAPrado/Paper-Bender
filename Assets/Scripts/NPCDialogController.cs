@@ -52,13 +52,15 @@ public class NPCDialogController : MonoBehaviour {
 		Chatting();
 		if(onChat)
 		{
-			if(!volumeMixed)
-			{
+            if(!volumeMixed)
+            {
 				lastVolume = FindObjectOfType<SoundManager>().maxVol;
-				if(lastVolume <= 0.1)
+				if(lastVolume >= 0.1)
 					FindObjectOfType<SoundManager>().ChangeVolume(0.1f);
+                Debug.Log("VAI SOM");
+                Debug.Log(lastVolume);
 				volumeMixed = true;
-			}
+            }
 
 			CheckAvatarImage();
 			gText.gameObject.SetActive(true);
@@ -154,6 +156,8 @@ public class NPCDialogController : MonoBehaviour {
 		if(currentLine >= dialogueScript.Length)
 		{
 			onChat = false;
+            Debug.Log("VOLTA SOM");
+            Debug.Log(lastVolume);
 			FindObjectOfType<SoundManager>().ChangeVolume(lastVolume);
 			return;
 		}

@@ -3,6 +3,8 @@ using System.Collections;
 
 public class MovePlayer : MonoBehaviour {
 
+    public LayerMask ballLayer;
+
 	//Movement
 	Vector2 charPosition;
 	float mouseClicked;
@@ -207,8 +209,11 @@ public class MovePlayer : MonoBehaviour {
 				GameObject staffParticleActive = GameObject.Instantiate(staffParticle, new Vector2(groundCheck.position.x + (0.6f * speed), groundCheck.position.y + 1.43f), staffParticle.transform.rotation) as GameObject;
 				staffParticleActive.GetComponent<ParticleSystem>().particleSystem.renderer.sortingLayerName = "Particles";
 				GameObject.Destroy(staffParticleActive, 2);
-				staffTrigger = true;
-				GameObject bendParticleActive = GameObject.Instantiate(bendParticle, new Vector2(paperToBend.transform.position.x, paperToBend.transform.position.y), bendParticle.transform.rotation) as GameObject;
+                staffTrigger = true;
+
+                RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, 1, ballLayer);
+
+                GameObject bendParticleActive = GameObject.Instantiate(bendParticle, new Vector2(hit.transform.position.x, hit.transform.position.y), bendParticle.transform.rotation) as GameObject;
 				bendParticleActive.GetComponent<ParticleSystem>().particleSystem.renderer.sortingLayerName = "Particles";
 				GameObject.Destroy(bendParticleActive, 3);
 				//paperToBend.transform.position;

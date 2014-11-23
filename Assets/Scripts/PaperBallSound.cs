@@ -5,6 +5,8 @@ public class PaperBallSound : MonoBehaviour {
 
 	float volume;
 	float value;
+
+    bool isRolling = false;
 	// Use this for initialization
 	void Start () {
 	
@@ -15,15 +17,22 @@ public class PaperBallSound : MonoBehaviour {
 	{
 		if(rigidbody2D.velocity.x > 0.5 || rigidbody2D.velocity.x < -0.5)
 		{
-			volume = 1;
+			volume = 0.5f;
 			
 			audio.volume = volume;
-			audio.Play();
+
+            if(!isRolling)
+            {
+    			audio.Play();
+                isRolling = true;
+            }
 		}
 		else
 		{
 			audio.volume = 0;
 			audio.Stop();
+
+            isRolling = false;
 		}
 	
 	}
