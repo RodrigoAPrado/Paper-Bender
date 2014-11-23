@@ -50,43 +50,43 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 1536
-        width: 333
+        width: 332
         height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Villager_Idle_1
       rect:
         serializedVersion: 2
-        x: 333
+        x: 332
         y: 1536
-        width: 333
+        width: 332
         height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Villager_Idle_2
       rect:
         serializedVersion: 2
-        x: 666
+        x: 664
         y: 1536
-        width: 333
+        width: 332
         height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Villager_Idle_3
       rect:
         serializedVersion: 2
-        x: 999
+        x: 996
         y: 1536
-        width: 333
+        width: 332
         height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Villager_Idle_4
       rect:
         serializedVersion: 2
-        x: 1332
+        x: 1328
         y: 1536
-        width: 333
+        width: 332
         height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -95,43 +95,43 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 1024
-        width: 333
+        width: 332
         height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Villager_Idle_6
       rect:
         serializedVersion: 2
-        x: 333
+        x: 332
         y: 1024
-        width: 333
+        width: 332
         height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Villager_Idle_7
       rect:
         serializedVersion: 2
-        x: 666
+        x: 664
         y: 1024
-        width: 333
+        width: 332
         height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Villager_Idle_8
       rect:
         serializedVersion: 2
-        x: 999
+        x: 996
         y: 1024
-        width: 333
+        width: 332
         height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Villager_Idle_9
       rect:
         serializedVersion: 2
-        x: 1332
+        x: 1328
         y: 1024
-        width: 333
+        width: 332
         height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -140,43 +140,43 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 512
-        width: 333
+        width: 332
         height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Villager_Idle_11
       rect:
         serializedVersion: 2
-        x: 333
+        x: 332
         y: 512
-        width: 333
+        width: 332
         height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Villager_Idle_12
       rect:
         serializedVersion: 2
-        x: 666
+        x: 664
         y: 512
-        width: 333
+        width: 332
         height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Villager_Idle_13
       rect:
         serializedVersion: 2
-        x: 999
+        x: 996
         y: 512
-        width: 333
+        width: 332
         height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Villager_Idle_14
       rect:
         serializedVersion: 2
-        x: 1332
+        x: 1328
         y: 512
-        width: 333
+        width: 332
         height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -185,43 +185,43 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 333
+        width: 332
         height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Villager_Idle_16
       rect:
         serializedVersion: 2
-        x: 333
+        x: 332
         y: 0
-        width: 333
+        width: 332
         height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Villager_Idle_17
       rect:
         serializedVersion: 2
-        x: 666
+        x: 664
         y: 0
-        width: 333
+        width: 332
         height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Villager_Idle_18
       rect:
         serializedVersion: 2
-        x: 999
+        x: 996
         y: 0
-        width: 333
+        width: 332
         height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Villager_Idle_19
       rect:
         serializedVersion: 2
-        x: 1332
+        x: 1328
         y: 0
-        width: 333
+        width: 332
         height: 512
       alignment: 0
       pivot: {x: 0, y: 0}

@@ -18,6 +18,8 @@ public class NPCDialogController : MonoBehaviour {
 	public bool onChat;
 	public Texture[] avatarImage;
 	AudioClip[] avatarClip;
+	float lastVolume;
+	bool volumeMixed = false;
 	public enum allAvatar
 	{
 		Abutre,
@@ -50,6 +52,14 @@ public class NPCDialogController : MonoBehaviour {
 		Chatting();
 		if(onChat)
 		{
+			if(!volumeMixed)
+			{
+				lastVolume = FindObjectOfType<SoundManager>().maxVol;
+				if(lastVolume <= 0.1)
+					FindObjectOfType<SoundManager>().ChangeVolume(0.1f);
+				volumeMixed = true;
+			}
+
 			CheckAvatarImage();
 			gText.gameObject.SetActive(true);
 			gTextureBox.gameObject.SetActive(true);
@@ -66,6 +76,7 @@ public class NPCDialogController : MonoBehaviour {
 		}
 		else
 		{
+			volumeMixed = false;
 			gText.gameObject.SetActive(false);
 			gTextureBox.gameObject.SetActive(false);
 			gTextureAvatar.gameObject.SetActive(false);
@@ -143,6 +154,7 @@ public class NPCDialogController : MonoBehaviour {
 		if(currentLine >= dialogueScript.Length)
 		{
 			onChat = false;
+			FindObjectOfType<SoundManager>().ChangeVolume(lastVolume);
 			return;
 		}
 		fullString = dialogueScript[currentLine];

@@ -39,7 +39,7 @@ public class SoundManager : MonoBehaviour {
 			
 			currSource.volume = vol;
 		}
-
+		indoorMusic.volume = vol;
 		ES2.Save (vol,"MusicVol");
 	}
 	
