@@ -21,5 +21,6 @@ public class btn_pause : MonoBehaviour {
         //CRIAR O PAUSE
         Time.timeScale = 0;
         GameObject.Instantiate(Resources.Load("UI Pause") as GameObject, new Vector3(9999, 0, 0), new Quaternion(0, 0, 0, 0));
+        GameObject.Destroy(transform.parent.gameObject);
     }
 }
