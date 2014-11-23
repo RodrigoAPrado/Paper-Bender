@@ -39,6 +39,10 @@ public class FallingPlataformController : MonoBehaviour {
 				{
 					currentWeight += 2;
 				}
+				if(collidersDetected[i].tag == "Floor")
+				{
+					currentWeight += 10;
+				}
 			}
 		}
 		/*if(Physics2D.OverlapArea(new Vector2(upperLeft.position.x, upperLeft.position.y), new Vector2(lowerRight.position.x, lowerRight.position.y), weight))*/

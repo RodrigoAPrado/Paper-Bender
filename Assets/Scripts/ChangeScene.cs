@@ -50,10 +50,13 @@ public class ChangeScene : MonoBehaviour {
 				begin = true;
 			}
 		}
-		if(change)
+
+		if(change == true)
 		{
+
 			if(blankScreen != null)
 			{
+
 				bSRenderer.color = new Color(1,1,1,opacity);
 				if(opacity < 1)
 				{
@@ -72,7 +75,6 @@ public class ChangeScene : MonoBehaviour {
 	}
 	public void ChangeThisScene(string s)
 	{
-
 		nextStage = s;
 		change = true;
 		opacity = 0;

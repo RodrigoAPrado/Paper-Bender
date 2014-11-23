@@ -85,9 +85,9 @@ public class NPCDialogController : MonoBehaviour {
 		gTextureAvatar.pixelInset = new Rect((-Screen.width/2) + (Screen.width/16), (-Screen.height/2) + Screen.height/18, Screen.width/7, Screen.width/7);
 		gTextureKeepTalking.pixelInset = new Rect((Screen.width/2) - (Screen.width/8), (-Screen.height/2) + Screen.height/25, Screen.width/23, Screen.width/23);
 		gTextureEndTalking.pixelInset = new Rect((Screen.width/2) - (Screen.width/8), (-Screen.height/2) + Screen.height/25, Screen.width/23, Screen.width/23);
-		gText.pixelOffset = new Vector2((-Screen.width/2) + (Screen.width/4),(-Screen.height/2) + (Screen.height/6));
+		gText.pixelOffset = new Vector2((-Screen.width/2) + (Screen.width/4),(-Screen.height/2) + (Screen.height/5.5f));
 		gText.text = displayString;
-		gText.fontSize = (int) Screen.width/28;
+		gText.fontSize = (int) Screen.width/29;
 	}
 	void CheckAvatarImage()
 	{

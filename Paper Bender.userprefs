@@ -1,17 +1,18 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ParticleDustEmitter.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ClearBandit.cs">
     <Files>
-      <File FileName="Assets\Scripts\DoorController.cs" Line="101" Column="108" />
-      <File FileName="Assets\Scripts\UltraRangeStatueController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Old\PositionDetect.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Old\MovePlayer.cs" Line="443" Column="9" />
-      <File FileName="Assets\Scripts\Old\PaperBendB.cs" Line="95" Column="1" />
-      <File FileName="Assets\Scripts\ParticleDustEmitter.cs" Line="6" Column="26" />
-      <File FileName="Assets\Scripts\StageManagerMaster.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\StageManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\AtlasTempleDoor.cs" Line="11" Column="9" />
-      <File FileName="Assets\Scripts\TemplePuzzle.cs" Line="31" Column="22" />
+      <File FileName="Assets\Menu\Scripts\ConfirmWorld.cs" Line="50" Column="1" />
+      <File FileName="Assets\Menu\Scripts\LoadLevel.cs" Line="23" Column="1" />
+      <File FileName="Assets\Menu\Scripts\SaveLoad.cs" Line="74" Column="47" />
+      <File FileName="Assets\Scripts\StageLoader.cs" Line="28" Column="78" />
+      <File FileName="Assets\Scripts\SaveController.cs" Line="50" Column="17" />
+      <File FileName="Assets\Menu\Scripts\ConfirmSave.cs" Line="87" Column="1" />
+      <File FileName="Assets\Scripts\Old\FallingPlataformController.cs" Line="44" Column="25" />
+      <File FileName="Assets\Scripts\NextStage.cs" Line="16" Column="35" />
+      <File FileName="Assets\Scripts\ClearBandit.cs" Line="89" Column="33" />
+      <File FileName="Assets\Scripts\StageManagerMaster.cs" Line="19" Column="71" />
+      <File FileName="Assets\Scripts\ChangeScene.cs" Line="62" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -13,6 +13,12 @@ public class StageManagerMaster : MonoBehaviour {
 			GameObject.Destroy(GameObject.FindGameObjectWithTag("NextStageNote").gameObject);
 			print(i);
 		}
+		if(GameObject.FindGameObjectWithTag("NextStageClear") != null)
+		{
+			i = GameObject.FindGameObjectWithTag("NextStageClear").GetComponent<ClearBandit>().nextStageStartingPosition;
+			GameObject.Destroy(GameObject.FindGameObjectWithTag("NextStageClear").gameObject);
+			print(i);
+		}
 		CallStageManager(i);
 	}
 	

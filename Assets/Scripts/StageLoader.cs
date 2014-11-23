@@ -16,8 +16,17 @@ public class StageLoader : MonoBehaviour {
 		}
 		switch(currentProgress)
 		{
-		default:
-			print ("Error");
+			default:
+			print (ES2.Load<int>("file" + stageLoader.ToString() + ".txt?tag=curW"));
+			//print ("Error");
+
+			if(currentProgress == 10 || currentProgress == 11)
+			{
+				ES2.Save(9, "file" + stageLoader.ToString() + ".txt?tag=gProgEvent");
+			}
+			print ("Current is " + currentProgress.ToString());
+			print (ES2.Load <int>("file" + stageLoader.ToString() + ".txt?tag=uestA"));
+			Application.LoadLevel(scenesToLoad[9 + ES2.Load<int>("file" + stageLoader.ToString() + ".txt?tag=curW")]);
 			break;
 			case 0:
 			print ("Current is " + currentProgress.ToString());
