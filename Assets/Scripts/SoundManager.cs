@@ -7,17 +7,40 @@ public class SoundManager : MonoBehaviour {
 	bool indoor;
 	public AudioSource indoorMusic;
 	public AudioSource outdoorMusic;
-	float volumeOutDoor;
+	public float maxVol = 1;
+	public float volumeOutDoor;
 	public float musicEnd;
 	[SerializeField] bool startsIndoor;
 	// Use this for initialization
 	void Start () {
+
+		if(ES2.Exists("MusicVol"))
+		{
+			maxVol = ES2.Load<float>("MusicVol");
+		}
+
 		if(startsIndoor)
 			volumeOutDoor = 0;
 		else
-			volumeOutDoor = 1;
+			volumeOutDoor = maxVol;
 		indoorMusic.volume = volumeOutDoor;
 		//outdoorMusic.time = 80;
+	}
+
+	public void ChangeVolume(float vol)
+	{
+		maxVol = vol;
+
+		Object[] SourcesList = FindObjectsOfType<AudioSource>();
+		
+		for(int i = 0; i< SourcesList.Length; i++)
+		{
+			AudioSource currSource = SourcesList[i] as AudioSource;
+			
+			currSource.volume = vol;
+		}
+
+		ES2.Save (vol,"MusicVol");
 	}
 	
 	// Update is called once per frame
@@ -35,13 +58,13 @@ public class SoundManager : MonoBehaviour {
 		}
 		if(!indoor)
 		{
-			if(volumeOutDoor < 1)
+			if(volumeOutDoor < maxVol)
 			{
 				volumeOutDoor += Time.deltaTime * 2;
 			}
 			else
 			{
-				volumeOutDoor = 1;
+				volumeOutDoor = maxVol;
 			}
 		}
 		else

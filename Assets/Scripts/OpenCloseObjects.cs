@@ -16,7 +16,7 @@ public class OpenCloseObjects : MonoBehaviour {
 	void OnClick()
 	{
 		if(openOrClose == tabOpenCloseObj.Close)
-			ObjectClose.SetActive(false);
+			Destroy(ObjectClose);
 		else
 			ObjectClose.SetActive(true);
 	}

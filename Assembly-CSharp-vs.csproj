@@ -6,7 +6,6 @@
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
 	<ProjectGuid>{AE690BC4-F5A8-A955-6A14-8284B6580ACC}</ProjectGuid>
-	<ProjectGuid>{E5B58819-943C-0EEF-59E2-AFB6610ED871}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -48,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Menu\Scripts\ActivateOnClick.cs" />
+     <Compile Include="Assets\Menu\Scripts\ButtonFeedback.cs" />
      <Compile Include="Assets\Menu\Scripts\CloseLevels.cs" />
      <Compile Include="Assets\Menu\Scripts\ConfirmSave.cs" />
      <Compile Include="Assets\Menu\Scripts\ConfirmWorld.cs" />
@@ -252,6 +252,7 @@
      <Compile Include="Assets\Scripts\PuzzleDurexControllerNeo.cs" />
      <Compile Include="Assets\Scripts\SaveController.cs" />
      <Compile Include="Assets\Scripts\SaveManager.cs" />
+     <Compile Include="Assets\Scripts\SaveOptions.cs" />
      <Compile Include="Assets\Scripts\Scissor.cs" />
      <Compile Include="Assets\Scripts\ScissorBroken.cs" />
      <Compile Include="Assets\Scripts\SheepController.cs" />
@@ -344,7 +345,6 @@
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
       <Project>{3013C494-C1E7-F260-6448-9E7FB613A19A}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
-      <Project>{CA4CB1ED-4448-4F55-4386-2D2667A37E47}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
