@@ -19,6 +19,6 @@ public class btn_options : MonoBehaviour {
     {
         //print("options");
         //CRIAR O OPTIONS
-        GameObject.Instantiate(Resources.Load("UI Options") as GameObject, new Vector3(9999, 0, 0), new Quaternion(0, 0, 0, 0));
+        GameObject.Instantiate(Resources.Load("UI Options") as GameObject, new Vector3(8888, 0, 0), new Quaternion(0, 0, 0, 0));
     }
 }
