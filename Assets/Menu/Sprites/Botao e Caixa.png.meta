@@ -1,0 +1,310 @@
+fileFormatVersion: 2
+guid: d46d7130edd86ea478050174c54a5006
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: Botao e Caixa_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 3770
+        width: 878
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Botao e Caixa_1
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 3770
+        width: 2981
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Botao e Caixa_2
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 3433
+        width: 878
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Botao e Caixa_3
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 3434
+        width: 1127
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Botao e Caixa_4
+      rect:
+        serializedVersion: 2
+        x: 2152
+        y: 3432
+        width: 1753
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Botao e Caixa_5
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 2997
+        width: 881
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Botao e Caixa_6
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 2997
+        width: 1112
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Botao e Caixa_7
+      rect:
+        serializedVersion: 2
+        x: 2191
+        y: 2997
+        width: 1711
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Botao e Caixa_8
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 2624
+        width: 881
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Botao e Caixa_9
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 2624
+        width: 1143
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Botao e Caixa_10
+      rect:
+        serializedVersion: 2
+        x: 2187
+        y: 2624
+        width: 1711
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Botao e Caixa_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2139
+        width: 930
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Botao e Caixa_12
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 2139
+        width: 1252
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Botao e Caixa_13
+      rect:
+        serializedVersion: 2
+        x: 2265
+        y: 2139
+        width: 1658
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Botao e Caixa_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1812
+        width: 930
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Botao e Caixa_15
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 1812
+        width: 1252
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Botao e Caixa_16
+      rect:
+        serializedVersion: 2
+        x: 2265
+        y: 1812
+        width: 1658
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Botao e Caixa_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1575
+        width: 930
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Botao e Caixa_18
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 1575
+        width: 1252
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Botao e Caixa_19
+      rect:
+        serializedVersion: 2
+        x: 2265
+        y: 1575
+        width: 1658
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Botao e Caixa_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 915
+        width: 930
+        height: 629
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Botao e Caixa_21
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 915
+        width: 1252
+        height: 629
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Botao e Caixa_22
+      rect:
+        serializedVersion: 2
+        x: 2265
+        y: 915
+        width: 1658
+        height: 629
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Botao e Caixa_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 387
+        width: 930
+        height: 497
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Botao e Caixa_24
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 387
+        width: 1252
+        height: 497
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Botao e Caixa_25
+      rect:
+        serializedVersion: 2
+        x: 2265
+        y: 387
+        width: 1658
+        height: 497
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Botao e Caixa_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 930
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Botao e Caixa_27
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 0
+        width: 1252
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Botao e Caixa_28
+      rect:
+        serializedVersion: 2
+        x: 2265
+        y: 0
+        width: 1658
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 
