@@ -49,81 +49,81 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 275
-        width: 129
-        height: 129
+        y: 138
+        width: 65
+        height: 65
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
     - name: Plataformas_1
       rect:
         serializedVersion: 2
-        x: 137
-        y: 275
-        width: 130
-        height: 129
+        x: 69
+        y: 138
+        width: 65
+        height: 65
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
     - name: Plataformas_2
       rect:
         serializedVersion: 2
-        x: 275
-        y: 275
-        width: 129
-        height: 129
+        x: 138
+        y: 138
+        width: 65
+        height: 65
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
     - name: Plataformas_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 137
-        width: 129
-        height: 130
+        y: 69
+        width: 65
+        height: 65
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
     - name: Plataformas_4
       rect:
         serializedVersion: 2
-        x: 137
-        y: 137
-        width: 130
-        height: 130
+        x: 69
+        y: 69
+        width: 65
+        height: 65
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
     - name: Plataformas_5
       rect:
         serializedVersion: 2
-        x: 275
-        y: 137
-        width: 129
-        height: 130
+        x: 138
+        y: 69
+        width: 65
+        height: 65
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
     - name: Plataformas_6
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 129
-        height: 129
+        width: 65
+        height: 65
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
     - name: Plataformas_7
       rect:
         serializedVersion: 2
-        x: 137
+        x: 69
         y: 0
-        width: 130
-        height: 129
+        width: 65
+        height: 65
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
     - name: Plataformas_8
       rect:
         serializedVersion: 2
-        x: 275
+        x: 138
         y: 0
-        width: 129
-        height: 129
+        width: 65
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
   spritePackingTag: 
