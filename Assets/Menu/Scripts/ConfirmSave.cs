@@ -25,11 +25,12 @@ public class ConfirmSave : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		fM = GameObject.Find ("FileManager").gameObject.GetComponent<FileManager>();
-		LoadScreen = transform.parent.transform.parent.FindChild("Confirm").gameObject;
-		FilesScreen = transform.parent.transform.parent.FindChild("Files").gameObject;
-		CreateScreen = transform.parent.transform.parent.FindChild("Create").gameObject;
-		EraseScreen = transform.parent.transform.parent.FindChild("Erase").gameObject;
-		ConfirmEraseScreen = transform.parent.transform.parent.FindChild("ConfirmErase").gameObject;
+		LoadScreen = GameObject.Find("Anchor").transform.FindChild("Confirm").gameObject;
+        FilesScreen = GameObject.Find("Anchor").transform.FindChild("Files").gameObject;
+        CreateScreen = GameObject.Find("Anchor").transform.FindChild("Create").gameObject;
+        EraseScreen = GameObject.Find("Anchor").transform.FindChild("Erase").gameObject;
+        ConfirmEraseScreen = GameObject.Find("Anchor").transform.FindChild("ConfirmErase").gameObject;
+        //ConfirmEraseScreen = transform.parent.transform.parent.FindChild("ConfirmErase").gameObject;
 	}
 	
 	// Update is called once per frame
