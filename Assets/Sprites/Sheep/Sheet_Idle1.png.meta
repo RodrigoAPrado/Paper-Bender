@@ -44,6 +44,186 @@ TextureImporter:
     textureFormat: -2
     compressionQuality: 50
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Sheet_Idle1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1412
+        width: 505
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Sheet_Idle1_1
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 1412
+        width: 505
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Sheet_Idle1_2
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 1412
+        width: 505
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Sheet_Idle1_3
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 1412
+        width: 505
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Sheet_Idle1_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1059
+        width: 505
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Sheet_Idle1_5
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 1059
+        width: 505
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Sheet_Idle1_6
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 1059
+        width: 505
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Sheet_Idle1_7
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 1059
+        width: 505
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Sheet_Idle1_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 706
+        width: 505
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Sheet_Idle1_9
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 706
+        width: 505
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Sheet_Idle1_10
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 706
+        width: 505
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Sheet_Idle1_11
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 706
+        width: 505
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Sheet_Idle1_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 353
+        width: 505
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Sheet_Idle1_13
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 353
+        width: 505
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Sheet_Idle1_14
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 353
+        width: 505
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Sheet_Idle1_15
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 353
+        width: 505
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Sheet_Idle1_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 505
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Sheet_Idle1_17
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 0
+        width: 505
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Sheet_Idle1_18
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 0
+        width: 505
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Sheet_Idle1_19
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 0
+        width: 505
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
   spritePackingTag: 
   userData: 
