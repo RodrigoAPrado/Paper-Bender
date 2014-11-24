@@ -22,11 +22,16 @@ public class ClearBandit : MonoBehaviour
 		{
 			print ("null");
 		}
+		int stageLoader = ES2.Load<int>("currentSave.txt");
 		if(uest7)
 		{
+			int currentProgressB = ES2.Load<int>("file" + stageLoader.ToString() + ".txt?tag=gProgEvent");
+			if(currentProgressB >= 15)
+			{
+				bandidao.transform.FindChild("Avatar").GetComponent<SpriteRenderer>().color = new Color(0,1,1,0.5f);
+			}
 			return;
 		}
-		int stageLoader = ES2.Load<int>("currentSave.txt");
 		int currentProgress = ES2.Load<int>("file" + stageLoader.ToString() + ".txt?tag=" + variable);
 		switch(stage)
 		{
@@ -86,6 +91,11 @@ public class ClearBandit : MonoBehaviour
 			changeS = true;
 			if(uest7)
 			{
+				int currentProgressB = ES2.Load<int>("file" + stageLoader.ToString() + ".txt?tag=gProgEvent");
+				if(currentProgressB < 15)
+				{
+					ES2.Save<int>(15, "file" + stageLoader.ToString() + ".txt?tag=gProgEvent");
+				}
 				arrowEnable.SetActive(true);
 				return;
 			}

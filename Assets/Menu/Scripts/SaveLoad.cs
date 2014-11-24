@@ -7,6 +7,10 @@ public class SaveLoad : MonoBehaviour {
 	FileManager fM;
 	UILabel world;
 	UILabel percent;
+	GameObject bandaidA;
+	GameObject bandaidB;
+	GameObject bandaidC;
+	GameObject bandaidD;
 	GameObject LoadScreen;
 	GameObject FilesScreen;
 	GameObject CreateScreen;
@@ -16,11 +20,28 @@ public class SaveLoad : MonoBehaviour {
 	public bool load;
 	// Use this for initialization
 	void Start () {
+		bandaidA = transform.FindChild("Save").transform.FindChild("Texture_Bandaid_01").gameObject;
+		bandaidB = transform.FindChild("Save").transform.FindChild("Texture_Bandaid_02").gameObject;
+		bandaidC = transform.FindChild("Save").transform.FindChild("Texture_Bandaid_03").gameObject;
+		bandaidD = transform.FindChild("Save").transform.FindChild("Texture_Bandaid_04").gameObject;
 		fM = GameObject.Find ("FileManager").gameObject.GetComponent<FileManager>();
 		world = transform.FindChild("Save").transform.FindChild("World").GetComponent<UILabel>();
 		percent = transform.FindChild("Save").transform.FindChild("Percent").GetComponent<UILabel>();
 		int i = ES2.Load<int>("file" + thisSave.ToString() + ".txt?tag=gProgStages");
 		percent.text = ((i*100)/maxStages).ToString() + "%";
+		if(i < 3)
+			bandaidA.SetActive(false);
+		else
+			bandaidA.SetActive(true);
+
+		if(i < 10)
+			bandaidB.SetActive(false);
+		else
+			bandaidB.SetActive(true);
+
+		bandaidC.SetActive(false);
+		bandaidD.SetActive(false);
+
 		int j = ES2.Load<int>("file" + thisSave.ToString() + ".txt?tag=curW");
 		switch(j)
 		{
