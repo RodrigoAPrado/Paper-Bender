@@ -4,6 +4,7 @@ using System.Collections;
 public class ParticleDustEmitter : MonoBehaviour {
 
 	public bool isPaperBall;
+	public LayerMask floorLayer;
 	// Use this for initialization
 	void Start () {
 		//particleSystem.renderer.sortingLayerName = "Particles";
@@ -14,6 +15,14 @@ public class ParticleDustEmitter : MonoBehaviour {
 		//print (transform.parent.gameObject.rigidbody2D.velocity.x);
 		if(isPaperBall)
 		{
+			if(!Physics2D.OverlapCircle(transform.position, 0.3f, floorLayer))
+			{
+				if(!particleSystem.isStopped)
+				{
+					particleSystem.Stop();
+					return;
+				}
+			}
 			if(transform.parent.gameObject.rigidbody2D.velocity.x > -0.3 && transform.parent.gameObject.rigidbody2D.velocity.x < 0.3 )
 			{
 				if(!particleSystem.isStopped)

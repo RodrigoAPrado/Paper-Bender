@@ -211,9 +211,9 @@ public class MovePlayer : MonoBehaviour {
 				GameObject.Destroy(staffParticleActive, 2);
                 staffTrigger = true;
 
-                RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, 1, ballLayer);
+                //RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, 1, ballLayer);
 
-                GameObject bendParticleActive = GameObject.Instantiate(bendParticle, new Vector2(hit.transform.position.x, hit.transform.position.y), bendParticle.transform.rotation) as GameObject;
+				GameObject bendParticleActive = GameObject.Instantiate(bendParticle, new Vector2(paperToBend.transform.position.x, paperToBend.transform.position.y), bendParticle.transform.rotation) as GameObject;
 				bendParticleActive.GetComponent<ParticleSystem>().particleSystem.renderer.sortingLayerName = "Particles";
 				GameObject.Destroy(bendParticleActive, 3);
 				//paperToBend.transform.position;
