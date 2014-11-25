@@ -25,6 +25,10 @@ public class SoundManager : MonoBehaviour {
 			volumeOutDoor = maxVol;
 		indoorMusic.volume = volumeOutDoor;
 		//outdoorMusic.time = 80;
+		if(ES2.Exists("musicTime.txt"))
+		{
+			outdoorMusic.time = ES2.Load<float>("musicTime.txt");
+		}
 	}
 
 	public void ChangeVolume(float vol)
@@ -57,7 +61,9 @@ public class SoundManager : MonoBehaviour {
 			outdoorMusic.time = 0;
 			indoorMusic.time = 0;
 		}*/
-		if(indoorMusic.time > outdoorMusic.time + 0.5f || indoorMusic.time < outdoorMusic.time - 0.5f)
+		print (indoorMusic.time);
+		print (outdoorMusic.time);
+		if(indoorMusic.time > outdoorMusic.time + 0.1f || indoorMusic.time < outdoorMusic.time - 0.1f)
 		{
 			indoorMusic.time = outdoorMusic.time;
 		}

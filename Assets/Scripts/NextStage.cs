@@ -86,6 +86,9 @@ public class NextStage : MonoBehaviour {
 		}
 		gameObject.tag = "NextStageNote";
 		DontDestroyOnLoad(gameObject);
+		SoundManager sM = FindObjectOfType<SoundManager>();
+		float oM = sM.outdoorMusic.time;
+		ES2.Save(oM, "musicTime.txt");
 		if(cSc!= null)
 			cSc.ChangeThisScene(nextStage);
 		else

@@ -103,8 +103,14 @@ public class BanditControllerNeo : MonoBehaviour {
 
 	public AudioClip scaredSound;
 
+	public GameObject jumpParticle;
+	public GameObject fallParticle;
+	bool fallTrigger;
+	ParticleSystem dustRunParticle;
 	// Use this for initialization
 	void Start () {
+		dustRunParticle = transform.FindChild("ParticlePaperBall").particleSystem;
+		dustRunParticle.Stop();
 		player = GameObject.FindGameObjectWithTag("Player").transform;
 		bWP = currentWayPoint.GetComponent<BanditWayPointNeo>();
 		charAvatar = transform.FindChild("Avatar").gameObject;
@@ -120,9 +126,22 @@ public class BanditControllerNeo : MonoBehaviour {
 		if(grounded)
 		{
 			if(walk)
+			{
 				anim.SetBool("Walk", true);
+				if(!dustRunParticle.isPlaying)
+				{
+					dustRunParticle.Play();
+				}
+			}
 			else
+			{
 				anim.SetBool("Walk", false);
+				dustRunParticle.Stop();
+			}
+		}
+		else
+		{
+			dustRunParticle.Stop();
 		}
 		if(scared)
 			anim.SetBool("Scared", true);
@@ -339,7 +358,26 @@ public class BanditControllerNeo : MonoBehaviour {
 		else
 			grounded = false;
 
-
+		if(!grounded)
+			fallTrigger = true;
+		if(fallTrigger && grounded)
+		{
+			fallTrigger = false;
+			Vector3[] fallParticleRotation = new Vector3[2];
+			fallParticleRotation[0] = new Vector3(0, -90, 90);
+			fallParticleRotation[1] = new Vector3(0, 90, -90);
+			int j = 0;
+			for(float i = -0.2f; i< 0.5f; i += 0.4f)
+			{
+				GameObject fallParticleActive = GameObject.Instantiate(fallParticle, new Vector2(wayPointCheck.position.x, wayPointCheck.position.y), fallParticle.transform.rotation) as GameObject;
+				fallParticleActive.transform.eulerAngles = fallParticleRotation[j];
+				fallParticleActive.GetComponent<ParticleSystem>().particleSystem.renderer.sortingLayerName = "Particles";
+				fallParticleActive.GetComponent<ParticleSystem>().particleSystem.startRotation = Random.Range(0,89) + i*90;
+				fallParticleActive.GetComponent<ParticleSystem>().particleSystem.startSize = Random.Range(0.7f,0.9f);
+				GameObject.Destroy(fallParticleActive, 4);
+				j++;
+			}
+		}
 
 		if(grounded)
 			groundSpeed = 5;
@@ -449,6 +487,21 @@ public class BanditControllerNeo : MonoBehaviour {
 			}
 		}
 		rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, jumpSpeed);
+		Vector3[] jumpParticleRotation = new Vector3[3];
+				jumpParticleRotation[0] = new Vector3(60, -90, 90);
+				jumpParticleRotation[1] = new Vector3(90, 180, 0);
+				jumpParticleRotation[2] = new Vector3(60, 90, -90);
+				int j = 0;
+				for(float i = -0.6f; i< 1; i += 0.6f)
+				{
+			GameObject jumpParticleActive = GameObject.Instantiate(jumpParticle, new Vector2(wayPointCheck.position.x + i, wayPointCheck.position.y + 0.4f), jumpParticle.transform.rotation) as GameObject;
+					jumpParticleActive.transform.eulerAngles = jumpParticleRotation[j];
+					jumpParticleActive.GetComponent<ParticleSystem>().particleSystem.renderer.sortingLayerName = "Particles";
+					jumpParticleActive.GetComponent<ParticleSystem>().particleSystem.startRotation = Random.Range(0,89) + i*90;
+					jumpParticleActive.GetComponent<ParticleSystem>().particleSystem.startSize = Random.Range(0.7f,0.9f);
+					GameObject.Destroy(jumpParticleActive, 4);
+					j++;
+				}
 		jumping = true;
 		doJump = false;
 		doDistanceJump = false;

@@ -38,6 +38,7 @@ public class ConfirmWorld : MonoBehaviour {
 				ES2.Save(9, "file" + stageLoader.ToString() + ".txt?tag=gProgEvent");
 			}
 			Time.timeScale = 1;
+			ES2.Save(0.1f, "musicTime.txt");
 			Application.LoadLevel(wM.worlds[stage]);
 			break;
 		case worldButtons.Cancel:
