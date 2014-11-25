@@ -7,7 +7,7 @@ public class ParticleDustEmitter : MonoBehaviour {
 	public LayerMask floorLayer;
 	bool grounded;
 	bool groundedCheck;
-	public ParticleSystem fallParticle;
+	public GameObject fallParticle;
 	float timer;
 	// Use this for initialization
 	void Start () {

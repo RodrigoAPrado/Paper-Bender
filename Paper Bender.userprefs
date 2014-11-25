@@ -1,16 +1,15 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ParticleDustEmitter.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SoundManager.cs">
     <Files>
-      <File FileName="Assets\Scripts\Old\MovePlayer.cs" Line="506" Column="1" />
-      <File FileName="Assets\Scripts\SaveManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\ChangeScene.cs" Line="1" Column="1" />
-      <File FileName="Assets\Menu\Scripts\ConfirmSave.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\FileManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Menu\Scripts\SaveLoad.cs" Line="110" Column="1" />
-      <File FileName="Assets\Scripts\ClearBandit.cs" Line="145" Column="1" />
-      <File FileName="Assets\Scripts\Old\PositionDetect.cs" Line="136" Column="1" />
-      <File FileName="Assets\Scripts\ParticleDustEmitter.cs" Line="57" Column="1" />
+      <File FileName="Assets\Scripts\BanditControllerNeo.cs" Line="131" Column="9" />
+      <File FileName="Assets\Scripts\NextStage.cs" Line="91" Column="15" />
+      <File FileName="Assets\Scripts\SoundManager.cs" Line="13" Column="37" />
+      <File FileName="Assets\Menu\Scripts\SaveLoad.cs" Line="23" Column="95" />
+      <File FileName="Assets\Menu\Scripts\ConfirmSave.cs" Line="51" Column="17" />
+      <File FileName="Assets\Menu\Scripts\ActivateOnClick.cs" Line="63" Column="1" />
+      <File FileName="Assets\Menu\Scripts\ConfirmWorld.cs" Line="41" Column="17" />
+      <File FileName="Assets\Scripts\Old\PersistentObject.cs" Line="27" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

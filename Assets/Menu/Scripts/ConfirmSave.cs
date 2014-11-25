@@ -48,6 +48,7 @@ public class ConfirmSave : MonoBehaviour {
 			fM.CheckFiles();
 			print ("GameLoaded");
 			ES2.Save(fM.chosenSave,"currentSave.txt");
+			ES2.Save(0.1f, "musicTime.txt");
             Application.LoadLevel("StageLoader");
 			break;
 		case saveButtons.CancelCreate:

@@ -5,7 +5,15 @@ public class PersistentObject : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		DontDestroyOnLoad(gameObject);
+		if(GameObject.FindGameObjectWithTag("MenuMusic") != null)
+		{
+			GameObject.Destroy(gameObject);
+		}
+		else
+		{
+			gameObject.tag = "MenuMusic";
+			DontDestroyOnLoad(gameObject);
+		}
 	}
 	
 	void OnLevelWasLoaded(int scene)
