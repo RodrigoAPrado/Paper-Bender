@@ -61,8 +61,8 @@ public class SoundManager : MonoBehaviour {
 			outdoorMusic.time = 0;
 			indoorMusic.time = 0;
 		}*/
-		print (indoorMusic.time);
-		print (outdoorMusic.time);
+//		print (indoorMusic.time);
+//		print (outdoorMusic.time);
 		if(indoorMusic.time > outdoorMusic.time + 0.1f || indoorMusic.time < outdoorMusic.time - 0.1f)
 		{
 			indoorMusic.time = outdoorMusic.time;

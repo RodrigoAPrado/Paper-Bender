@@ -159,6 +159,7 @@ public class NPCDialogController : MonoBehaviour {
             Debug.Log("VOLTA SOM");
             Debug.Log(lastVolume);
 			FindObjectOfType<SoundManager>().ChangeVolume(lastVolume);
+
 			return;
 		}
 		fullString = dialogueScript[currentLine];
