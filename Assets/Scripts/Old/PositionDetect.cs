@@ -23,6 +23,7 @@ public class PositionDetect : MonoBehaviour {
 	public Vector3[] cameraPositions;
 	NPCDialogController nPC;
 	public GameObject touchParticle;
+	public GameObject bendParticle;
 		
 
 	void Start () {
@@ -93,6 +94,9 @@ public class PositionDetect : MonoBehaviour {
 					//hit.collider.gameObject.GetComponent<PaperBendB>().BendPaper();
 					GameObject.Destroy(touchParticleActive);
 					movePlayer.BendAnimation(hit.collider.gameObject.GetComponent<PaperBendB>());
+					GameObject bendParticleActive = GameObject.Instantiate(bendParticle, new Vector2(mouseposition.x, mouseposition.y), bendParticle.transform.rotation) as GameObject;
+					bendParticleActive.GetComponent<ParticleSystem>().particleSystem.renderer.sortingLayerName = "Particles";
+					GameObject.Destroy(bendParticleActive, 3);
 					return;
 				}
 			}
