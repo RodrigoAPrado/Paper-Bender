@@ -14,6 +14,7 @@ public class NextStage : MonoBehaviour {
 	public int saveProgressToChange;
 	public bool changeStageProgress;
 	public int stageProgressToChange;
+	public KeyCode keyToCheat;
 	// Use this for initialization
 	void Start () {
 		if(Camera.main.GetComponent<ChangeScene>() != null)
@@ -31,6 +32,13 @@ public class NextStage : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
+		if(keyToCheat != null)
+		{
+			if(Input.GetKeyDown(keyToCheat))
+			{
+				Clicked();
+			}
+		}
 		if(cSc != null){
 			if(cSc.begin)
 			{

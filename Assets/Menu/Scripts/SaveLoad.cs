@@ -16,7 +16,7 @@ public class SaveLoad : MonoBehaviour {
 	GameObject CreateScreen;
 	GameObject EraseScreen;
 	GameObject ConfirmEraseScreen;
-	int maxStages = 10;
+	int maxStages = 11;
 	public bool load;
 	// Use this for initialization
 	void Start () {
@@ -34,7 +34,7 @@ public class SaveLoad : MonoBehaviour {
 		else
 			bandaidA.SetActive(true);
 
-		if(i < 10)
+		if(i < 11)
 			bandaidB.SetActive(false);
 		else
 			bandaidB.SetActive(true);

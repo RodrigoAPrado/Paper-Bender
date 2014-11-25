@@ -9,6 +9,8 @@ public class WaterController : MonoBehaviour {
 	[SerializeField] Transform left;
 	[SerializeField] Transform right;
 	[SerializeField] Transform teleportBack;
+	public Transform particleHeight;
+	public ParticleSystem particleWater;
 	Transform player;
 	// Use this for initialization
 	void Start () {
@@ -23,6 +25,11 @@ public class WaterController : MonoBehaviour {
 	void Update () {
 		if(Physics2D.OverlapArea(left.position, right.position, playerLayer))
 		{
+			if(particleWater != null && particleHeight != null)
+			{
+				GameObject particleWaterActive = GameObject.Instantiate(particleWater, new Vector2(player.position.x, particleHeight.position.y), particleWater.transform.rotation) as GameObject;
+				GameObject.Destroy(particleWaterActive, 4);
+			}
 			player.position = teleportBack.position;
 			player.GetComponent<MovePlayer>().moving = false;
 		}

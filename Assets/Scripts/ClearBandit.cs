@@ -63,6 +63,10 @@ public class ClearBandit : MonoBehaviour
 	
 	void Update () 
     {
+		if(Input.GetKeyDown(KeyCode.B))
+		{
+			GameObject.Destroy(bandidao);
+		}
 		/*if(cSc != null){
 			if(cSc.begin)
 			{
