@@ -37,6 +37,7 @@ public class MovePlayer : MonoBehaviour {
 	bool paperBall;
 	public bool flipStart;
 	bool adjustJumpSpeed;
+	public AudioClip audioFall;
 
 	SpriteRenderer bendZoneSprite;
 	float opacity;
@@ -65,6 +66,10 @@ public class MovePlayer : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		nPC = GameObject.FindGameObjectWithTag("ChatBox").GetComponent<NPCDialogController>();
+
+		gameObject.AddComponent<AudioSource>();
+		audio.volume = 0.2f;
+
 		normalSpeed = 5;
 		bendZoneSprite = GameObject.FindGameObjectWithTag("PlayerBendZone").gameObject.GetComponent<SpriteRenderer>();
 		currentDist = new float[2];
@@ -126,6 +131,10 @@ public class MovePlayer : MonoBehaviour {
 				fallParticleActive.GetComponent<ParticleSystem>().particleSystem.renderer.sortingLayerName = "Particles";
 				fallParticleActive.GetComponent<ParticleSystem>().particleSystem.startRotation = Random.Range(0,89) + i*90;
 				fallParticleActive.GetComponent<ParticleSystem>().particleSystem.startSize = Random.Range(0.7f,0.9f);
+
+				if(audioFall)
+//					audio.PlayOneShot(audioFall);
+
 				GameObject.Destroy(fallParticleActive, 4);
 				j++;
 			}

@@ -16,6 +16,7 @@ public class DoorController : MonoBehaviour {
 	public ParticleSystem doorParticleDust;
 	public GameObject fallParticle;
 	public Transform doorDustClosePosition;
+	public AudioClip audioOpen;
 	// Use this for initialization
 	void Start () {
 		if(doorParticle != null)
@@ -26,6 +27,8 @@ public class DoorController : MonoBehaviour {
 		{
 			doorParticleDust.renderer.sortingLayerName = "Particles";
 		}
+
+		gameObject.AddComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -35,7 +38,16 @@ public class DoorController : MonoBehaviour {
 			if(doorParticle != null)
 			{
 				if(!doorParticle.isPlaying)
+				{
 					doorParticle.Play();
+
+					if(audioOpen != null)
+					{
+	
+						GetComponent<AudioSource>().loop = true;
+						audio.PlayOneShot(audioOpen);
+					}
+				}
 			}
 			if(doorParticleDust != null)
 			{
@@ -221,7 +233,11 @@ public class DoorController : MonoBehaviour {
 			if(doorParticle != null)
 			{
 				if(!doorParticle.isStopped)
+				{
 					doorParticle.Stop();
+					audio.Stop();
+
+				}
 			}
 			if(doorParticleDust != null)
 			{

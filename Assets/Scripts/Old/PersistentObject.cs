@@ -14,6 +14,7 @@ public class PersistentObject : MonoBehaviour {
 			gameObject.tag = "MenuMusic";
 			DontDestroyOnLoad(gameObject);
 		}
+
 	}
 	
 	void OnLevelWasLoaded(int scene)
